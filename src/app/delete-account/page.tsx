@@ -114,7 +114,7 @@ export default function DeleteAccountPage() {
         </form>
 
         <p className="text-sm text-gray-400 mt-8 text-center">
-          Need help? Contact <a href="mailto:support@payoffdebtplanner.com" className="text-primary underline">support@payoffdebtplanner.com</a>
+          Need help? Contact <a href="mailto:payoffdebtplanner@zohomail.eu" className="text-primary underline">payoffdebtplanner@zohomail.eu</a>
         </p>
       </div>
     </main>

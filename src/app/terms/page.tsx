@@ -81,7 +81,7 @@ export default function TermsPage() {
 
         <h2>12. Contact</h2>
         <p>
-          For questions about these Terms, contact us at <a href="mailto:support@payoffdebtplanner.com">support@payoffdebtplanner.com</a>.
+          For questions about these Terms, contact us at <a href="mailto:payoffdebtplanner@zohomail.eu">payoffdebtplanner@zohomail.eu</a>.
         </p>
       </div>
     </main>

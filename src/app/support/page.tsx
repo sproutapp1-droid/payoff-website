@@ -20,14 +20,14 @@ export default function SupportPage() {
         {/* Contact cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
           <a
-            href="mailto:support@payoffdebtplanner.com"
+            href="mailto:payoffdebtplanner@zohomail.eu"
             className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center no-underline"
           >
             <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
               <Mail className="w-6 h-6 text-primary" />
             </div>
             <h3 className="font-bold text-gray-900 mb-1">Email Us</h3>
-            <p className="text-sm text-gray-500">support@payoffdebtplanner.com</p>
+            <p className="text-sm text-gray-500">payoffdebtplanner@zohomail.eu</p>
           </a>
 
           <Link

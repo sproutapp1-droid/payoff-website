@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -34,10 +35,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl" role="img" aria-label="tree">
-              🌳
-            </span>
+          <Link href="/" className="flex items-center gap-1.5">
+            <Image
+              src="/logo.png"
+              alt="Payoff logo"
+              width={36}
+              height={36}
+              className="w-9 h-9"
+            />
             <span className="text-xl font-extrabold text-primary">Payoff</span>
           </Link>
 

@@ -91,7 +91,7 @@ export default function PrivacyPolicyPage() {
 
         <h2>Contact Us</h2>
         <p>
-          If you have questions about this Privacy Policy, please contact us at <a href="mailto:support@payoffdebtplanner.com">support@payoffdebtplanner.com</a>.
+          If you have questions about this Privacy Policy, please contact us at <a href="mailto:payoffdebtplanner@zohomail.eu">payoffdebtplanner@zohomail.eu</a>.
         </p>
       </div>
     </main>

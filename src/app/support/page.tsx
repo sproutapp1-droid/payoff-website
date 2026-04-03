@@ -10,8 +10,19 @@ export const metadata: Metadata = {
 
 export default function SupportPage() {
   return (
-    <main className="pt-32 pb-20 px-4">
-      <div className="max-w-3xl mx-auto">
+    <main className="relative pt-32 pb-20 px-4">
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-28 -right-36 w-[420px] h-[420px] rounded-full bg-secondary opacity-[0.06] blur-[120px]" />
+        <div className="absolute -bottom-32 -left-28 w-[380px] h-[380px] rounded-full bg-accent opacity-[0.07] blur-[100px]" />
+        <div className="absolute top-[20%] left-[6%] w-10 h-10 rounded-full border border-primary/12 animate-float" style={{ animationDelay: '0.4s' }} />
+        <div className="absolute bottom-[25%] right-[8%] w-8 h-8 rounded-full border border-secondary/10 animate-float" style={{ animationDelay: '1.2s' }} />
+        <div className="absolute top-16 left-[35%] w-2 h-2 rounded-full bg-accent/20 animate-pulse" />
+        <div className="absolute bottom-20 right-[30%] w-1.5 h-1.5 rounded-full bg-secondary/15 animate-pulse" style={{ animationDelay: '0.6s' }} />
+        <div className="absolute top-[50%] right-[45%] w-2 h-2 rounded-full bg-primary/12 animate-pulse" style={{ animationDelay: '1s' }} />
+      </div>
+
+      <div className="relative z-10 max-w-3xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4">Support</h1>
         <p className="text-lg text-gray-500 mb-12">
           We&apos;re here to help. Choose an option below or browse our FAQ.

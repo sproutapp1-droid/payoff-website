@@ -17,8 +17,24 @@ export default function BlogPage() {
   const categories = getAllCategories();
 
   return (
-    <main className="pt-32 pb-20 px-4">
-      <div className="max-w-6xl mx-auto">
+    <main className="relative pt-32 pb-20 px-4">
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Coral blob top-right */}
+        <div className="absolute -top-32 -right-36 w-[450px] h-[450px] rounded-full bg-secondary opacity-[0.06] blur-[120px]" />
+        {/* Yellow blob bottom-left */}
+        <div className="absolute -bottom-28 -left-32 w-[400px] h-[400px] rounded-full bg-accent opacity-[0.07] blur-[100px]" />
+        {/* Floating shapes */}
+        <div className="absolute top-20 left-[6%] w-12 h-12 rounded-full border border-secondary/12 animate-float" style={{ animationDelay: '0.3s' }} />
+        <div className="absolute bottom-[15%] right-[8%] w-10 h-10 rounded-full border border-accent/15 animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-[45%] left-[4%] w-8 h-8 rounded-full bg-primary/8 animate-float" style={{ animationDelay: '1.6s' }} />
+        {/* Sparkle dots */}
+        <div className="absolute top-16 right-[20%] w-2 h-2 rounded-full bg-secondary/18 animate-pulse" />
+        <div className="absolute bottom-24 left-[25%] w-1.5 h-1.5 rounded-full bg-accent/20 animate-pulse" style={{ animationDelay: '0.7s' }} />
+        <div className="absolute top-[35%] right-[40%] w-2 h-2 rounded-full bg-primary/12 animate-pulse" style={{ animationDelay: '1.3s' }} />
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block bg-secondary/10 text-secondary rounded-full px-4 py-1 text-sm font-semibold mb-4">

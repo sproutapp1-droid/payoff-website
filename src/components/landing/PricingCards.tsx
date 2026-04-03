@@ -9,8 +9,24 @@ export default function PricingCards() {
   const [isYearly, setIsYearly] = useState(true);
 
   return (
-    <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
-      <div className="max-w-5xl mx-auto">
+    <section id="pricing" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Green blob top-right */}
+        <div className="absolute -top-32 -right-40 w-[480px] h-[480px] rounded-full bg-primary opacity-[0.20] blur-[130px]" />
+        {/* Yellow blob bottom-left */}
+        <div className="absolute -bottom-36 -left-28 w-[400px] h-[400px] rounded-full bg-accent opacity-[0.25] blur-[100px]" />
+        {/* Floating shapes */}
+        <div className="absolute top-24 left-[8%] w-12 h-12 rounded-full border border-primary/12 animate-float" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute bottom-20 right-[12%] w-10 h-10 rounded-full border border-accent/30 animate-float" style={{ animationDelay: '1.3s' }} />
+        <div className="absolute top-[50%] right-[6%] w-8 h-8 rounded-full bg-secondary/8 animate-float" style={{ animationDelay: '0.7s' }} />
+        {/* Sparkle dots */}
+        <div className="absolute top-16 left-[25%] w-2 h-2 rounded-full bg-primary/25 animate-pulse" />
+        <div className="absolute bottom-28 right-[30%] w-1.5 h-1.5 rounded-full bg-accent/30 animate-pulse" style={{ animationDelay: '0.9s' }} />
+        <div className="absolute top-[35%] left-[4%] w-2 h-2 rounded-full bg-secondary/15 animate-pulse" style={{ animationDelay: '1.4s' }} />
+      </div>
+
+      <div className="relative z-10 max-w-5xl mx-auto">
         {/* Heading */}
         <h2 className="text-4xl font-extrabold text-center text-foreground">
           Simple, transparent pricing

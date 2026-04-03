@@ -13,71 +13,76 @@ const trustPills = [
 ];
 
 export default function HeroSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
-    target: containerRef,
+    target: scrollRef,
     offset: ["start start", "end end"],
   });
 
-  // Phase 1 (0-0.15): Phone centred, slight initial tilt
-  // Phase 2 (0.15-0.45): Phone rotates on X-axis, shifts right, scales
-  // Phase 3 (0.45-0.55): Content swap happens (opacity crossfade)
-  // Phase 4 (0.55-0.75): Phone settles into right column position
+  // Simple Y-axis flip: 0 → 180 degrees (card flip forward)
+  const rotateY = useTransform(scrollYProgress, [0.15, 0.65], [0, 180]);
 
-  // X-axis rotation: 0 -> -75deg (tilting backward away from viewer)
-  const rotateX = useTransform(scrollYProgress, [0.05, 0.35, 0.55, 0.75], [0, -75, -75, 0]);
+  // Hero text fades out
+  const textOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0]);
+  const textY = useTransform(scrollYProgress, [0, 0.25], [0, -50]);
 
-  // Y-axis rotation: slight turn as it tilts
-  const rotateY = useTransform(scrollYProgress, [0.05, 0.35, 0.55, 0.75], [0, 15, -15, 0]);
-
-  // Z rotation: subtle tilt
-  const rotateZ = useTransform(scrollYProgress, [0.05, 0.35, 0.55, 0.75], [0, 3, -3, 0]);
-
-  // Move right: centred -> right column
-  const x = useTransform(scrollYProgress, [0.05, 0.55, 0.75], [0, 100, 0]);
-
-  // Scale: slightly shrink during rotation, then grow back
-  const scale = useTransform(scrollYProgress, [0.05, 0.4, 0.75], [1, 0.85, 1]);
-
-  // Front image opacity: visible -> hidden during rotation peak
-  const frontOpacity = useTransform(scrollYProgress, [0.35, 0.45], [1, 0]);
-
-  // Back image opacity: hidden -> visible during rotation peak
-  const backOpacity = useTransform(scrollYProgress, [0.45, 0.55], [0, 1]);
-
-  // Hero text fades out as you scroll
-  const heroTextOpacity = useTransform(scrollYProgress, [0.05, 0.25], [1, 0]);
-  const heroTextY = useTransform(scrollYProgress, [0.05, 0.25], [0, -40]);
-
-  // "DEBT" / "FREE" text fades
-  const bigTextOpacity = useTransform(scrollYProgress, [0.05, 0.3], [0.1, 0]);
+  // Watermark stays visible throughout
+  const watermarkOpacity = 0.07;
 
   return (
-    <div ref={containerRef} className="relative" style={{ height: "300vh" }}>
-      {/* Sticky container — stays in view while we scroll through 300vh */}
-      <div className="sticky top-0 h-screen overflow-hidden">
-        {/* Decorative blobs */}
-        <div className="absolute w-[400px] h-[400px] bg-secondary rounded-full blur-[80px] opacity-20 -top-[100px] -right-[100px] pointer-events-none" />
-        <div className="absolute w-[350px] h-[350px] bg-accent rounded-full blur-[80px] opacity-20 -bottom-[80px] -left-[80px] pointer-events-none" />
+    <div ref={scrollRef} className="relative" style={{ height: "200vh" }}>
+      <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
+        {/* Rich background — warm gradients, blobs, and floating shapes */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          {/* Large gradient blobs */}
+          <div className="absolute w-[700px] h-[700px] bg-secondary rounded-full blur-[140px] opacity-[0.14] -top-[200px] -right-[200px]" />
+          <div className="absolute w-[600px] h-[600px] bg-accent rounded-full blur-[130px] opacity-[0.18] -bottom-[150px] -left-[150px]" />
+          <div className="absolute w-[400px] h-[400px] bg-primary rounded-full blur-[120px] opacity-[0.05] top-[25%] left-[5%]" />
+          <div className="absolute w-[350px] h-[350px] bg-secondary rounded-full blur-[100px] opacity-[0.10] bottom-[15%] right-[25%]" />
+          <div className="absolute w-[500px] h-[500px] bg-accent rounded-full blur-[120px] opacity-[0.10] top-[15%] right-[10%]" />
 
-        {/* Desktop layout */}
-        <div className="hidden lg:flex h-full items-center justify-center px-8">
-          {/* Left side: text content (fades out, then "What Payoff Can Do" section scrolls in) */}
+          {/* Floating decorative shapes — slow CSS animations */}
+          <div className="absolute w-24 h-24 rounded-full border-2 border-secondary/15 top-[15%] left-[12%] animate-float" />
+          <div className="absolute w-16 h-16 rounded-full bg-accent/10 top-[20%] right-[20%] animate-float" style={{ animationDelay: "1s" }} />
+          <div className="absolute w-10 h-10 rounded-full bg-secondary/10 bottom-[25%] left-[18%] animate-float" style={{ animationDelay: "2s" }} />
+          <div className="absolute w-20 h-20 rounded-full border-2 border-accent/15 bottom-[20%] right-[12%] animate-float" style={{ animationDelay: "0.5s" }} />
+          <div className="absolute w-14 h-14 rounded-full bg-primary/5 top-[45%] left-[30%] animate-float" style={{ animationDelay: "1.5s" }} />
+
+          {/* Sparkle dots */}
+          <div className="absolute w-2 h-2 rounded-full bg-secondary/30 top-[10%] left-[25%] animate-pulse" />
+          <div className="absolute w-1.5 h-1.5 rounded-full bg-accent/40 top-[30%] right-[35%] animate-pulse" style={{ animationDelay: "0.7s" }} />
+          <div className="absolute w-2 h-2 rounded-full bg-primary/20 bottom-[30%] left-[40%] animate-pulse" style={{ animationDelay: "1.2s" }} />
+          <div className="absolute w-1.5 h-1.5 rounded-full bg-secondary/25 top-[55%] right-[18%] animate-pulse" style={{ animationDelay: "0.3s" }} />
+          <div className="absolute w-2.5 h-2.5 rounded-full bg-accent/30 bottom-[15%] right-[40%] animate-pulse" style={{ animationDelay: "1.8s" }} />
+          <div className="absolute w-1.5 h-1.5 rounded-full bg-secondary/20 top-[70%] left-[8%] animate-pulse" style={{ animationDelay: "2.2s" }} />
+
+          {/* Subtle diagonal line pattern (top-right corner) */}
+          <svg className="absolute top-0 right-0 w-[300px] h-[300px] opacity-[0.03]" viewBox="0 0 300 300">
+            <line x1="50" y1="0" x2="300" y2="250" stroke="#005235" strokeWidth="1" />
+            <line x1="100" y1="0" x2="300" y2="200" stroke="#005235" strokeWidth="1" />
+            <line x1="150" y1="0" x2="300" y2="150" stroke="#005235" strokeWidth="1" />
+            <line x1="200" y1="0" x2="300" y2="100" stroke="#005235" strokeWidth="1" />
+          </svg>
+        </div>
+
+        {/* "DEBT" / "FREE" vertical text sandwiching the phone */}
+
+        {/* ===== DESKTOP ===== */}
+        <div className="hidden lg:flex w-full max-w-7xl mx-auto px-8 items-center gap-12 h-full">
+          {/* Left: hero text */}
           <motion.div
-            className="flex-1 flex flex-col items-center lg:items-start max-w-xl z-10"
-            style={{ opacity: heroTextOpacity, y: heroTextY }}
+            className="flex-1 z-10"
+            style={{ opacity: textOpacity, y: textY }}
           >
             <h1 className="text-4xl xl:text-5xl font-extrabold text-primary mb-5 leading-tight">
-              Your personal AI debt coach
+              Crush debt. Build savings. Stay motivated.
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-md">
-              Pay off debt faster with AI coaching, 7 strategies, and a savings
-              planner. Join thousands on their journey to financial freedom.
+              The smart debt payoff planner with AI coaching, 7 proven strategies,
+              and a savings planner to help you see life after debt.
             </p>
-
-            <WaitlistForm variant="hero" className="mb-6 w-full max-w-md" />
-
+            <WaitlistForm variant="hero" className="mb-6 max-w-md" />
             <div className="flex flex-wrap gap-2">
               {trustPills.map((pill) => (
                 <span
@@ -90,35 +95,30 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Centre/Right: Phone mockup with 3D rotation */}
-          <div className="flex-1 flex items-center justify-center" style={{ perspective: "1200px" }}>
-            {/* Big watermark text behind phone */}
-            <motion.span
-              className="absolute text-[180px] font-extrabold text-primary select-none leading-none left-[5%] pointer-events-none"
-              style={{ opacity: bigTextOpacity }}
+          {/* Right: DEBT (vertical) | phone | FREE (vertical) */}
+          <div className="flex-1 flex items-center justify-center gap-4" style={{ perspective: "1200px" }}>
+            <span
+              className="text-[80px] xl:text-[100px] font-extrabold text-primary select-none leading-[0.85] tracking-tight pointer-events-none"
+              style={{ opacity: watermarkOpacity, writingMode: "vertical-rl", transform: "rotate(180deg)" }}
             >
               DEBT
-            </motion.span>
-            <motion.span
-              className="absolute text-[180px] font-extrabold text-primary select-none leading-none right-[5%] pointer-events-none"
-              style={{ opacity: bigTextOpacity }}
-            >
-              FREE
-            </motion.span>
+            </span>
 
             <motion.div
-              className="relative w-[300px] h-[620px] rounded-[44px] border-[8px] border-gray-900 overflow-hidden shadow-2xl bg-black z-20"
               style={{
-                rotateX,
                 rotateY,
-                rotateZ,
-                x,
-                scale,
                 transformStyle: "preserve-3d",
               }}
+              className="relative w-[310px] h-[640px]"
             >
-              {/* Front: Dashboard */}
-              <motion.div className="absolute inset-0" style={{ opacity: frontOpacity }}>
+              {/* Front face: Dashboard */}
+              <div
+                className="absolute inset-0 rounded-[44px] border-[8px] border-gray-900 overflow-hidden bg-black"
+                style={{
+                  backfaceVisibility: "hidden",
+                  boxShadow: "0 30px 80px -15px rgba(0,0,0,0.3)",
+                }}
+              >
                 <Image
                   src="/screenshots/en/1.jpeg"
                   alt="Payoff app dashboard showing debt-free countdown and payment progress"
@@ -126,37 +126,56 @@ export default function HeroSection() {
                   className="object-cover rounded-[36px]"
                   priority
                 />
-              </motion.div>
+              </div>
 
-              {/* Back: AI Coach */}
-              <motion.div className="absolute inset-0" style={{ opacity: backOpacity }}>
+              {/* Back face: AI Coach */}
+              <div
+                className="absolute inset-0 rounded-[44px] border-[8px] border-gray-900 overflow-hidden bg-black"
+                style={{
+                  backfaceVisibility: "hidden",
+                  transform: "rotateY(180deg)",
+                  boxShadow: "0 30px 80px -15px rgba(0,0,0,0.3)",
+                }}
+              >
                 <Image
                   src="/screenshots/en/2.jpeg"
-                  alt="Payoff AI debt coach giving personalised advice about bonus payments"
+                  alt="Payoff AI debt coach giving personalised advice"
                   fill
                   className="object-cover rounded-[36px]"
                 />
-              </motion.div>
+              </div>
             </motion.div>
+
+            <span
+              className="text-[80px] xl:text-[100px] font-extrabold text-primary select-none leading-[0.85] tracking-tight pointer-events-none"
+              style={{ opacity: watermarkOpacity, writingMode: "vertical-rl", transform: "rotate(180deg)" }}
+            >
+              FREE
+            </span>
           </div>
         </div>
 
-        {/* Mobile layout — simpler version */}
-        <div className="lg:hidden flex flex-col items-center justify-center h-full px-4 py-16">
-          <span className="text-6xl font-extrabold text-primary opacity-10 select-none leading-none mb-6">
+        {/* ===== MOBILE ===== */}
+        <div className="lg:hidden flex flex-col items-center justify-center h-full px-4">
+          <span className="text-5xl sm:text-6xl font-extrabold text-primary opacity-[0.08] select-none leading-none mb-4">
             DEBT FREE
           </span>
 
-          <div style={{ perspective: "1000px" }} className="mb-8">
+          <div style={{ perspective: "1000px" }} className="mb-6">
             <motion.div
-              className="relative w-[260px] h-[540px] rounded-[40px] border-[7px] border-gray-900 overflow-hidden shadow-2xl bg-black"
               style={{
-                rotateX,
-                scale,
+                rotateY,
                 transformStyle: "preserve-3d",
               }}
+              className="relative w-[250px] h-[520px]"
             >
-              <motion.div className="absolute inset-0" style={{ opacity: frontOpacity }}>
+              <div
+                className="absolute inset-0 rounded-[40px] border-[7px] border-gray-900 overflow-hidden bg-black"
+                style={{
+                  backfaceVisibility: "hidden",
+                  boxShadow: "0 25px 60px -12px rgba(0,0,0,0.25)",
+                }}
+              >
                 <Image
                   src="/screenshots/en/1.jpeg"
                   alt="Payoff app dashboard"
@@ -164,31 +183,33 @@ export default function HeroSection() {
                   className="object-cover rounded-[33px]"
                   priority
                 />
-              </motion.div>
-              <motion.div className="absolute inset-0" style={{ opacity: backOpacity }}>
+              </div>
+              <div
+                className="absolute inset-0 rounded-[40px] border-[7px] border-gray-900 overflow-hidden bg-black"
+                style={{
+                  backfaceVisibility: "hidden",
+                  transform: "rotateY(180deg)",
+                  boxShadow: "0 25px 60px -12px rgba(0,0,0,0.25)",
+                }}
+              >
                 <Image
                   src="/screenshots/en/2.jpeg"
                   alt="Payoff AI coach"
                   fill
                   className="object-cover rounded-[33px]"
                 />
-              </motion.div>
+              </div>
             </motion.div>
           </div>
 
-          <motion.div
-            className="text-center max-w-sm"
-            style={{ opacity: heroTextOpacity }}
-          >
-            <h1 className="text-3xl font-extrabold text-primary mb-4">
-              Your personal AI debt coach
+          <motion.div className="text-center max-w-sm" style={{ opacity: textOpacity }}>
+            <h1 className="text-3xl font-extrabold text-primary mb-3">
+              Crush debt. Build savings. Stay motivated.
             </h1>
-            <p className="text-base text-gray-600 mb-6">
-              Pay off debt faster with AI coaching, 7 strategies, and a savings planner
+            <p className="text-base text-gray-600 mb-5">
+              The smart debt payoff planner with AI coaching and 7 proven strategies
             </p>
-
-            <WaitlistForm variant="hero" className="mb-6" />
-
+            <WaitlistForm variant="hero" className="mb-4" />
             <div className="flex flex-wrap justify-center gap-2">
               {trustPills.map((pill) => (
                 <span

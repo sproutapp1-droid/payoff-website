@@ -51,13 +51,31 @@ export default function WhatPayoffCanDo() {
   };
 
   return (
-    <section id="features" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="features" className="relative py-20 px-4 sm:px-6 lg:px-8">
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Coral blob top-left */}
+        <div className="absolute -top-32 -left-40 w-[500px] h-[500px] rounded-full bg-secondary opacity-[0.22] blur-[120px]" />
+        {/* Yellow blob bottom-right */}
+        <div className="absolute -bottom-40 -right-32 w-[400px] h-[400px] rounded-full bg-accent opacity-[0.25] blur-[100px]" />
+        {/* Floating circles */}
+        <div className="absolute top-24 right-[12%] w-16 h-16 rounded-full border border-secondary/30 animate-float" style={{ animationDelay: '0s' }} />
+        <div className="absolute top-[60%] left-[8%] w-10 h-10 rounded-full border border-primary/30 animate-float" style={{ animationDelay: '1.2s' }} />
+        <div className="absolute bottom-20 right-[25%] w-8 h-8 rounded-full bg-accent/30 animate-float" style={{ animationDelay: '0.6s' }} />
+        <div className="absolute top-[40%] right-[5%] w-12 h-12 rounded-full border border-accent/30 animate-float" style={{ animationDelay: '1.8s' }} />
+        {/* Sparkle dots */}
+        <div className="absolute top-16 left-[20%] w-2 h-2 rounded-full bg-secondary/35 animate-pulse" />
+        <div className="absolute top-[45%] right-[15%] w-1.5 h-1.5 rounded-full bg-accent/35 animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute bottom-32 left-[35%] w-2 h-2 rounded-full bg-primary/25 animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-[20%] right-[40%] w-1.5 h-1.5 rounded-full bg-secondary/35 animate-pulse" style={{ animationDelay: '1.5s' }} />
+      </div>
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-14"
+        className="relative z-10 text-center mb-14"
       >
         <h2 className="text-4xl md:text-5xl font-extrabold text-foreground">
           What Payoff Can Do For You
@@ -67,7 +85,7 @@ export default function WhatPayoffCanDo() {
         </p>
       </motion.div>
 
-      <div className="max-w-3xl mx-auto">
+      <div className="relative z-10 max-w-3xl mx-auto">
         {items.map((item, index) => (
           <motion.div
             key={item.number}

@@ -39,8 +39,14 @@ export default function DeleteAccountPage() {
 
   if (status === 'success') {
     return (
-      <main className="pt-32 pb-20 px-4">
-        <div className="max-w-lg mx-auto text-center">
+      <main className="relative pt-32 pb-20 px-4">
+        {/* Background decorations (minimal for serious page) */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute -top-20 -right-24 w-[280px] h-[280px] rounded-full bg-secondary opacity-[0.03] blur-[100px]" />
+          <div className="absolute -bottom-16 -left-20 w-[250px] h-[250px] rounded-full bg-accent opacity-[0.04] blur-[90px]" />
+          <div className="absolute top-[40%] right-[12%] w-1.5 h-1.5 rounded-full bg-secondary/10 animate-pulse" />
+        </div>
+        <div className="relative z-10 max-w-lg mx-auto text-center">
           <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <Check className="w-8 h-8 text-primary" />
           </div>
@@ -54,8 +60,14 @@ export default function DeleteAccountPage() {
   }
 
   return (
-    <main className="pt-32 pb-20 px-4">
-      <div className="max-w-lg mx-auto">
+    <main className="relative pt-32 pb-20 px-4">
+      {/* Background decorations (minimal for serious page) */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-20 -right-24 w-[280px] h-[280px] rounded-full bg-secondary opacity-[0.03] blur-[100px]" />
+        <div className="absolute -bottom-16 -left-20 w-[250px] h-[250px] rounded-full bg-accent opacity-[0.04] blur-[90px]" />
+        <div className="absolute top-[40%] right-[12%] w-1.5 h-1.5 rounded-full bg-secondary/10 animate-pulse" />
+      </div>
+      <div className="relative z-10 max-w-lg mx-auto">
         <h1 className="text-3xl font-extrabold mb-4">Delete Your Account</h1>
         <p className="text-gray-600 mb-8">
           This will permanently delete your Payoff account and all associated data, including your debts, payment history, savings goals, and AI Coach conversations. This action cannot be undone.

@@ -6,8 +6,24 @@ import { TESTIMONIALS } from "@/lib/constants";
 
 export default function Testimonials() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Accent blob top-left */}
+        <div className="absolute -top-36 -left-32 w-[420px] h-[420px] rounded-full bg-accent opacity-[0.22] blur-[110px]" />
+        {/* Secondary blob bottom-right */}
+        <div className="absolute -bottom-28 -right-36 w-[460px] h-[460px] rounded-full bg-secondary opacity-[0.22] blur-[120px]" />
+        {/* Floating shapes */}
+        <div className="absolute top-20 right-[10%] w-12 h-12 rounded-full border border-accent/30 animate-float" style={{ animationDelay: '0.2s' }} />
+        <div className="absolute bottom-16 left-[12%] w-10 h-10 rounded-full bg-secondary/8 animate-float" style={{ animationDelay: '0.9s' }} />
+        <div className="absolute top-[55%] left-[5%] w-14 h-14 rounded-full border border-primary/25 animate-float" style={{ animationDelay: '1.4s' }} />
+        {/* Sparkle dots */}
+        <div className="absolute top-12 left-[30%] w-2 h-2 rounded-full bg-accent/35 animate-pulse" />
+        <div className="absolute bottom-20 right-[20%] w-1.5 h-1.5 rounded-full bg-secondary/35 animate-pulse" style={{ animationDelay: '0.8s' }} />
+        <div className="absolute top-[40%] right-[40%] w-2 h-2 rounded-full bg-primary/20 animate-pulse" style={{ animationDelay: '1.1s' }} />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
         <h2 className="text-4xl font-extrabold text-center text-foreground mb-12">
           Loved by thousands getting out of debt
         </h2>

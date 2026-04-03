@@ -39,9 +39,11 @@ export default function Navbar() {
             <Image
               src="/logo.png"
               alt="Payoff logo"
-              width={36}
-              height={36}
-              className="w-9 h-9"
+              width={72}
+              height={72}
+              quality={100}
+              unoptimized
+              className="w-[42px] h-[42px]"
             />
             <span className="text-xl font-extrabold text-primary">Payoff</span>
           </Link>

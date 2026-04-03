@@ -26,13 +26,25 @@ export default function FAQAccordion() {
   };
 
   return (
-    <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+    <section id="faq" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-background">
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Coral blob top-left */}
+        <div className="absolute -top-28 -left-36 w-[400px] h-[400px] rounded-full bg-secondary opacity-[0.20] blur-[110px]" />
+        {/* Green blob bottom-right */}
+        <div className="absolute -bottom-32 -right-28 w-[350px] h-[350px] rounded-full bg-primary opacity-[0.18] blur-[100px]" />
+        {/* Sparkle dots */}
+        <div className="absolute top-20 right-[18%] w-2 h-2 rounded-full bg-secondary/15 animate-pulse" />
+        <div className="absolute bottom-24 left-[22%] w-1.5 h-1.5 rounded-full bg-accent/30 animate-pulse" style={{ animationDelay: '0.6s' }} />
+        <div className="absolute top-[50%] left-[8%] w-2 h-2 rounded-full bg-primary/20 animate-pulse" style={{ animationDelay: '1.2s' }} />
+      </div>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <div className="max-w-3xl mx-auto">
+      <div className="relative z-10 max-w-3xl mx-auto">
         <h2 className="text-4xl font-extrabold text-center text-foreground mb-12">
           Frequently asked questions
         </h2>

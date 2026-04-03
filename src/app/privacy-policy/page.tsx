@@ -7,8 +7,16 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="pt-32 pb-20 px-4">
-      <div className="prose max-w-3xl mx-auto">
+    <main className="relative pt-32 pb-20 px-4">
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-20 -right-32 w-[350px] h-[350px] rounded-full bg-secondary opacity-[0.04] blur-[110px]" />
+        <div className="absolute -bottom-28 -left-24 w-[300px] h-[300px] rounded-full bg-accent opacity-[0.05] blur-[100px]" />
+        <div className="absolute top-[30%] right-[10%] w-1.5 h-1.5 rounded-full bg-secondary/15 animate-pulse" />
+        <div className="absolute top-[60%] left-[8%] w-2 h-2 rounded-full bg-accent/15 animate-pulse" style={{ animationDelay: '0.8s' }} />
+      </div>
+
+      <div className="relative z-10 prose max-w-3xl mx-auto">
         <h1>Privacy Policy</h1>
         <p><em>Last updated: 3 April 2026</em></p>
 

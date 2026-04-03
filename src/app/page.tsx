@@ -1,65 +1,129 @@
-import Image from "next/image";
+import HeroSection from '@/components/landing/HeroSection';
+import WhatPayoffCanDo from '@/components/landing/WhatPayoffCanDo';
+import BenefitsGrid from '@/components/landing/BenefitsGrid';
+import FeatureSection from '@/components/landing/FeatureSection';
+import HowItWorks from '@/components/landing/HowItWorks';
+import Testimonials from '@/components/landing/Testimonials';
+import PricingCards from '@/components/landing/PricingCards';
+import FAQAccordion from '@/components/landing/FAQAccordion';
+import CTABanner from '@/components/landing/CTABanner';
 
-export default function Home() {
+const features = [
+  {
+    imageSrc: '/screenshots/en/2.jpeg',
+    imageAlt: 'Payoff AI debt coach giving personalised advice about a $600 bonus payment',
+    badge: 'AI-Powered',
+    heading: 'A debt coach that actually knows your debts',
+    description:
+      'Payoff Coach sees your real balances, interest rates, and payment history. Ask it anything — from "Should I pay off my credit card or car loan first?" to "I got a bonus, where should it go?"',
+    bullets: [
+      'Personalised advice, not generic tips',
+      'Knows your exact debt-free date',
+      'Suggests where to put bonuses and windfalls',
+      '5 free messages/month, unlimited on Premium',
+    ],
+    reverse: false,
+  },
+  {
+    imageSrc: '/screenshots/en/4.jpeg',
+    imageAlt: 'Payoff strategy recommendation screen showing avalanche, snowball, and hybrid methods',
+    badge: 'Smart Matching',
+    heading: 'Find your perfect payoff strategy',
+    description:
+      'Take a 60-second quiz about your money personality. Payoff recommends the best method — snowball for motivation, avalanche for savings, or one of 5 other approaches.',
+    bullets: [
+      '7 strategies including hybrid and cash flow index',
+      'Dave Ramsey Baby Steps built in',
+      'Switch anytime with one tap',
+      'See exactly how much each strategy saves',
+    ],
+    reverse: true,
+  },
+  {
+    imageSrc: '/screenshots/en/6.jpeg',
+    imageAlt: 'Payoff what-if scenario screen with extra payment slider and balance chart',
+    badge: 'Interactive',
+    heading: 'See what extra payments can do',
+    description:
+      'Slide to explore how paying more each month speeds up your debt-free date. Watch the balance chart update in real time as you experiment with different amounts.',
+    bullets: [
+      'Instant debt-free date recalculation',
+      'Interest savings shown in real time',
+      'Compare minimums vs your plan vs aggressive',
+    ],
+    reverse: false,
+  },
+  {
+    imageSrc: '/screenshots/en/3.jpeg',
+    imageAlt: 'Payoff partner mode showing shared debts with split percentages between Sarah and James',
+    badge: 'Household',
+    heading: 'Crush debt together',
+    description:
+      'Share debts with your partner, split payments by percentage, and track who has contributed what. One household, one plan, zero arguments.',
+    bullets: [
+      'Invite partner with a simple code',
+      'Split percentages per debt',
+      'Shared AI coach for joint decisions',
+      'Household plan covers both accounts',
+    ],
+    reverse: true,
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      {/* Structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Payoff: Smart Debt Planner',
+            applicationCategory: 'FinanceApplication',
+            operatingSystem: 'iOS, Android',
+            description:
+              'AI-powered debt payoff planner with 7 strategies, savings planner, and partner mode.',
+            offers: [
+              {
+                '@type': 'Offer',
+                price: '0',
+                priceCurrency: 'USD',
+                description: 'Free plan with 2 debts and basic features',
+              },
+              {
+                '@type': 'Offer',
+                price: '5.99',
+                priceCurrency: 'GBP',
+                description: 'Premium monthly plan',
+              },
+            ],
+          }),
+        }}
+      />
+
+      <HeroSection />
+
+      <WhatPayoffCanDo />
+
+      <BenefitsGrid />
+
+      <div className="space-y-20 py-20 px-4">
+        {features.map((feature, i) => (
+          <FeatureSection key={i} {...feature} />
+        ))}
+      </div>
+
+      <HowItWorks />
+
+      <Testimonials />
+
+      <PricingCards />
+
+      <FAQAccordion />
+
+      <CTABanner />
+    </>
   );
 }

@@ -15,7 +15,12 @@
     "headline": "Elimina i debiti. Costruisci risparmi. Resta motivato.",
     "subheadline": "Il pianificatore intelligente dei debiti con coaching IA, 7 strategie comprovate e un pianificatore di risparmio per mostrarti la vita dopo i debiti.",
     "subheadlineMobile": "Il pianificatore intelligente dei debiti con coaching IA e 7 strategie comprovate",
-    "trustPills": ["Nessun accesso bancario", "9 lingue", "Inizia gratis", "iOS & Android"]
+    "trustPills": [
+      "Nessun accesso bancario",
+      "9 lingue",
+      "Inizia gratis",
+      "iOS & Android"
+    ]
   },
   "whatPayoffCanDo": {
     "title": "Cosa può fare Payoff per te",
@@ -332,9 +337,87 @@
   "calculator": {
     "title": "Calcolatore gratuito per l'estinzione dei debiti",
     "description": "Confronta snowball e avalanche, scopri la tua data di estinzione e calcola il risparmio sugli interessi - tutto gratis, senza registrazione.",
-    "comingSoon": "In arrivo",
-    "comingSoonText": "Il nostro calcolatore web gratuito è in fase di sviluppo. Nel frattempo, l'app Payoff include un calcolatore completo con 7 strategie e scenari ipotetici.",
-    "backToHome": "Torna alla home"
+    "hubTitle": "Calcolatori Gratuiti per l'Estinzione dei Debiti",
+    "hubDesc": "Scopri esattamente quando sarai libero dai debiti. Confronta strategie, calcola risparmi sugli interessi — 100% gratuito, senza registrazione.",
+    "snowballTitle": "Calcolatore Palla di Neve",
+    "snowballDesc": "Estingui prima il saldo più piccolo. Guadagna slancio con vittorie rapide.",
+    "snowballBadge": "Migliore per la motivazione",
+    "avalancheTitle": "Calcolatore Valanga",
+    "avalancheDesc": "Estingui prima il tasso più alto. Risparmia il massimo sugli interessi.",
+    "avalancheBadge": "Migliore per risparmiare",
+    "openCalculator": "Apri calcolatore",
+    "privacyNote": "I tuoi dati restano nel tuo browser. Non vediamo mai i tuoi numeri.",
+    "privacy": "I tuoi dati restano nel tuo browser. Non vediamo mai i tuoi numeri.",
+    "emptyState": "Aggiungi i tuoi debiti per vedere il piano",
+    "emptyStateHint": "Inserisci almeno un debito con saldo e pagamento minimo.",
+    "faqTitle": "Domande Frequenti",
+    "backToHome": "Torna alla home",
+    "snowball": {
+      "title": "Calcolatore Palla di Neve Gratuito",
+      "heroText": "Scopri quando sarai libero dai debiti con il metodo palla di neve. Aggiungi i debiti — risultati in tempo reale.",
+      "metaTitle": "Calcolatore Palla di Neve Gratuito — Data Senza Debiti | Payoff",
+      "metaDesc": "Calcola la data senza debiti con il metodo palla di neve. Piano mensile e confronto con valanga — 100% gratuito."
+    },
+    "avalanche": {
+      "title": "Calcolatore Valanga Gratuito",
+      "heroText": "Scopri quando sarai libero dai debiti con il metodo valanga. Aggiungi i debiti — risultati in tempo reale.",
+      "metaTitle": "Calcolatore Valanga Gratuito — Risparmia di Più sugli Interessi | Payoff",
+      "metaDesc": "Calcola la data senza debiti con il metodo valanga. Attacca prima il debito con il tasso più alto — 100% gratuito."
+    },
+    "form": {
+      "yourDebts": "I tuoi debiti",
+      "loadExample": "Carica esempio",
+      "debtName": "Nome del debito",
+      "debtNamePlaceholder": "es. Carta di Credito, Prestito Auto...",
+      "balance": "Saldo",
+      "apr": "Tasso di interesse (APR %)",
+      "minimumPayment": "Pagamento minimo mensile",
+      "addDebt": "Aggiungi un altro debito",
+      "removeDebt": "Rimuovi",
+      "extraPayment": "Pagamento mensile extra",
+      "extraPaymentHint": "Qualsiasi importo sopra i pagamenti minimi totali, applicato al debito target ogni mese."
+    },
+    "results": {
+      "debtFreeDate": "Data senza debiti",
+      "totalInterest": "Interessi totali",
+      "timeSaved": "Tempo risparmiato",
+      "months": "mesi",
+      "totalPaid": "totale pagato",
+      "interestSaved": "interessi risparmiati",
+      "noExtra": "Aggiungi extra per risparmiare",
+      "vsMinimumOnly": "vs. solo pagamenti minimi",
+      "negAmortWarning": "Uno o più debiti hanno un pagamento minimo inferiore agli interessi mensili. Il calcolatore ha aggiustato il pagamento.",
+      "switchTo": "Passa a",
+      "snowballMethod": "Palla di Neve",
+      "avalancheMethod": "Valanga",
+      "toSave": "per risparmiare",
+      "inInterest": "di interessi",
+      "and": "e",
+      "currentMethodSaves": "Il tuo metodo attuale ti fa risparmiare",
+      "vsOther": "vs.",
+      "tryMethod": "Prova",
+      "payoffOrder": "Ordine di estinzione",
+      "over": "in",
+      "interest": "interessi",
+      "balanceOverTime": "Saldo nel tempo",
+      "month": "Mese",
+      "monthlyBreakdown": "Dettaglio mensile",
+      "monthCol": "Mese",
+      "paymentCol": "Pagamento",
+      "principalCol": "Capitale",
+      "interestCol": "Interessi",
+      "balanceCol": "Saldo"
+    },
+    "cta": {
+      "ctaInlineTitle": "Vuoi coaching AI per la tua situazione?",
+      "ctaInlineDesc": "L'app Payoff ti dà consigli personalizzati basati sui tuoi dati reali.",
+      "ctaInlineButton": "Unisciti alla lista",
+      "ctaBadge": "Gratuito per iniziare",
+      "ctaTitle": "Vuoi l'esperienza completa?",
+      "ctaDesc": "Coaching AI, 7 strategie, scenari what-if, pianificatore risparmi, modalità partner e altro.",
+      "ctaFeatures": "Coach AI,7 Strategie,Scenari,Modalità Focus,Modalità Partner",
+      "ctaButton": "Unisciti alla Lista d'Attesa"
+    }
   },
   "privacyPolicy": {
     "title": "Informativa sulla privacy",

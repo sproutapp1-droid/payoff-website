@@ -15,7 +15,12 @@
     "headline": "Elimine dividas. Construa economias. Mantenha-se motivado.",
     "subheadline": "O planejador inteligente de dividas com coaching de IA, 7 estrategias comprovadas e um planejador de economias para visualizar a vida apos as dividas.",
     "subheadlineMobile": "O planejador inteligente de dividas com coaching de IA e 7 estrategias comprovadas",
-    "trustPills": ["Sem acesso bancario", "9 idiomas", "Gratis para comecar", "iOS e Android"]
+    "trustPills": [
+      "Sem acesso bancario",
+      "9 idiomas",
+      "Gratis para comecar",
+      "iOS e Android"
+    ]
   },
   "whatPayoffCanDo": {
     "title": "O Que o Payoff Pode Fazer Por Voce",
@@ -332,9 +337,87 @@
   "calculator": {
     "title": "Calculadora Gratuita de Quitacao de Dividas",
     "description": "Compare bola de neve vs avalanche, veja sua data livre de dividas e calcule a economia de juros - tudo gratis, sem cadastro necessario.",
-    "comingSoon": "Em Breve",
-    "comingSoonText": "Nossa calculadora web gratuita esta sendo construida. Enquanto isso, o app Payoff inclui uma calculadora completa com 7 estrategias e cenarios hipoteticos.",
-    "backToHome": "Voltar a pagina inicial"
+    "hubTitle": "Calculadoras Gratuitas de Quitação de Dívidas",
+    "hubDesc": "Veja exatamente quando ficará livre de dívidas. Compare estratégias, calcule economia de juros e crie seu plano — 100% grátis, sem cadastro.",
+    "snowballTitle": "Calculadora Bola de Neve",
+    "snowballDesc": "Pague primeiro o menor saldo. Ganhe impulso com vitórias rápidas.",
+    "snowballBadge": "Melhor para motivação",
+    "avalancheTitle": "Calculadora Avalanche",
+    "avalancheDesc": "Pague primeiro a maior taxa de juros. Economize mais dinheiro.",
+    "avalancheBadge": "Melhor para economizar",
+    "openCalculator": "Abrir calculadora",
+    "privacyNote": "Seus dados ficam no seu navegador. Nunca vemos seus números.",
+    "privacy": "Seus dados ficam no seu navegador. Nunca vemos seus números.",
+    "emptyState": "Adicione suas dívidas para ver seu plano",
+    "emptyStateHint": "Insira pelo menos uma dívida com saldo e pagamento mínimo.",
+    "faqTitle": "Perguntas Frequentes",
+    "backToHome": "Voltar à página inicial",
+    "snowball": {
+      "title": "Calculadora Bola de Neve Gratuita",
+      "heroText": "Veja exatamente quando ficará livre de dívidas com o método bola de neve. Adicione suas dívidas — resultados em tempo real.",
+      "metaTitle": "Calculadora Bola de Neve Gratuita — Data Livre de Dívidas | Payoff",
+      "metaDesc": "Calcule sua data livre de dívidas com o método bola de neve. Plano mês a mês e comparação com avalanche — 100% grátis."
+    },
+    "avalanche": {
+      "title": "Calculadora Avalanche Gratuita",
+      "heroText": "Veja exatamente quando ficará livre de dívidas com o método avalanche. Adicione suas dívidas — resultados em tempo real.",
+      "metaTitle": "Calculadora Avalanche Gratuita — Economize Mais em Juros | Payoff",
+      "metaDesc": "Calcule sua data livre de dívidas com o método avalanche. Ataque primeiro a dívida com maior juros — 100% grátis."
+    },
+    "form": {
+      "yourDebts": "Suas dívidas",
+      "loadExample": "Carregar exemplo",
+      "debtName": "Nome da dívida",
+      "debtNamePlaceholder": "ex. Cartão de Crédito, Financiamento...",
+      "balance": "Saldo",
+      "apr": "Taxa de juros (APR %)",
+      "minimumPayment": "Pagamento mínimo mensal",
+      "addDebt": "Adicionar outra dívida",
+      "removeDebt": "Remover",
+      "extraPayment": "Pagamento mensal extra",
+      "extraPaymentHint": "Qualquer valor acima dos pagamentos mínimos totais, aplicado à dívida alvo a cada mês."
+    },
+    "results": {
+      "debtFreeDate": "Data livre de dívidas",
+      "totalInterest": "Juros total",
+      "timeSaved": "Tempo economizado",
+      "months": "meses",
+      "totalPaid": "total pago",
+      "interestSaved": "juros economizados",
+      "noExtra": "Adicione extra para economizar",
+      "vsMinimumOnly": "vs. apenas pagamentos mínimos",
+      "negAmortWarning": "Uma ou mais dívidas têm pagamento mínimo menor que os juros mensais. A calculadora ajustou o pagamento.",
+      "switchTo": "Mudar para",
+      "snowballMethod": "Bola de Neve",
+      "avalancheMethod": "Avalanche",
+      "toSave": "para economizar",
+      "inInterest": "em juros",
+      "and": "e",
+      "currentMethodSaves": "Seu método atual economiza",
+      "vsOther": "vs.",
+      "tryMethod": "Tentar",
+      "payoffOrder": "Ordem de pagamento",
+      "over": "em",
+      "interest": "juros",
+      "balanceOverTime": "Saldo ao longo do tempo",
+      "month": "Mês",
+      "monthlyBreakdown": "Detalhamento mensal",
+      "monthCol": "Mês",
+      "paymentCol": "Pagamento",
+      "principalCol": "Principal",
+      "interestCol": "Juros",
+      "balanceCol": "Saldo"
+    },
+    "cta": {
+      "ctaInlineTitle": "Quer coaching IA para sua situação?",
+      "ctaInlineDesc": "O app Payoff dá conselhos personalizados baseados nos seus dados reais.",
+      "ctaInlineButton": "Entrar na lista",
+      "ctaBadge": "Grátis para começar",
+      "ctaTitle": "Quer a experiência completa?",
+      "ctaDesc": "Coaching IA, 7 estratégias, cenários hipotéticos, planejador de economia, modo parceiro e mais.",
+      "ctaFeatures": "Coach IA,7 Estratégias,Cenários,Modo Foco,Modo Parceiro",
+      "ctaButton": "Entrar na Lista de Espera"
+    }
   },
   "privacyPolicy": {
     "title": "Politica de Privacidade",

@@ -15,7 +15,12 @@
     "headline": "借金を返済。貯蓄を構築。モチベーションを維持。",
     "subheadline": "AIコーチング、7つの実証済み戦略、返済後の生活を見据えた貯蓄プランナーを備えたスマート借金返済プランナー。",
     "subheadlineMobile": "AIコーチングと7つの実証済み戦略を備えたスマート借金返済プランナー",
-    "trustPills": ["銀行アクセス不要", "9言語対応", "無料で始められる", "iOS・Android対応"]
+    "trustPills": [
+      "銀行アクセス不要",
+      "9言語対応",
+      "無料で始められる",
+      "iOS・Android対応"
+    ]
   },
   "whatPayoffCanDo": {
     "title": "Payoffでできること",
@@ -332,9 +337,87 @@
   "calculator": {
     "title": "無料借金返済計算ツール",
     "description": "雪だるま式と雪崩式を比較し、借金完済日を確認し、利息節約額を計算 - すべて無料、登録不要。",
-    "comingSoon": "近日公開",
-    "comingSoonText": "無料ウェブ計算ツールを開発中です。それまでの間、Payoffアプリには7つの戦略とWhat-Ifシミュレーションを備えた完全な借金計算ツールが含まれています。",
-    "backToHome": "ホームページに戻る"
+    "hubTitle": "無料借金返済計算ツール",
+    "hubDesc": "借金完済日を正確に確認。戦略を比較し、利息節約額を計算 — 100%無料、登録不要。",
+    "snowballTitle": "雪だるま式計算機",
+    "snowballDesc": "最小残高から返済。小さな勝利でモチベーションを維持。",
+    "snowballBadge": "モチベーションに最適",
+    "avalancheTitle": "雪崩式計算機",
+    "avalancheDesc": "最高金利から返済。数学的に最も節約。",
+    "avalancheBadge": "節約に最適",
+    "openCalculator": "計算機を開く",
+    "privacyNote": "データはブラウザ内に保存。私たちが数字を見ることはありません。",
+    "privacy": "データはブラウザ内に保存。私たちが数字を見ることはありません。",
+    "emptyState": "借金を追加して返済計画を確認",
+    "emptyStateHint": "残高と最低返済額のある借金を少なくとも1件入力してください。",
+    "faqTitle": "よくある質問",
+    "backToHome": "ホームに戻る",
+    "snowball": {
+      "title": "無料雪だるま式計算機",
+      "heroText": "雪だるま式で借金完済日を確認。借金を追加 — 結果は即座に更新。",
+      "metaTitle": "無料雪だるま式計算機 — 完済日を確認 | Payoff",
+      "metaDesc": "雪だるま式で借金完済日を計算。月別計画と雪崩式との比較 — 100%無料。"
+    },
+    "avalanche": {
+      "title": "無料雪崩式計算機",
+      "heroText": "雪崩式で借金完済日を確認。借金を追加 — 結果は即座に更新。",
+      "metaTitle": "無料雪崩式計算機 — 利息を最大限節約 | Payoff",
+      "metaDesc": "雪崩式で借金完済日を計算。最高金利の借金から攻略 — 100%無料。"
+    },
+    "form": {
+      "yourDebts": "あなたの借金",
+      "loadExample": "例を読み込む",
+      "debtName": "借金名",
+      "debtNamePlaceholder": "例: クレジットカード、自動車ローン...",
+      "balance": "残高",
+      "apr": "金利 (APR %)",
+      "minimumPayment": "月々の最低返済額",
+      "addDebt": "借金を追加",
+      "removeDebt": "削除",
+      "extraPayment": "月々の追加返済額",
+      "extraPaymentHint": "合計最低返済額を超える金額で、毎月ターゲットの借金に適用されます。"
+    },
+    "results": {
+      "debtFreeDate": "借金完済日",
+      "totalInterest": "合計利息",
+      "timeSaved": "節約時間",
+      "months": "ヶ月",
+      "totalPaid": "合計支払い",
+      "interestSaved": "利息節約",
+      "noExtra": "追加で節約",
+      "vsMinimumOnly": "vs. 最低返済のみ",
+      "negAmortWarning": "1件以上の借金で最低返済額が月々の利息を下回っています。計算機が返済額を調整しました。",
+      "switchTo": "切り替え",
+      "snowballMethod": "雪だるま式",
+      "avalancheMethod": "雪崩式",
+      "toSave": "節約",
+      "inInterest": "の利息",
+      "and": "と",
+      "currentMethodSaves": "現在の方法での節約額",
+      "vsOther": "vs.",
+      "tryMethod": "試す",
+      "payoffOrder": "返済順序",
+      "over": "で",
+      "interest": "利息",
+      "balanceOverTime": "時間経過による残高",
+      "month": "月",
+      "monthlyBreakdown": "月別内訳",
+      "monthCol": "月",
+      "paymentCol": "返済額",
+      "principalCol": "元本",
+      "interestCol": "利息",
+      "balanceCol": "残高"
+    },
+    "cta": {
+      "ctaInlineTitle": "あなたの状況にAIコーチングが必要ですか？",
+      "ctaInlineDesc": "Payoffアプリが実際のデータに基づくアドバイスを提供。",
+      "ctaInlineButton": "ウェイトリストに参加",
+      "ctaBadge": "無料で開始",
+      "ctaTitle": "フル体験をしませんか？",
+      "ctaDesc": "AIコーチング、7つの戦略、What-ifシナリオ、貯蓄プランナー、パートナーモードなど。",
+      "ctaFeatures": "AIコーチ,7戦略,シナリオ,フォーカス,パートナー",
+      "ctaButton": "ウェイトリストに参加"
+    }
   },
   "privacyPolicy": {
     "title": "プライバシーポリシー",

@@ -15,7 +15,12 @@
     "headline": "消灭债务。积累储蓄。保持动力。",
     "subheadline": "配备AI教练、7种经过验证的策略和储蓄规划器的智能债务还款规划器,帮助你看到还清债务后的生活。",
     "subheadlineMobile": "配备AI教练和7种经过验证策略的智能债务还款规划器",
-    "trustPills": ["无需银行授权", "9种语言", "免费开始", "iOS和Android"]
+    "trustPills": [
+      "无需银行授权",
+      "9种语言",
+      "免费开始",
+      "iOS和Android"
+    ]
   },
   "whatPayoffCanDo": {
     "title": "Payoff能为你做什么",
@@ -332,9 +337,87 @@
   "calculator": {
     "title": "免费债务还款计算器",
     "description": "比较雪球法和雪崩法,查看还清日期,计算利息节省 - 全部免费,无需注册。",
-    "comingSoon": "即将推出",
-    "comingSoonText": "我们的免费网页计算器正在开发中。在此期间,Payoff应用包含了完整的债务计算器,支持7种策略和What-If模拟。",
-    "backToHome": "返回首页"
+    "hubTitle": "免费债务还款计算器",
+    "hubDesc": "精确查看无债日期。比较策略，计算利息节省 — 100%免费，无需注册。",
+    "snowballTitle": "雪球法计算器",
+    "snowballDesc": "先还最小余额。通过快速胜利保持动力。",
+    "snowballBadge": "最适合动力",
+    "avalancheTitle": "雪崩法计算器",
+    "avalancheDesc": "先还最高利率。数学上节省最多。",
+    "avalancheBadge": "最适合节省",
+    "openCalculator": "打开计算器",
+    "privacyNote": "数据保存在您的浏览器中。我们永远不会看到您的数字。",
+    "privacy": "数据保存在您的浏览器中。我们永远不会看到您的数字。",
+    "emptyState": "添加您的债务以查看还款计划",
+    "emptyStateHint": "请至少输入一笔带有余额和最低还款额的债务。",
+    "faqTitle": "常见问题",
+    "backToHome": "返回首页",
+    "snowball": {
+      "title": "免费雪球法计算器",
+      "heroText": "用雪球法查看无债日期。添加债务 — 结果即时更新。",
+      "metaTitle": "免费雪球法计算器 — 查看无债日期 | Payoff",
+      "metaDesc": "用雪球法计算无债日期。月度计划和与雪崩法的比较 — 100%免费。"
+    },
+    "avalanche": {
+      "title": "免费雪崩法计算器",
+      "heroText": "用雪崩法查看无债日期。添加债务 — 结果即时更新。",
+      "metaTitle": "免费雪崩法计算器 — 最大节省利息 | Payoff",
+      "metaDesc": "用雪崩法计算无债日期。先攻击最高利率债务 — 100%免费。"
+    },
+    "form": {
+      "yourDebts": "您的债务",
+      "loadExample": "加载示例",
+      "debtName": "债务名称",
+      "debtNamePlaceholder": "例: 信用卡、车贷...",
+      "balance": "余额",
+      "apr": "利率 (APR %)",
+      "minimumPayment": "月最低还款额",
+      "addDebt": "添加债务",
+      "removeDebt": "删除",
+      "extraPayment": "月额外还款",
+      "extraPaymentHint": "超出总最低还款额的任何金额，每月应用于目标债务。"
+    },
+    "results": {
+      "debtFreeDate": "无债日期",
+      "totalInterest": "总利息",
+      "timeSaved": "节省时间",
+      "months": "个月",
+      "totalPaid": "总支付",
+      "interestSaved": "利息节省",
+      "noExtra": "添加额外以节省",
+      "vsMinimumOnly": "vs. 仅最低还款",
+      "negAmortWarning": "一笔或多笔债务的最低还款额低于月利息。计算器已调整还款额。",
+      "switchTo": "切换到",
+      "snowballMethod": "雪球法",
+      "avalancheMethod": "雪崩法",
+      "toSave": "节省",
+      "inInterest": "利息",
+      "and": "和",
+      "currentMethodSaves": "当前方法节省",
+      "vsOther": "vs.",
+      "tryMethod": "尝试",
+      "payoffOrder": "还款顺序",
+      "over": "超过",
+      "interest": "利息",
+      "balanceOverTime": "余额随时间变化",
+      "month": "月",
+      "monthlyBreakdown": "月度明细",
+      "monthCol": "月",
+      "paymentCol": "还款额",
+      "principalCol": "本金",
+      "interestCol": "利息",
+      "balanceCol": "余额"
+    },
+    "cta": {
+      "ctaInlineTitle": "想要针对您情况的AI指导？",
+      "ctaInlineDesc": "Payoff应用根据您的真实数据提供个性化建议。",
+      "ctaInlineButton": "加入等待列表",
+      "ctaBadge": "免费开始",
+      "ctaTitle": "想要完整体验？",
+      "ctaDesc": "AI指导、7种策略、假设场景、储蓄规划、伴侣模式等。",
+      "ctaFeatures": "AI教练,7策略,场景,专注,伴侣",
+      "ctaButton": "加入等待列表"
+    }
   },
   "privacyPolicy": {
     "title": "隐私政策",

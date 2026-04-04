@@ -15,7 +15,12 @@
     "headline": "Eliminez vos dettes. Epargnez plus. Restez motive.",
     "subheadline": "Le planificateur de dettes intelligent avec coaching IA, 7 strategies eprouvees et un planificateur d'epargne pour visualiser la vie apres les dettes.",
     "subheadlineMobile": "Le planificateur de dettes intelligent avec coaching IA et 7 strategies eprouvees",
-    "trustPills": ["Sans acces bancaire", "9 langues", "Gratuit pour commencer", "iOS et Android"]
+    "trustPills": [
+      "Sans acces bancaire",
+      "9 langues",
+      "Gratuit pour commencer",
+      "iOS et Android"
+    ]
   },
   "whatPayoffCanDo": {
     "title": "Ce Que Payoff Peut Faire Pour Vous",
@@ -332,9 +337,87 @@
   "calculator": {
     "title": "Calculateur Gratuit de Remboursement de Dettes",
     "description": "Comparez boule de neige vs avalanche, visualisez votre date de liberation et calculez les economies d'interets - le tout gratuitement, sans inscription.",
-    "comingSoon": "Bientot Disponible",
-    "comingSoonText": "Notre calculateur web gratuit est en cours de developpement. En attendant, l'application Payoff inclut un calculateur complet avec 7 strategies et des scenarios hypothetiques.",
-    "backToHome": "Retour a la page d'accueil"
+    "hubTitle": "Calculateurs Gratuits de Remboursement de Dettes",
+    "hubDesc": "Découvrez exactement quand vous serez libre de dettes. Comparez les stratégies, calculez les économies d’intérêts — 100% gratuit, sans inscription.",
+    "snowballTitle": "Calculateur Boule de Neige",
+    "snowballDesc": "Remboursez d’abord le plus petit solde. Gagnez en élan avec des victoires rapides.",
+    "snowballBadge": "Meilleur pour la motivation",
+    "avalancheTitle": "Calculateur Avalanche",
+    "avalancheDesc": "Remboursez d’abord le taux d’intérêt le plus élevé. Économisez le plus d’argent.",
+    "avalancheBadge": "Meilleur pour économiser",
+    "openCalculator": "Ouvrir le calculateur",
+    "privacyNote": "Vos données restent dans votre navigateur. Nous ne voyons jamais vos chiffres.",
+    "privacy": "Vos données restent dans votre navigateur. Nous ne voyons jamais vos chiffres.",
+    "emptyState": "Ajoutez vos dettes pour voir votre plan",
+    "emptyStateHint": "Saisissez au moins une dette avec un solde et un paiement minimum.",
+    "faqTitle": "Questions Fréquentes",
+    "backToHome": "Retour à l’accueil",
+    "snowball": {
+      "title": "Calculateur Boule de Neige Gratuit",
+      "heroText": "Découvrez exactement quand vous serez libre de dettes avec la méthode boule de neige. Ajoutez vos dettes — résultats en temps réel.",
+      "metaTitle": "Calculateur Boule de Neige Gratuit — Date Sans Dettes | Payoff",
+      "metaDesc": "Calculez votre date sans dettes avec la méthode boule de neige. Plan mois par mois et comparaison avec avalanche — 100% gratuit."
+    },
+    "avalanche": {
+      "title": "Calculateur Avalanche Gratuit",
+      "heroText": "Découvrez exactement quand vous serez libre de dettes avec la méthode avalanche. Ajoutez vos dettes — résultats en temps réel.",
+      "metaTitle": "Calculateur Avalanche Gratuit — Économisez Plus sur les Intérêts | Payoff",
+      "metaDesc": "Calculez votre date sans dettes avec la méthode avalanche. Ciblez d’abord la dette au taux le plus élevé — 100% gratuit."
+    },
+    "form": {
+      "yourDebts": "Vos dettes",
+      "loadExample": "Charger un exemple",
+      "debtName": "Nom de la dette",
+      "debtNamePlaceholder": "ex. Carte de Crédit, Prêt Auto...",
+      "balance": "Solde",
+      "apr": "Taux d’intérêt (APR %)",
+      "minimumPayment": "Paiement minimum mensuel",
+      "addDebt": "Ajouter une dette",
+      "removeDebt": "Supprimer",
+      "extraPayment": "Paiement mensuel supplémentaire",
+      "extraPaymentHint": "Tout montant au-dessus de vos paiements minimums totaux, appliqué à la dette cible chaque mois."
+    },
+    "results": {
+      "debtFreeDate": "Date sans dettes",
+      "totalInterest": "Intérêts totaux",
+      "timeSaved": "Temps économisé",
+      "months": "mois",
+      "totalPaid": "total payé",
+      "interestSaved": "intérêts économisés",
+      "noExtra": "Ajoutez extra pour économiser",
+      "vsMinimumOnly": "vs. paiements minimums seuls",
+      "negAmortWarning": "Une ou plusieurs dettes ont un paiement minimum inférieur aux intérêts mensuels. Le calculateur a ajusté le paiement.",
+      "switchTo": "Passer à",
+      "snowballMethod": "Boule de Neige",
+      "avalancheMethod": "Avalanche",
+      "toSave": "pour économiser",
+      "inInterest": "en intérêts",
+      "and": "et",
+      "currentMethodSaves": "Votre méthode actuelle vous économise",
+      "vsOther": "vs.",
+      "tryMethod": "Essayer",
+      "payoffOrder": "Ordre de remboursement",
+      "over": "sur",
+      "interest": "intérêts",
+      "balanceOverTime": "Solde dans le temps",
+      "month": "Mois",
+      "monthlyBreakdown": "Détail mensuel",
+      "monthCol": "Mois",
+      "paymentCol": "Paiement",
+      "principalCol": "Capital",
+      "interestCol": "Intérêts",
+      "balanceCol": "Solde"
+    },
+    "cta": {
+      "ctaInlineTitle": "Vous voulez un coaching IA pour votre situation ?",
+      "ctaInlineDesc": "L’app Payoff vous donne des conseils personnalisés basés sur vos données réelles.",
+      "ctaInlineButton": "Rejoindre la liste",
+      "ctaBadge": "Gratuit pour commencer",
+      "ctaTitle": "Vous voulez l’expérience complète ?",
+      "ctaDesc": "Coaching IA, 7 stratégies, scénarios, planificateur d’épargne, mode partenaire et plus.",
+      "ctaFeatures": "Coach IA,7 Stratégies,Scénarios,Mode Focus,Mode Partenaire",
+      "ctaButton": "Rejoindre la Liste d’Attente"
+    }
   },
   "privacyPolicy": {
     "title": "Politique de Confidentialite",

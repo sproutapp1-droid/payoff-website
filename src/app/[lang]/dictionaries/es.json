@@ -15,7 +15,12 @@
     "headline": "Elimina deudas. Ahorra mas. Mantente motivado.",
     "subheadline": "El planificador inteligente de deudas con coaching de IA, 7 estrategias probadas y un planificador de ahorro para visualizar tu vida sin deudas.",
     "subheadlineMobile": "El planificador inteligente de deudas con coaching de IA y 7 estrategias probadas",
-    "trustPills": ["Sin acceso bancario", "9 idiomas", "Gratis para empezar", "iOS y Android"]
+    "trustPills": [
+      "Sin acceso bancario",
+      "9 idiomas",
+      "Gratis para empezar",
+      "iOS y Android"
+    ]
   },
   "whatPayoffCanDo": {
     "title": "Lo Que Payoff Puede Hacer Por Ti",
@@ -332,9 +337,87 @@
   "calculator": {
     "title": "Calculadora Gratuita de Pago de Deudas",
     "description": "Compara bola de nieve vs avalancha, ve tu fecha libre de deudas y calcula el ahorro en intereses - todo gratis, sin necesidad de registrarse.",
-    "comingSoon": "Proximamente",
-    "comingSoonText": "Nuestra calculadora web gratuita esta en construccion. Mientras tanto, la app Payoff incluye una calculadora completa con 7 estrategias y escenarios hipoteticos.",
-    "backToHome": "Volver a la pagina principal"
+    "hubTitle": "Calculadoras Gratuitas de Pago de Deudas",
+    "hubDesc": "Descubre exactamente cuándo estarás libre de deudas. Compara estrategias, calcula ahorros en intereses y crea tu plan de pago — 100% gratis, sin registro.",
+    "snowballTitle": "Calculadora Bola de Nieve",
+    "snowballDesc": "Paga primero el saldo más pequeño. Gana impulso con victorias rápidas que te mantienen motivado.",
+    "snowballBadge": "Mejor para motivación",
+    "avalancheTitle": "Calculadora Avalancha",
+    "avalancheDesc": "Paga primero la tasa de interés más alta. Ahorra más dinero matemáticamente.",
+    "avalancheBadge": "Mejor para ahorrar dinero",
+    "openCalculator": "Abrir calculadora",
+    "privacyNote": "Tus datos permanecen en tu navegador. Nunca vemos tus números.",
+    "privacy": "Tus datos permanecen en tu navegador. Nunca vemos tus números.",
+    "emptyState": "Agrega tus deudas para ver tu plan de pago",
+    "emptyStateHint": "Ingresa al menos una deuda con saldo y pago mínimo.",
+    "faqTitle": "Preguntas Frecuentes",
+    "backToHome": "Volver a la página principal",
+    "snowball": {
+      "title": "Calculadora Gratuita Bola de Nieve",
+      "heroText": "Descubre exactamente cuándo estarás libre de deudas con el método bola de nieve. Agrega tus deudas abajo — los resultados se actualizan al instante.",
+      "metaTitle": "Calculadora Bola de Nieve Gratuita — Tu Fecha Libre de Deudas | Payoff",
+      "metaDesc": "Calcula tu fecha libre de deudas con el método bola de nieve. Plan mes a mes y comparación con avalancha — 100% gratis."
+    },
+    "avalanche": {
+      "title": "Calculadora Gratuita Avalancha",
+      "heroText": "Descubre exactamente cuándo estarás libre de deudas con el método avalancha. Agrega tus deudas abajo — los resultados se actualizan al instante.",
+      "metaTitle": "Calculadora Avalancha Gratuita — Ahorra Más en Intereses | Payoff",
+      "metaDesc": "Calcula tu fecha libre de deudas con el método avalancha. Ataca primero la deuda con mayor interés — 100% gratis."
+    },
+    "form": {
+      "yourDebts": "Tus deudas",
+      "loadExample": "Cargar ejemplo",
+      "debtName": "Nombre de la deuda",
+      "debtNamePlaceholder": "ej. Tarjeta de Crédito, Préstamo Auto...",
+      "balance": "Saldo",
+      "apr": "Tasa de interés (APR %)",
+      "minimumPayment": "Pago mínimo mensual",
+      "addDebt": "Agregar otra deuda",
+      "removeDebt": "Eliminar",
+      "extraPayment": "Pago mensual extra",
+      "extraPaymentHint": "Cualquier monto por encima de tus pagos mínimos totales, aplicado a la deuda objetivo cada mes."
+    },
+    "results": {
+      "debtFreeDate": "Fecha libre de deudas",
+      "totalInterest": "Interés total",
+      "timeSaved": "Tiempo ahorrado",
+      "months": "meses",
+      "totalPaid": "total pagado",
+      "interestSaved": "interés ahorrado",
+      "noExtra": "Agrega extra para ahorrar",
+      "vsMinimumOnly": "vs. solo pagos mínimos",
+      "negAmortWarning": "Una o más deudas tienen un pago mínimo que no cubre el interés mensual. La calculadora ha ajustado el pago.",
+      "switchTo": "Cambiar a",
+      "snowballMethod": "Bola de Nieve",
+      "avalancheMethod": "Avalancha",
+      "toSave": "para ahorrar",
+      "inInterest": "en intereses",
+      "and": "y",
+      "currentMethodSaves": "Tu método actual te ahorra",
+      "vsOther": "vs.",
+      "tryMethod": "Probar",
+      "payoffOrder": "Orden de pago",
+      "over": "en",
+      "interest": "interés",
+      "balanceOverTime": "Saldo a lo largo del tiempo",
+      "month": "Mes",
+      "monthlyBreakdown": "Desglose mensual",
+      "monthCol": "Mes",
+      "paymentCol": "Pago",
+      "principalCol": "Capital",
+      "interestCol": "Interés",
+      "balanceCol": "Saldo"
+    },
+    "cta": {
+      "ctaInlineTitle": "¿Quieres coaching de IA para tu situación?",
+      "ctaInlineDesc": "La app Payoff te da consejos personalizados basados en tus datos reales.",
+      "ctaInlineButton": "Unirse a la lista",
+      "ctaBadge": "Gratis para empezar",
+      "ctaTitle": "¿Quieres la experiencia completa?",
+      "ctaDesc": "Coaching IA, 7 estrategias, escenarios hipotéticos, planificador de ahorros, modo pareja y más.",
+      "ctaFeatures": "Coach IA,7 Estrategias,Escenarios,Modo Enfoque,Modo Pareja",
+      "ctaButton": "Unirse a la Lista de Espera"
+    }
   },
   "privacyPolicy": {
     "title": "Politica de Privacidad",

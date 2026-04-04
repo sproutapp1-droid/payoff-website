@@ -11,6 +11,8 @@ const STATIC_PAGES = [
   '/contact',
   '/delete-account',
   '/calculator',
+  '/calculator/snowball',
+  '/calculator/avalanche',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -27,8 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push({
         url: `${SITE_URL}/${locale}${page}`,
         lastModified: new Date(),
-        changeFrequency: page === '' ? 'weekly' : 'monthly',
-        priority: page === '' ? 1.0 : 0.7,
+        changeFrequency: page === '' || page.startsWith('/calculator') ? 'weekly' : 'monthly',
+        priority: page === '' ? 1.0 : page.startsWith('/calculator') ? 0.9 : 0.7,
         alternates: {
           languages: alternates,
         },

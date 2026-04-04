@@ -29,14 +29,34 @@ function parseAttributes(tagLine: string): Record<string, unknown> {
   }
 
   // Match attr={jsonValue} (JSON attributes: arrays, objects, numbers, booleans)
-  const jsonRegex = /(\w+)=\{([^}]+)\}/g;
-  while ((m = jsonRegex.exec(tagLine)) !== null) {
+  // Uses brace-depth counting to handle nested objects/arrays
+  const attrNameRegex = /(\w+)=\{/g;
+  while ((m = attrNameRegex.exec(tagLine)) !== null) {
+    const name = m[1];
+    const start = m.index + m[0].length;
+    let depth = 1;
+    let j = start;
+    // Track whether we're inside a string to avoid counting braces in string values
+    let inString = false;
+    let escaped = false;
+    while (j < tagLine.length && depth > 0) {
+      const ch = tagLine[j];
+      if (escaped) { escaped = false; j++; continue; }
+      if (ch === '\\') { escaped = true; j++; continue; }
+      if (ch === '"') { inString = !inString; j++; continue; }
+      if (!inString) {
+        if (ch === '{' || ch === '[') depth++;
+        else if (ch === '}' || ch === ']') depth--;
+      }
+      j++;
+    }
+    const raw = tagLine.slice(start, j - 1);
     try {
-      // Replace single quotes with double quotes for JSON parsing
-      const jsonStr = m[2].replace(/'/g, '"');
-      attrs[m[1]] = JSON.parse(jsonStr);
+      // Convert JS object syntax to valid JSON: add quotes around bare keys
+      const jsonStr = raw.replace(/(\{|,)\s*(\w+)\s*:/g, '$1 "$2":');
+      attrs[name] = JSON.parse(jsonStr);
     } catch {
-      attrs[m[1]] = m[2];
+      attrs[name] = raw;
     }
   }
 

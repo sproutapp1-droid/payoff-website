@@ -15,7 +15,12 @@
     "headline": "Schulden abbauen. Sparen aufbauen. Motiviert bleiben.",
     "subheadline": "Der intelligente Schuldenplaner mit KI-Coaching, 7 bewährten Strategien und einem Sparplaner, der dir das Leben nach den Schulden zeigt.",
     "subheadlineMobile": "Der intelligente Schuldenplaner mit KI-Coaching und 7 bewährten Strategien",
-    "trustPills": ["Kein Bankzugang nötig", "9 Sprachen", "Kostenlos starten", "iOS & Android"]
+    "trustPills": [
+      "Kein Bankzugang nötig",
+      "9 Sprachen",
+      "Kostenlos starten",
+      "iOS & Android"
+    ]
   },
   "whatPayoffCanDo": {
     "title": "Was Payoff für dich tun kann",
@@ -332,9 +337,87 @@
   "calculator": {
     "title": "Kostenloser Schulden-Tilgungsrechner",
     "description": "Vergleiche Snowball mit Avalanche, sieh dein schuldenfreies Datum und berechne Zinsersparnisse - alles kostenlos, keine Anmeldung erforderlich.",
-    "comingSoon": "Demnächst verfügbar",
-    "comingSoonText": "Unser kostenloser Web-Rechner wird gerade gebaut. In der Zwischenzeit enthält die Payoff-App einen vollständigen Schuldenrechner mit 7 Strategien und Was-wäre-wenn-Szenarien.",
-    "backToHome": "Zurück zur Startseite"
+    "hubTitle": "Kostenlose Schulden-Tilgungsrechner",
+    "hubDesc": "Erfahre genau, wann du schuldenfrei bist. Vergleiche Strategien, berechne Zinsersparnisse und erstelle deinen Plan — 100% kostenlos, ohne Anmeldung.",
+    "snowballTitle": "Schneeball-Rechner",
+    "snowballDesc": "Tilge zuerst den kleinsten Saldo. Gewinne Schwung mit schnellen Erfolgen.",
+    "snowballBadge": "Am besten für Motivation",
+    "avalancheTitle": "Lawinen-Rechner",
+    "avalancheDesc": "Tilge zuerst den höchsten Zinssatz. Spare mathematisch am meisten.",
+    "avalancheBadge": "Am besten zum Sparen",
+    "openCalculator": "Rechner öffnen",
+    "privacyNote": "Deine Daten bleiben in deinem Browser. Wir sehen deine Zahlen nie.",
+    "privacy": "Deine Daten bleiben in deinem Browser. Wir sehen deine Zahlen nie.",
+    "emptyState": "Füge deine Schulden hinzu, um deinen Plan zu sehen",
+    "emptyStateHint": "Gib mindestens eine Schuld mit Saldo und Mindestzahlung ein.",
+    "faqTitle": "Häufig gestellte Fragen",
+    "backToHome": "Zurück zur Startseite",
+    "snowball": {
+      "title": "Kostenloser Schneeball-Rechner",
+      "heroText": "Erfahre genau, wann du mit der Schneeball-Methode schuldenfrei bist. Füge deine Schulden hinzu — Ergebnisse sofort.",
+      "metaTitle": "Kostenloser Schneeball-Rechner — Dein Schuldenfreiheitsdatum | Payoff",
+      "metaDesc": "Berechne dein Schuldenfreiheitsdatum mit der Schneeball-Methode. Monatsplan und Vergleich mit Lawine — 100% kostenlos."
+    },
+    "avalanche": {
+      "title": "Kostenloser Lawinen-Rechner",
+      "heroText": "Erfahre genau, wann du mit der Lawinen-Methode schuldenfrei bist. Füge deine Schulden hinzu — Ergebnisse sofort.",
+      "metaTitle": "Kostenloser Lawinen-Rechner — Spare am meisten bei Zinsen | Payoff",
+      "metaDesc": "Berechne dein Schuldenfreiheitsdatum mit der Lawinen-Methode. Greife zuerst die teuerste Schuld an — 100% kostenlos."
+    },
+    "form": {
+      "yourDebts": "Deine Schulden",
+      "loadExample": "Beispiel laden",
+      "debtName": "Schuldenname",
+      "debtNamePlaceholder": "z.B. Kreditkarte, Autokredit...",
+      "balance": "Saldo",
+      "apr": "Zinssatz (APR %)",
+      "minimumPayment": "Monatliche Mindestzahlung",
+      "addDebt": "Weitere Schuld hinzufügen",
+      "removeDebt": "Entfernen",
+      "extraPayment": "Monatliche Extrazahlung",
+      "extraPaymentHint": "Jeder Betrag über deinen gesamten Mindestzahlungen, der monatlich auf die Zielschuld angewendet wird."
+    },
+    "results": {
+      "debtFreeDate": "Schuldenfreiheitsdatum",
+      "totalInterest": "Gesamtzinsen",
+      "timeSaved": "Zeitersparnis",
+      "months": "Monate",
+      "totalPaid": "gesamt bezahlt",
+      "interestSaved": "Zinsen gespart",
+      "noExtra": "Extra hinzufügen zum Sparen",
+      "vsMinimumOnly": "vs. nur Mindestzahlungen",
+      "negAmortWarning": "Eine oder mehrere Schulden haben eine Mindestzahlung unter den monatlichen Zinsen. Der Rechner hat die Zahlung angepasst.",
+      "switchTo": "Wechseln zu",
+      "snowballMethod": "Schneeball",
+      "avalancheMethod": "Lawine",
+      "toSave": "um zu sparen",
+      "inInterest": "an Zinsen",
+      "and": "und",
+      "currentMethodSaves": "Deine aktuelle Methode spart dir",
+      "vsOther": "vs.",
+      "tryMethod": "Ausprobieren",
+      "payoffOrder": "Tilgungsreihenfolge",
+      "over": "über",
+      "interest": "Zinsen",
+      "balanceOverTime": "Saldo im Zeitverlauf",
+      "month": "Mo",
+      "monthlyBreakdown": "Monatliche Aufschlüsselung",
+      "monthCol": "Monat",
+      "paymentCol": "Zahlung",
+      "principalCol": "Tilgung",
+      "interestCol": "Zinsen",
+      "balanceCol": "Saldo"
+    },
+    "cta": {
+      "ctaInlineTitle": "Möchtest du KI-Coaching für deine Situation?",
+      "ctaInlineDesc": "Die Payoff-App gibt dir personalisierte Ratschläge basierend auf deinen echten Daten.",
+      "ctaInlineButton": "Auf die Warteliste",
+      "ctaBadge": "Kostenlos starten",
+      "ctaTitle": "Möchtest du die volle Erfahrung?",
+      "ctaDesc": "KI-Coaching, 7 Strategien, Was-wäre-wenn-Szenarien, Sparplaner, Partnermodus und mehr.",
+      "ctaFeatures": "KI-Coach,7 Strategien,Szenarien,Fokus-Modus,Partner-Modus",
+      "ctaButton": "Auf die Warteliste"
+    }
   },
   "privacyPolicy": {
     "title": "Datenschutzrichtlinie",

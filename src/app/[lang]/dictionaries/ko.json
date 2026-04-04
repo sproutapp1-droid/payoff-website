@@ -15,7 +15,12 @@
     "headline": "부채를 갚고. 저축을 쌓고. 동기를 유지하세요.",
     "subheadline": "AI 코칭, 7가지 검증된 전략, 부채 상환 이후의 삶을 위한 저축 플래너를 갖춘 스마트 부채 상환 플래너.",
     "subheadlineMobile": "AI 코칭과 7가지 검증된 전략을 갖춘 스마트 부채 상환 플래너",
-    "trustPills": ["은행 연결 불필요", "9개 언어 지원", "무료로 시작", "iOS 및 Android"]
+    "trustPills": [
+      "은행 연결 불필요",
+      "9개 언어 지원",
+      "무료로 시작",
+      "iOS 및 Android"
+    ]
   },
   "whatPayoffCanDo": {
     "title": "Payoff가 해드리는 것들",
@@ -332,9 +337,87 @@
   "calculator": {
     "title": "무료 부채 상환 계산기",
     "description": "눈덩이 vs 눈사태를 비교하고, 부채 완납일을 확인하고, 이자 절감액을 계산하세요 - 모두 무료, 가입 불필요.",
-    "comingSoon": "곧 출시",
-    "comingSoonText": "무료 웹 계산기를 개발 중입니다. 그동안 Payoff 앱에서 7가지 전략과 What-If 시뮬레이션이 포함된 전체 부채 계산기를 이용할 수 있습니다.",
-    "backToHome": "홈페이지로 돌아가기"
+    "hubTitle": "무료 부채 상환 계산기",
+    "hubDesc": "부채 완납일을 정확히 확인하세요. 전략을 비교하고 이자 절감액을 계산 — 100% 무료, 가입 불필요.",
+    "snowballTitle": "눈덱이 방식 계산기",
+    "snowballDesc": "가장 작은 잔액부터 상환. 빠른 성공으로 동기부여.",
+    "snowballBadge": "동기부여에 최적",
+    "avalancheTitle": "눈사태 방식 계산기",
+    "avalancheDesc": "가장 높은 금리부터 상환. 수학적으로 가장 많이 절약.",
+    "avalancheBadge": "절약에 최적",
+    "openCalculator": "계산기 열기",
+    "privacyNote": "데이터는 브라우저에 저장됩니다. 우리는 절대 숫자를 보지 않습니다.",
+    "privacy": "데이터는 브라우저에 저장됩니다. 우리는 절대 숫자를 보지 않습니다.",
+    "emptyState": "부채를 추가하여 상환 계획을 확인하세요",
+    "emptyStateHint": "잔액과 최소 상환액이 있는 부채를 최소 1건 입력하세요.",
+    "faqTitle": "자주 묻는 질문",
+    "backToHome": "홈으로 돌아가기",
+    "snowball": {
+      "title": "무료 눈덱이 방식 계산기",
+      "heroText": "눈덱이 방식으로 부채 완납일을 확인하세요. 부채를 추가하면 결과가 즉시 업데이트됩니다.",
+      "metaTitle": "무료 눈덱이 방식 계산기 — 완납일 확인 | Payoff",
+      "metaDesc": "눈덱이 방식으로 부채 완납일을 계산하세요. 월별 계획과 눈사태 방식과 비교 — 100% 무료."
+    },
+    "avalanche": {
+      "title": "무료 눈사태 방식 계산기",
+      "heroText": "눈사태 방식으로 부채 완납일을 확인하세요. 부채를 추가하면 결과가 즉시 업데이트됩니다.",
+      "metaTitle": "무료 눈사태 방식 계산기 — 이자 최대 절약 | Payoff",
+      "metaDesc": "눈사태 방식으로 부채 완납일을 계산하세요. 최고 금리 부채부터 공략 — 100% 무료."
+    },
+    "form": {
+      "yourDebts": "내 부채",
+      "loadExample": "예시 불러오기",
+      "debtName": "부채명",
+      "debtNamePlaceholder": "예: 신용카드, 자동차 대출...",
+      "balance": "잔액",
+      "apr": "금리 (APR %)",
+      "minimumPayment": "월 최소 상환액",
+      "addDebt": "부채 추가",
+      "removeDebt": "삭제",
+      "extraPayment": "월 추가 상환액",
+      "extraPaymentHint": "총 최소 상환액을 초과하는 금액으로 매월 대상 부채에 적용됩니다."
+    },
+    "results": {
+      "debtFreeDate": "부채 완납일",
+      "totalInterest": "총 이자",
+      "timeSaved": "절약 시간",
+      "months": "개월",
+      "totalPaid": "총 지불액",
+      "interestSaved": "이자 절약",
+      "noExtra": "추가로 절약",
+      "vsMinimumOnly": "vs. 최소 상환만",
+      "negAmortWarning": "하나 이상의 부채의 최소 상환액이 월 이자보다 적습니다. 계산기가 상환액을 조정했습니다.",
+      "switchTo": "전환",
+      "snowballMethod": "눈덱이",
+      "avalancheMethod": "눈사태",
+      "toSave": "절약",
+      "inInterest": "이자",
+      "and": "및",
+      "currentMethodSaves": "현재 방식의 절약액",
+      "vsOther": "vs.",
+      "tryMethod": "시도",
+      "payoffOrder": "상환 순서",
+      "over": "동안",
+      "interest": "이자",
+      "balanceOverTime": "시간별 잔액",
+      "month": "월",
+      "monthlyBreakdown": "월별 내역",
+      "monthCol": "월",
+      "paymentCol": "상환액",
+      "principalCol": "원금",
+      "interestCol": "이자",
+      "balanceCol": "잔액"
+    },
+    "cta": {
+      "ctaInlineTitle": "당신의 상황에 AI 코칭이 필요하신가요?",
+      "ctaInlineDesc": "Payoff 앱이 실제 데이터를 기반으로 맞춤형 조언을 제공합니다.",
+      "ctaInlineButton": "대기자 등록",
+      "ctaBadge": "무료로 시작",
+      "ctaTitle": "완전한 경험을 원하시나요?",
+      "ctaDesc": "AI 코칭, 7가지 전략, What-if 시나리오, 저축 플래너, 파트너 모드 등.",
+      "ctaFeatures": "AI 코치,7 전략,시나리오,포커스,파트너",
+      "ctaButton": "대기자 등록"
+    }
   },
   "privacyPolicy": {
     "title": "개인정보 처리방침",

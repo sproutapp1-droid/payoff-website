@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronDown, Calculator, Snowflake, TrendingDown } from "lucide-react";
+import { Menu, X, ChevronDown, Calculator, Snowflake, TrendingDown, Blend, Banknote, BarChart3, CalendarClock } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useDict } from "@/components/i18n/LocaleProvider";
 
@@ -27,6 +27,10 @@ export default function Navbar() {
   const toolLinks = [
     { label: dict.nav?.snowballCalculator || "Snowball Calculator", href: `${prefix}/calculator/snowball`, icon: <Snowflake size={16} /> },
     { label: dict.nav?.avalancheCalculator || "Avalanche Calculator", href: `${prefix}/calculator/avalanche`, icon: <TrendingDown size={16} /> },
+    { label: dict.nav?.hybridCalculator || "Hybrid Calculator", href: `${prefix}/calculator/hybrid`, icon: <Blend size={16} /> },
+    { label: dict.nav?.cashFlowCalculator || "Cash Flow Calculator", href: `${prefix}/calculator/cash-flow`, icon: <Banknote size={16} /> },
+    { label: dict.nav?.highestBalanceCalculator || "Highest Balance", href: `${prefix}/calculator/highest-balance`, icon: <BarChart3 size={16} /> },
+    { label: dict.nav?.deadlineCalculator || "Debt-Free By Date", href: `${prefix}/calculator/deadline`, icon: <CalendarClock size={16} /> },
     { label: dict.nav?.allCalculators || "All Calculators", href: `${prefix}/calculator`, icon: <Calculator size={16} /> },
   ];
 

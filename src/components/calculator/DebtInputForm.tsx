@@ -15,6 +15,7 @@ interface DebtInputFormProps {
   onCurrencyChange: (code: CurrencyCode) => void;
   dict: Record<string, string>;
   currencySymbol?: string;
+  hideExtraPayment?: boolean;
 }
 
 const SAMPLE_DEBTS: Omit<WebDebt, 'id'>[] = [
@@ -45,6 +46,7 @@ export default function DebtInputForm({
   onCurrencyChange,
   dict,
   currencySymbol = '$',
+  hideExtraPayment = false,
 }: DebtInputFormProps) {
   const [sliderValue, setSliderValue] = useState(extraPayment);
 
@@ -268,39 +270,41 @@ export default function DebtInputForm({
       )}
 
       {/* Extra monthly payment */}
-      <div className="bg-gradient-to-br from-primary/5 to-accent/10 rounded-2xl p-5 space-y-3">
-        <label className="block text-sm font-bold text-gray-900">
-          {dict.extraPayment || 'Extra monthly payment'}
-        </label>
-        <div className="flex items-center gap-4">
-          <div className="relative flex-shrink-0 w-28">
-            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">
-              {currencySymbol}
-            </span>
+      {!hideExtraPayment && (
+        <div className="bg-gradient-to-br from-primary/5 to-accent/10 rounded-2xl p-5 space-y-3">
+          <label className="block text-sm font-bold text-gray-900">
+            {dict.extraPayment || 'Extra monthly payment'}
+          </label>
+          <div className="flex items-center gap-4">
+            <div className="relative flex-shrink-0 w-28">
+              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">
+                {currencySymbol}
+              </span>
+              <input
+                type="number"
+                min="0"
+                step="25"
+                value={extraPayment || ''}
+                onChange={(e) => handleExtraInput(e.target.value)}
+                placeholder="0"
+                className="w-full rounded-xl border-2 border-gray-200 pl-8 pr-3 py-2.5 text-sm font-semibold focus:border-primary focus:outline-none transition-colors bg-white"
+              />
+            </div>
             <input
-              type="number"
+              type="range"
               min="0"
+              max="1000"
               step="25"
-              value={extraPayment || ''}
-              onChange={(e) => handleExtraInput(e.target.value)}
-              placeholder="0"
-              className="w-full rounded-xl border-2 border-gray-200 pl-8 pr-3 py-2.5 text-sm font-semibold focus:border-primary focus:outline-none transition-colors bg-white"
+              value={sliderValue}
+              onChange={(e) => handleSlider(Number(e.target.value))}
+              className="flex-1 h-2 rounded-full appearance-none bg-gray-200 accent-primary cursor-pointer"
             />
           </div>
-          <input
-            type="range"
-            min="0"
-            max="1000"
-            step="25"
-            value={sliderValue}
-            onChange={(e) => handleSlider(Number(e.target.value))}
-            className="flex-1 h-2 rounded-full appearance-none bg-gray-200 accent-primary cursor-pointer"
-          />
+          <p className="text-xs text-gray-500">
+            {dict.extraPaymentHint || 'Any amount above your total minimum payments, applied to the target debt each month.'}
+          </p>
         </div>
-        <p className="text-xs text-gray-500">
-          {dict.extraPaymentHint || 'Any amount above your total minimum payments, applied to the target debt each month.'}
-        </p>
-      </div>
+      )}
     </div>
   );
 }

@@ -4,7 +4,7 @@
 // All calculations run in the browser — no data leaves the device
 // ============================================================
 
-export type StrategyMethod = 'snowball' | 'avalanche';
+export type StrategyMethod = 'snowball' | 'avalanche' | 'hybrid' | 'highest_balance' | 'cashflow' | 'deadline';
 
 export interface WebDebt {
   id: string;
@@ -89,16 +89,29 @@ function amortiseSingleDebt(
 function sortDebts(debts: WebDebt[], method: StrategyMethod): WebDebt[] {
   const active = debts.filter((d) => d.balance > 0);
 
-  if (method === 'snowball') {
-    return [...active].sort(
-      (a, b) => a.balance - b.balance || b.apr - a.apr,
-    );
+  switch (method) {
+    case 'snowball':
+      return [...active].sort((a, b) => a.balance - b.balance || b.apr - a.apr);
+    case 'avalanche':
+    case 'deadline':
+      return [...active].sort((a, b) => b.apr - a.apr || a.balance - b.balance);
+    case 'hybrid':
+      return [...active].sort((a, b) => {
+        const aprScore = b.apr - a.apr;
+        const balScore = a.balance - b.balance;
+        return aprScore * 0.6 + balScore * 0.4;
+      });
+    case 'highest_balance':
+      return [...active].sort((a, b) => b.balance - a.balance || b.apr - a.apr);
+    case 'cashflow':
+      return [...active].sort((a, b) => {
+        const ratioA = a.minimumPayment / (a.balance || 1);
+        const ratioB = b.minimumPayment / (b.balance || 1);
+        return ratioB - ratioA;
+      });
+    default:
+      return [...active].sort((a, b) => a.balance - b.balance || b.apr - a.apr);
   }
-
-  // avalanche
-  return [...active].sort(
-    (a, b) => b.apr - a.apr || a.balance - b.balance,
-  );
 }
 
 // ── Minimum-only baseline for comparison ──
@@ -260,6 +273,29 @@ export function generatePayoffPlan(
     monthsSaved: Math.max(0, monthsSaved),
     hasNegativeAmortization,
   };
+}
+
+// ── Deadline payment calculator ──
+
+export function calculateDeadlinePayment(
+  debts: WebDebt[],
+  targetMonths: number,
+): number {
+  if (debts.length === 0 || targetMonths <= 0) return 0;
+  let lo = 0;
+  let hi = debts.reduce((sum, d) => sum + d.balance, 0);
+
+  for (let i = 0; i < 50; i++) {
+    const mid = (lo + hi) / 2;
+    const plan = generatePayoffPlan(debts, mid, 'deadline');
+    if (plan.totalMonths <= targetMonths) {
+      hi = mid;
+    } else {
+      lo = mid;
+    }
+  }
+
+  return round2(hi);
 }
 
 // ── Helpers ──

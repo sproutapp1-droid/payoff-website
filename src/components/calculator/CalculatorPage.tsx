@@ -30,7 +30,7 @@ export default function CalculatorPageComponent({
   const c = dict.calculator || {};
   const f = c.form || {};
   const r = c.results || {};
-  const m = method === 'snowball' ? c.snowball || {} : c.avalanche || {};
+  const m = c[method] || (method === 'snowball' ? c.snowball || {} : c.avalanche || {});
   const cta = c.cta || {};
 
   const [debts, setDebts] = useState<WebDebt[]>([createEmptyDebt()]);
@@ -38,7 +38,7 @@ export default function CalculatorPageComponent({
   const [currency, setCurrency] = useState<CurrencyCode>(getDefaultCurrency(locale));
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
-  const otherMethod: StrategyMethod = method === 'snowball' ? 'avalanche' : 'snowball';
+  const otherMethod: StrategyMethod = method === 'avalanche' ? 'snowball' : 'avalanche';
 
   const hasValidDebts = debts.some(
     (d) => d.balance > 0 && d.minimumPayment > 0,
@@ -136,7 +136,7 @@ export default function CalculatorPageComponent({
                 <div className="text-center text-gray-400 space-y-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto">
                     <span className="text-2xl">
-                      {method === 'snowball' ? '\u2744\uFE0F' : '\u26A1'}
+                      {method === 'snowball' ? '\u2744\uFE0F' : method === 'cashflow' ? '\uD83D\uDCB8' : '\u26A1'}
                     </span>
                   </div>
                   <p className="text-sm font-medium">

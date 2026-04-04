@@ -12,6 +12,10 @@
     "tools": "Tools",
     "snowballCalculator": "Schneeball-Rechner",
     "avalancheCalculator": "Lawinen-Rechner",
+    "hybridCalculator": "Hybrid-Rechner",
+    "cashFlowCalculator": "Cashflow-Rechner",
+    "highestBalanceCalculator": "Hochster Saldo",
+    "deadlineCalculator": "Schuldenfrei bis Datum",
     "allCalculators": "Alle Rechner",
     "joinWaitlist": "Warteliste beitreten"
   },

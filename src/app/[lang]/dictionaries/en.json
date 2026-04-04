@@ -12,6 +12,10 @@
     "tools": "Tools",
     "snowballCalculator": "Snowball Calculator",
     "avalancheCalculator": "Avalanche Calculator",
+    "hybridCalculator": "Hybrid Calculator",
+    "cashFlowCalculator": "Cash Flow Calculator",
+    "highestBalanceCalculator": "Highest Balance",
+    "deadlineCalculator": "Debt-Free By Date",
     "allCalculators": "All Calculators",
     "joinWaitlist": "Join Waitlist"
   },

@@ -12,6 +12,10 @@
     "tools": "도구",
     "snowballCalculator": "눈덩이 계산기",
     "avalancheCalculator": "눈사태 계산기",
+    "hybridCalculator": "하이브리드 계산기",
+    "cashFlowCalculator": "현금 흐름 계산기",
+    "highestBalanceCalculator": "최고 잔액",
+    "deadlineCalculator": "목표일까지 무빚",
     "allCalculators": "모든 계산기",
     "joinWaitlist": "대기자 명단 등록"
   },

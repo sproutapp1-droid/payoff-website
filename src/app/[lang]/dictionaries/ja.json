@@ -12,6 +12,10 @@
     "tools": "ツール",
     "snowballCalculator": "雪だるま式計算機",
     "avalancheCalculator": "雪崩式計算機",
+    "hybridCalculator": "ハイブリッド計算機",
+    "cashFlowCalculator": "キャッシュフロー計算機",
+    "highestBalanceCalculator": "最高残高",
+    "deadlineCalculator": "期限までに完済",
     "allCalculators": "すべての計算機",
     "joinWaitlist": "ウェイトリストに登録"
   },

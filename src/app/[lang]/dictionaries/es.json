@@ -12,6 +12,10 @@
     "tools": "Herramientas",
     "snowballCalculator": "Calculadora Bola de Nieve",
     "avalancheCalculator": "Calculadora Avalancha",
+    "hybridCalculator": "Calculadora Hibrida",
+    "cashFlowCalculator": "Calculadora de Flujo de Caja",
+    "highestBalanceCalculator": "Saldo Mas Alto",
+    "deadlineCalculator": "Libre de Deudas por Fecha",
     "allCalculators": "Todas las Calculadoras",
     "joinWaitlist": "Unirse a la Lista"
   },

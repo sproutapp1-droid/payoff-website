@@ -13,6 +13,10 @@ const STATIC_PAGES = [
   '/calculator',
   '/calculator/snowball',
   '/calculator/avalanche',
+  '/calculator/hybrid',
+  '/calculator/cash-flow',
+  '/calculator/highest-balance',
+  '/calculator/deadline',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

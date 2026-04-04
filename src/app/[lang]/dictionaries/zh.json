@@ -12,6 +12,10 @@
     "tools": "工具",
     "snowballCalculator": "雪球法计算器",
     "avalancheCalculator": "雪崩法计算器",
+    "hybridCalculator": "混合计算器",
+    "cashFlowCalculator": "现金流计算器",
+    "highestBalanceCalculator": "最高余额",
+    "deadlineCalculator": "按日期还清债务",
     "allCalculators": "所有计算器",
     "joinWaitlist": "加入等候名单"
   },

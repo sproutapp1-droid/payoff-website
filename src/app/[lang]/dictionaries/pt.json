@@ -12,6 +12,10 @@
     "tools": "Ferramentas",
     "snowballCalculator": "Calculadora Bola de Neve",
     "avalancheCalculator": "Calculadora Avalanche",
+    "hybridCalculator": "Calculadora Hibrida",
+    "cashFlowCalculator": "Calculadora de Fluxo de Caixa",
+    "highestBalanceCalculator": "Maior Saldo",
+    "deadlineCalculator": "Livre de Dividas por Data",
     "allCalculators": "Todas as Calculadoras",
     "joinWaitlist": "Entrar na Lista"
   },

@@ -1,0 +1,498 @@
+{
+  "metadata": {
+    "title": "Payoff: Intelligenter Schuldenplaner - KI-gesteuerte Schulden-App",
+    "description": "Schulden schneller abbauen mit KI-Coaching, Schulden-Snowball, Schulden-Avalanche und 5 weiteren Strategien. Fortschritt verfolgen, Sparen planen und motiviert bleiben. Kostenlose Schulden-App fur iOS & Android."
+  },
+  "nav": {
+    "features": "Funktionen",
+    "howItWorks": "So funktioniert's",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "joinWaitlist": "Warteliste beitreten"
+  },
+  "hero": {
+    "headline": "Schulden abbauen. Sparen aufbauen. Motiviert bleiben.",
+    "subheadline": "Der intelligente Schuldenplaner mit KI-Coaching, 7 bewährten Strategien und einem Sparplaner, der dir das Leben nach den Schulden zeigt.",
+    "subheadlineMobile": "Der intelligente Schuldenplaner mit KI-Coaching und 7 bewährten Strategien",
+    "trustPills": ["Kein Bankzugang nötig", "9 Sprachen", "Kostenlos starten", "iOS & Android"]
+  },
+  "whatPayoffCanDo": {
+    "title": "Was Payoff für dich tun kann",
+    "subtitle": "Alles, was du brauchst, um Schulden abzubauen und Vermögen aufzubauen",
+    "items": [
+      {
+        "number": "01",
+        "title": "KI-gestütztes Coaching",
+        "content": "Persönliche Beratung von einer KI, die deine genauen Schulden kennt. Frag \"Ich habe einen 600 $-Bonus bekommen - was soll ich tun?\" und erhalte konkrete, umsetzbare Antworten basierend auf deinen echten Salden."
+      },
+      {
+        "number": "02",
+        "title": "7 Tilgungsstrategien + Baby Steps",
+        "content": "Snowball, Avalanche, Hybrid, Cash-Flow-Index, Deadline, höchster Saldo und individuelle Reihenfolge. Plus ein integrierter Dave Ramsey Baby Steps-Leitfaden. Mach unser 60-Sekunden-Quiz und finde deine passende Strategie."
+      },
+      {
+        "number": "03",
+        "title": "Partner- & Haushaltsmodus",
+        "content": "Teile Schulden mit deinem Partner, teile Zahlungen nach Prozentsätzen auf und verfolge, wer was beigetragen hat - alles in Echtzeit synchronisiert mit einem gemeinsamen KI-Coach."
+      },
+      {
+        "number": "04",
+        "title": "Was-wäre-wenn-Szenarien",
+        "content": "Schiebe den Regler, um zu sehen, wie zusätzliche Zahlungen dein schuldenfreies Datum verändern. Beobachte, wie sich das Saldodiagramm sofort aktualisiert, wenn du mit 50 $, 100 $ oder 500 $ extra pro Monat experimentierst."
+      },
+      {
+        "number": "05",
+        "title": "Das Leben nach den Schulden",
+        "content": "Sparziele, Investitions-Tracker mit Zinseszins-Prognosen und eine Geld-Timeline, die jeden Meilenstein vom ersten Zahltag bis zur finanziellen Freiheit abbildet."
+      },
+      {
+        "number": "06",
+        "title": "Meilenstein-Feiern",
+        "content": "Jede abbezahlte Schuld wird mit Konfetti, einer Trophäe und aufmunternden Worten belohnt. Verfolge deine Zahlungsserien und verdiene Abzeichen. Der Weg soll sich gut anfühlen."
+      }
+    ]
+  },
+  "benefits": {
+    "items": [
+      {
+        "title": "Kein Bankzugang nötig",
+        "description": "Deine Finanzdaten bleiben auf deinem Gerät. Kein Bank-Login, keine Synchronisierung, kein Risiko. Einfach Schulden eingeben und loslegen."
+      },
+      {
+        "title": "Schulden schneller abbezahlen",
+        "description": "Menschen mit einem strukturierten Tilgungsplan bauen Schulden 2-3 Jahre schneller ab als diejenigen, die nur Mindestzahlungen leisten."
+      },
+      {
+        "title": "Für deine Gefühle gemacht",
+        "description": "Der Fokusmodus blendet beängstigende Zahlen aus. Meilenstein-Feiern halten dich motiviert. Diese App versteht finanzielle Ängste."
+      }
+    ]
+  },
+  "features": [
+    {
+      "badge": "KI-gestützt",
+      "heading": "Ein Schulden-Coach, der deine Schulden wirklich kennt",
+      "description": "Payoff Coach sieht deine echten Salden, Zinssätze und Zahlungsverläufe. Frag ihn alles - von \"Soll ich zuerst meine Kreditkarte oder meinen Autokredit abbezahlen?\" bis \"Ich habe einen Bonus bekommen, wohin damit?\"",
+      "bullets": [
+        "Persönliche Beratung, keine allgemeinen Tipps",
+        "Kennt dein genaues schuldenfreies Datum",
+        "Schlägt vor, wohin Boni und Sonderzahlungen fließen sollen",
+        "5 kostenlose Nachrichten/Monat, unbegrenzt mit Premium"
+      ]
+    },
+    {
+      "badge": "Intelligentes Matching",
+      "heading": "Finde deine perfekte Tilgungsstrategie",
+      "description": "Mach ein 60-Sekunden-Quiz über deine Geld-Persönlichkeit. Payoff empfiehlt die beste Methode - Snowball für Motivation, Avalanche zum Sparen, oder einen von 5 weiteren Ansätzen.",
+      "bullets": [
+        "7 Strategien inklusive Hybrid und Cash-Flow-Index",
+        "Dave Ramsey Baby Steps integriert",
+        "Jederzeit mit einem Tipp wechseln",
+        "Sieh genau, wie viel jede Strategie spart"
+      ]
+    },
+    {
+      "badge": "Interaktiv",
+      "heading": "Sieh, was zusätzliche Zahlungen bewirken",
+      "description": "Schiebe den Regler, um zu sehen, wie höhere monatliche Zahlungen dein schuldenfreies Datum beschleunigen. Beobachte, wie sich das Saldodiagramm in Echtzeit aktualisiert, während du mit verschiedenen Beträgen experimentierst.",
+      "bullets": [
+        "Sofortige Neuberechnung des schuldenfreien Datums",
+        "Zinsersparnis in Echtzeit angezeigt",
+        "Vergleiche Mindestzahlungen vs. deinen Plan vs. aggressiv"
+      ]
+    },
+    {
+      "badge": "Haushalt",
+      "heading": "Gemeinsam Schulden abbauen",
+      "description": "Teile Schulden mit deinem Partner, teile Zahlungen nach Prozentsätzen auf und verfolge, wer was beigetragen hat. Ein Haushalt, ein Plan, null Streit.",
+      "bullets": [
+        "Partner mit einem einfachen Code einladen",
+        "Prozentuale Aufteilung pro Schuld",
+        "Gemeinsamer KI-Coach für gemeinsame Entscheidungen",
+        "Haushaltsplan deckt beide Konten ab"
+      ]
+    }
+  ],
+  "howItWorks": {
+    "title": "In 60 Sekunden starten",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Schulden eingeben",
+        "description": "Gib deine Salden, Zinssätze und Mindestzahlungen ein. Oder scanne einen Kontoauszug mit Smart Import - die KI übernimmt die Eingabe."
+      },
+      {
+        "number": "2",
+        "title": "Strategie wählen",
+        "description": "Mach das 60-Sekunden-Persönlichkeitsquiz oder wähle aus 7 bewährten Methoden. Wir erstellen deinen individuellen Tilgungsplan sofort."
+      },
+      {
+        "number": "3",
+        "title": "Schulden verschwinden lassen",
+        "description": "Folge deinem Plan, erfasse Zahlungen und feiere jeden Meilenstein. Dein KI-Coach begleitet dich bei jedem Schritt."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Geliebt von Tausenden, die ihre Schulden loswerden",
+    "items": [
+      {
+        "name": "Sarah M.",
+        "location": "London, UK",
+        "quote": "Der KI-Coach hat mir genau gesagt, wohin ich meine Steuerrückerstattung stecken soll. Ich zahle meine Kreditkarte 3 Monate früher ab!",
+        "initials": "SM"
+      },
+      {
+        "name": "Marcus T.",
+        "location": "Austin, TX",
+        "quote": "Ich habe jede Schulden-App ausprobiert. Payoff ist die erste, bei der ich keine Angst vor meinen Zahlen habe.",
+        "initials": "MT"
+      },
+      {
+        "name": "Priya & Dev K.",
+        "location": "Toronto, CA",
+        "quote": "Der Partnermodus hat unsere Beziehung gerettet. Wir sehen endlich, wer was bezahlt, ohne peinliche Gespräche.",
+        "initials": "PD"
+      },
+      {
+        "name": "James L.",
+        "location": "Sydney, AU",
+        "quote": "Die Meilenstein-Feiern sind wirklich motivierend. Gestern habe ich meine erste Kreditkarte abbezahlt und das Konfetti hat mir den Tag verschönert.",
+        "initials": "JL"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preise",
+    "subtitle": "Starte kostenlos. Upgrade, wenn du bereit bist.",
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "free": {
+      "name": "Kostenlos",
+      "price": "$0",
+      "period": "für immer",
+      "cta": "Kostenlos herunterladen",
+      "features": [
+        "2 Schulden",
+        "Snowball- & Avalanche-Strategien",
+        "Dashboard mit schuldenfreiem Countdown",
+        "5 KI-Coach-Nachrichten/Monat",
+        "Zahlungserinnerungen",
+        "Meilenstein-Feiern"
+      ]
+    },
+    "premium": {
+      "name": "Premium",
+      "badge": "Am beliebtesten",
+      "savingsNote": "30% sparen",
+      "trialNote": "7 Tage kostenlos testen",
+      "cta": "Kostenlose Testversion starten",
+      "features": [
+        "Alles aus Kostenlos, plus:",
+        "Unbegrenzte Schulden",
+        "Alle 7 Strategien + Persönlichkeitsquiz",
+        "Unbegrenztes KI-Coaching",
+        "Was-wäre-wenn-Szenarien",
+        "Fokusmodus",
+        "Smart Import (Kamerascan)",
+        "Spar- & Investitionsplaner",
+        "CSV-Import & Datenexport"
+      ]
+    },
+    "household": {
+      "name": "Haushalt",
+      "cta": "Haushaltsplan holen",
+      "features": [
+        "Alles aus Premium, plus:",
+        "2 Konten inklusive",
+        "Partnermodus mit geteilten Schulden",
+        "Geteilte Zahlungsverfolgung",
+        "Gemeinsamer KI-Coach"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Ist Payoff wirklich kostenlos?",
+        "answer": "Ja! Der kostenlose Plan umfasst 2 Schulden, Snowball- und Avalanche-Strategien, dein Dashboard und 5 KI-Coach-Nachrichten pro Monat. Keine Kreditkarte erforderlich."
+      },
+      {
+        "question": "Muss ich mein Bankkonto verbinden?",
+        "answer": "Nein. Payoff fragt niemals nach Bankzugang. Du gibst deine Schulden manuell ein, was bedeutet, dass deine Finanzdaten vollständig privat und sicher auf deinem Gerät bleiben."
+      },
+      {
+        "question": "Was unterscheidet den KI-Coach von ChatGPT?",
+        "answer": "Payoff Coach sieht deine tatsächlichen Schulden, Salden, Zinssätze und Zahlungsverläufe. Er gibt konkrete Ratschläge wie \"Stecke deinen Bonus in Chase Sapphire, um 389 $ an Zinsen zu sparen\" statt allgemeiner Tipps."
+      },
+      {
+        "question": "Welche Tilgungsstrategie sollte ich verwenden?",
+        "answer": "Mach unser 60-Sekunden-Strategie-Quiz! Allgemein: Wähle Snowball, wenn du schnelle Erfolge zur Motivation brauchst, Avalanche, wenn du am meisten Zinsen sparen willst, oder Hybrid für eine Kombination aus beidem."
+      },
+      {
+        "question": "Können mein Partner und ich es zusammen nutzen?",
+        "answer": "Ja! Der Haushaltsplan ermöglicht es dir, deinen Partner einzuladen, Schulden zu teilen, Aufteilungsprozente festzulegen und sogar einen gemeinsamen KI-Coach zu nutzen. Er ist für Paare gedacht, die gemeinsam Schulden abbauen."
+      },
+      {
+        "question": "Was ist der Fokusmodus?",
+        "answer": "Der Fokusmodus blendet deine Gesamtsalden aus und zeigt nur deinen Fortschrittsprozentsatz und eine einfache nächste Aktion. Er ist für Menschen gedacht, die beim Anblick großer Schuldenzahlen Angst empfinden."
+      },
+      {
+        "question": "Kann ich die Strategie später wechseln?",
+        "answer": "Absolut. Du kannst deine Tilgungsstrategie jederzeit mit einem Tipp ändern. Payoff berechnet deinen gesamten Plan sofort neu."
+      },
+      {
+        "question": "Welche Sprachen werden unterstützt?",
+        "answer": "Payoff ist in 9 Sprachen verfügbar: Englisch, Spanisch, Portugiesisch, Französisch, Deutsch, Japanisch, Koreanisch, Chinesisch (vereinfacht) und Italienisch. Multi-Währungsunterstützung inklusive."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Bereit, deine schuldenfreie Reise zu starten?",
+    "subtitle": "Tritt der Warteliste bei und sei der Erste, der Payoff beim Launch ausprobiert. Kein Bankzugang. Keine Verpflichtung."
+  },
+  "waitlist": {
+    "comingSoon": "Bald verfügbar für iOS & Android. Tritt der Warteliste bei:",
+    "placeholder": "deine@email.com",
+    "placeholderBanner": "E-Mail-Adresse eingeben",
+    "button": "Warteliste beitreten",
+    "buttonShort": "Beitreten",
+    "success": "Du bist auf der Liste!",
+    "successSub": "Wir benachrichtigen dich, wenn Payoff startet.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "errorNetwork": "Netzwerkfehler. Bitte versuche es erneut."
+  },
+  "footer": {
+    "ctaTitle": "Starte noch heute deine schuldenfreie Reise",
+    "ctaSubtitle": "Tritt der Warteliste bei und sei der Erste, der Payoff ausprobiert. Kein Bankzugang. Keine Verpflichtung.",
+    "product": "Produkt",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "links": {
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "calculator": "Rechner",
+      "faq": "FAQ",
+      "blog": "Blog",
+      "support": "Support",
+      "contact": "Kontakt",
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "termsOfService": "Nutzungsbedingungen",
+      "deleteAccount": "Konto löschen"
+    },
+    "copyright": "2026 Payoff. Alle Rechte vorbehalten."
+  },
+  "support": {
+    "title": "Support",
+    "subtitle": "Wir sind hier, um zu helfen. Wähle eine Option unten oder durchsuche unsere FAQ.",
+    "emailUs": "E-Mail senden",
+    "browseFaq": "FAQ durchsuchen",
+    "browseFaqSub": "Antworten auf häufige Fragen finden",
+    "deleteAccount": "Konto löschen",
+    "deleteAccountSub": "Deine Daten dauerhaft löschen",
+    "faqTitle": "Häufig gestellte Fragen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Hast du eine Frage, einen Vorschlag oder möchtest einfach Hallo sagen? Wir freuen uns, von dir zu hören.",
+    "email": "E-Mail",
+    "faqSupport": "FAQ & Support",
+    "faqSupportSub": "Häufige Fragen durchsuchen",
+    "responseTime": "Antwortzeit",
+    "responseTimeSub": "Wir antworten innerhalb von 24 Stunden",
+    "name": "Name",
+    "namePlaceholder": "Dein Name",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "deine@email.com",
+    "subject": "Betreff",
+    "subjectPlaceholder": "Worum geht es?",
+    "message": "Nachricht",
+    "messagePlaceholder": "Erzähl uns mehr...",
+    "send": "Nachricht senden",
+    "successTitle": "Nachricht gesendet",
+    "successMessage": "Danke für deine Nachricht! Wir melden uns innerhalb von 24 Stunden bei dir.",
+    "backToHome": "Zurück zur Startseite",
+    "errorMessage": "Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreibe uns direkt eine E-Mail."
+  },
+  "deleteAccountPage": {
+    "title": "Dein Konto löschen",
+    "description": "Dies löscht dauerhaft dein Payoff-Konto und alle zugehörigen Daten, einschließlich deiner Schulden, Zahlungshistorie, Sparziele und KI-Coach-Gespräche. Diese Aktion kann nicht rückgängig gemacht werden.",
+    "warning": "Vor dem Löschen:",
+    "warningText": "Wenn du ein aktives Abonnement hast, kündige es bitte zuerst über den App Store oder Google Play Store, um zukünftige Kosten zu vermeiden.",
+    "emailLabel": "E-Mail-Adresse des Kontos",
+    "emailPlaceholder": "deine@email.com",
+    "confirmText": "Ich verstehe, dass dies mein Konto und alle meine Daten dauerhaft löscht. Diese Aktion kann nicht rückgängig gemacht werden.",
+    "deleteButton": "Mein Konto löschen",
+    "successTitle": "Anfrage eingereicht",
+    "successMessage": "Deine Kontolöschungsanfrage wurde eingereicht. Deine Daten werden innerhalb von 30 Tagen dauerhaft gelöscht. Du erhältst eine Bestätigungs-E-Mail.",
+    "needHelp": "Brauchst du Hilfe? Kontaktiere"
+  },
+  "calculator": {
+    "title": "Kostenloser Schulden-Tilgungsrechner",
+    "description": "Vergleiche Snowball mit Avalanche, sieh dein schuldenfreies Datum und berechne Zinsersparnisse - alles kostenlos, keine Anmeldung erforderlich.",
+    "comingSoon": "Demnächst verfügbar",
+    "comingSoonText": "Unser kostenloser Web-Rechner wird gerade gebaut. In der Zwischenzeit enthält die Payoff-App einen vollständigen Schuldenrechner mit 7 Strategien und Was-wäre-wenn-Szenarien.",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Zuletzt aktualisiert: 3. April 2026",
+    "languageLabel": "Sprache",
+    "intro": "Payoff: Smart Debt Planner (\"Payoff\", \"wir\", \"uns\" oder \"unser\") verpflichtet sich zum Schutz deiner Privatsphäre. Diese Datenschutzrichtlinie erklärt, wie wir deine Informationen erheben, verwenden, offenlegen und schützen, wenn du unsere mobile Anwendung und Website (payoffdebtplanner.com) nutzt.",
+    "sections": [
+      {
+        "title": "Informationen, die wir erheben",
+        "subsections": [
+          {
+            "title": "Informationen, die du bereitstellst",
+            "items": [
+              "Kontoinformationen: E-Mail-Adresse und Anzeigename bei der Kontoerstellung.",
+              "Finanzinformationen: Schuldensalden, Zinssätze, Mindestzahlungen und Zahlungsverläufe, die du manuell in die App eingibst. Wir verbinden uns nicht mit deinen Bankkonten.",
+              "KI-Coach-Gespräche: Nachrichten, die du an die KI-Coach-Funktion sendest, um personalisierte Schuldenberatung zu erhalten.",
+              "Einstellungen: Benachrichtigungseinstellungen, Währungspräferenz, Sprachpräferenz und App-Einstellungen."
+            ]
+          },
+          {
+            "title": "Automatisch erhobene Informationen",
+            "items": [
+              "Nutzungsanalysen: Wir verwenden Firebase Analytics, um anonyme Nutzungsdaten wie Bildschirmaufrufe, Funktionsnutzung und App-Ereignisse zu sammeln, um die App-Erfahrung zu verbessern.",
+              "Absturzberichte: Firebase Crashlytics sammelt Absturzprotokolle und Fehlerberichte, um uns bei der Fehlerbehebung zu helfen.",
+              "Geräteinformationen: Gerätetyp, Betriebssystem und App-Version für Kompatibilitäts- und Supportzwecke."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Wie wir deine Informationen verwenden",
+        "items": [
+          "Um die Payoff-App und ihre Funktionen bereitzustellen und zu pflegen",
+          "Um personalisiertes KI-Coaching basierend auf deinen Schuldendaten anzubieten",
+          "Um deine Daten über Geräte hinweg via Supabase Cloud-Speicher zu synchronisieren",
+          "Um Zahlungserinnerungen und Meilenstein-Benachrichtigungen zu senden (falls aktiviert)",
+          "Um Abonnementkäufe über RevenueCat abzuwickeln",
+          "Um die App durch anonyme Analysen zu verbessern",
+          "Um technische Probleme zu diagnostizieren und zu beheben"
+        ]
+      },
+      {
+        "title": "Drittanbieter-Dienste",
+        "intro": "Wir nutzen folgende Drittanbieter-Dienste:",
+        "items": [
+          "Supabase: Authentifizierung und Cloud-Datenbank zur Synchronisierung deiner Daten.",
+          "OpenAI: Betreibt die KI-Coach-Funktion. Dein Schuldenkontext (keine persönlichen Daten) wird an die OpenAI-API gesendet, um personalisierte Beratung zu generieren. OpenAI verwendet diese Daten nicht zum Training.",
+          "RevenueCat: Verwaltet Abonnementkäufe und Berechtigungen.",
+          "Firebase (Google): Anonyme Analysen und Absturzberichte.",
+          "Apple / Google: In-App-Kaufabwicklung über die jeweiligen App Stores."
+        ]
+      },
+      {
+        "title": "Datenspeicherung und Sicherheit",
+        "content": "Deine Finanzdaten werden lokal auf deinem Gerät gespeichert und optional mit Supabase (gehostet auf AWS) synchronisiert. Daten werden bei der Übertragung (TLS) und im Ruhezustand verschlüsselt. Wir implementieren Row Level Security (RLS)-Richtlinien, um sicherzustellen, dass du nur auf deine eigenen Daten zugreifen kannst."
+      },
+      {
+        "title": "Datenaufbewahrung",
+        "content": "Wir bewahren deine Daten auf, solange dein Konto aktiv ist. Wenn du dein Konto löschst, werden alle zugehörigen Daten innerhalb von 30 Tagen dauerhaft von unseren Servern gelöscht. Anonyme Analysedaten können bis zu 14 Monate aufbewahrt werden."
+      },
+      {
+        "title": "Deine Rechte",
+        "intro": "Du hast das Recht:",
+        "items": [
+          "Auf deine persönlichen Daten zuzugreifen",
+          "Ungenaue Daten zu korrigieren",
+          "Dein Konto und alle zugehörigen Daten zu löschen",
+          "Deine Daten zu exportieren",
+          "Analysen abzulehnen (über Geräteeinstellungen)"
+        ]
+      },
+      {
+        "title": "Kontolöschung",
+        "content": "Du kannst dein Konto jederzeit über die App (Einstellungen > Konto löschen) oder unter payoffdebtplanner.com/delete-account löschen."
+      },
+      {
+        "title": "Datenschutz für Kinder",
+        "content": "Payoff ist nicht für Kinder unter 13 Jahren bestimmt. Wir erheben wissentlich keine persönlichen Daten von Kindern."
+      },
+      {
+        "title": "Änderungen dieser Richtlinie",
+        "content": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Wir werden dich über wesentliche Änderungen über die App oder per E-Mail informieren."
+      },
+      {
+        "title": "Kontakt",
+        "content": "Bei Fragen zu dieser Datenschutzrichtlinie kontaktiere uns bitte unter payoffdebtplanner@zohomail.eu."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert: 3. April 2026",
+    "intro": "Diese Nutzungsbedingungen (\"Bedingungen\") regeln deine Nutzung von Payoff: Smart Debt Planner (\"Payoff\", \"die App\") und der Website payoffdebtplanner.com (\"die Website\"). Durch die Nutzung von Payoff stimmst du diesen Bedingungen zu.",
+    "sections": [
+      {
+        "title": "1. Nutzung des Dienstes",
+        "content": "Payoff ist ein persönliches Finanzplanungstool, das dir hilft, Schuldentilgungspläne zu erstellen, Zahlungen zu verfolgen und Sparziele zu setzen. Du musst mindestens 13 Jahre alt sein, um die App zu nutzen."
+      },
+      {
+        "title": "2. Keine Finanzberatung",
+        "content": "Payoff ist kein Finanzberater. Die KI-Coach-Funktion bietet allgemeine Informationen und Vorschläge basierend auf den von dir eingegebenen Daten. Sie stellt keine professionelle Finanz-, Steuer-, Rechts- oder Anlageberatung dar. Konsultiere immer einen qualifizierten Finanzexperten, bevor du bedeutende finanzielle Entscheidungen triffst."
+      },
+      {
+        "title": "3. Kontoverantwortlichkeiten",
+        "content": "Du bist für die Sicherheit deiner Kontodaten verantwortlich. Du bist für alle Aktivitäten verantwortlich, die unter deinem Konto stattfinden. Die von dir eingegebenen Finanzdaten sollten nach bestem Wissen korrekt sein."
+      },
+      {
+        "title": "4. Abonnements und Zahlungen",
+        "items": [
+          "Payoff bietet kostenlose und Premium-Abonnementpläne an.",
+          "Premium-Abonnements werden über den Apple App Store oder Google Play Store abgerechnet.",
+          "Abonnements verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ablauf des aktuellen Zeitraums gekündigt werden.",
+          "Rückerstattungen werden vom jeweiligen App Store gemäß deren Rückerstattungsrichtlinien bearbeitet.",
+          "Die 7-tägige kostenlose Testversion (nur Jahresplan) wird automatisch in ein kostenpflichtiges Abonnement umgewandelt, sofern sie nicht gekündigt wird."
+        ]
+      },
+      {
+        "title": "5. Haushaltspläne",
+        "content": "Haushaltspläne ermöglichen es zwei Benutzern, Schuldendaten innerhalb der App zu teilen. Durch das Einladen eines Partners stimmst du zu, deine ausgewählten Schuldeninformationen mit ihm zu teilen. Du kannst die Freigabe jederzeit widerrufen."
+      },
+      {
+        "title": "6. KI-Coach-Haftungsausschluss",
+        "content": "Der KI-Coach wird von KI-Diensten Dritter (OpenAI) betrieben. Obwohl wir um Genauigkeit bemüht sind, können KI-generierte Antworten Fehler oder Ungenauigkeiten enthalten. Du solltest alle finanziellen Berechnungen oder Vorschläge unabhängig überprüfen. Wir haften nicht für Handlungen, die auf Grundlage von KI-Coach-Antworten getroffen werden."
+      },
+      {
+        "title": "7. Daten und Datenschutz",
+        "content": "Deine Nutzung von Payoff unterliegt auch unserer Datenschutzrichtlinie. Durch die Nutzung der App stimmst du der Erhebung und Verwendung von Daten wie darin beschrieben zu."
+      },
+      {
+        "title": "8. Akzeptable Nutzung",
+        "intro": "Du stimmst zu, Folgendes zu unterlassen:",
+        "items": [
+          "Die App für rechtswidrige Zwecke zu nutzen",
+          "Zu versuchen, die App zurückzuentwickeln, zu dekompilieren oder zu disassemblieren",
+          "Deine Kontodaten mit anderen zu teilen (nutze stattdessen den Haushaltsmodus)",
+          "Den KI-Coach zu nutzen, um schädliche, missbräuchliche oder illegale Inhalte zu erstellen"
+        ]
+      },
+      {
+        "title": "9. Haftungsbeschränkung",
+        "content": "Payoff wird \"wie besehen\" ohne jegliche Gewährleistung bereitgestellt. Wir haften nicht für finanzielle Verluste, versäumte Zahlungen oder fehlerhafte Berechnungen, die aus der Nutzung der App resultieren können. Die Nutzung von Payoff erfolgt auf eigenes Risiko."
+      },
+      {
+        "title": "10. Kündigung",
+        "content": "Wir behalten uns das Recht vor, dein Konto zu sperren oder zu kündigen, wenn du gegen diese Bedingungen verstößt. Du kannst dein Konto jederzeit über die App oder unter payoffdebtplanner.com/delete-account löschen."
+      },
+      {
+        "title": "11. Änderungen der Bedingungen",
+        "content": "Wir können diese Bedingungen von Zeit zu Zeit aktualisieren. Die fortgesetzte Nutzung der App nach Änderungen gilt als Annahme der neuen Bedingungen."
+      },
+      {
+        "title": "12. Kontakt",
+        "content": "Bei Fragen zu diesen Bedingungen kontaktiere uns unter payoffdebtplanner@zohomail.eu."
+      }
+    ]
+  },
+  "common": {
+    "language": "Sprache",
+    "selectLanguage": "Sprache auswählen"
+  }
+}

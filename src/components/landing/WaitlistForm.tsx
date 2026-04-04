@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Check, Loader2 } from 'lucide-react';
+import { useDict } from '@/components/i18n/LocaleProvider';
 
 interface WaitlistFormProps {
   variant?: 'hero' | 'banner' | 'inline';
@@ -10,6 +11,8 @@ interface WaitlistFormProps {
 }
 
 export function WaitlistForm({ variant = 'hero', className = '' }: WaitlistFormProps) {
+  const { dict } = useDict();
+  const w = dict.waitlist || {};
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
@@ -31,15 +34,15 @@ export function WaitlistForm({ variant = 'hero', className = '' }: WaitlistFormP
 
       if (res.ok) {
         setStatus('success');
-        setMessage(data.message || "You're on the list!");
+        setMessage(data.message || w.success || "You're on the list!");
         setEmail('');
       } else {
         setStatus('error');
-        setMessage(data.error || 'Something went wrong. Please try again.');
+        setMessage(data.error || w.errorGeneric || 'Something went wrong. Please try again.');
       }
     } catch {
       setStatus('error');
-      setMessage('Network error. Please try again.');
+      setMessage(w.errorNetwork || 'Network error. Please try again.');
     }
   };
 
@@ -52,22 +55,18 @@ export function WaitlistForm({ variant = 'hero', className = '' }: WaitlistFormP
               key="success"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="flex items-center gap-2 text-white font-semibold"
+              className="flex items-center gap-2 text-white font-semibold justify-center"
             >
               <Check className="w-5 h-5" />
               {message}
             </motion.div>
           ) : (
-            <motion.form
-              key="form"
-              onSubmit={handleSubmit}
-              className="flex gap-2 max-w-md mx-auto"
-            >
+            <motion.form key="form" onSubmit={handleSubmit} className="flex gap-2 max-w-md mx-auto">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
+                placeholder={w.placeholderBanner || "Enter your email"}
                 required
                 className="flex-1 px-5 py-3 rounded-full bg-white text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-white/50 placeholder:text-gray-400"
               />
@@ -80,7 +79,7 @@ export function WaitlistForm({ variant = 'hero', className = '' }: WaitlistFormP
                   <Loader2 className="w-4 h-4 animate-spin" />
                 ) : (
                   <>
-                    Join <ArrowRight className="w-4 h-4" />
+                    {w.buttonShort || "Join"} <ArrowRight className="w-4 h-4" />
                   </>
                 )}
               </button>
@@ -94,7 +93,6 @@ export function WaitlistForm({ variant = 'hero', className = '' }: WaitlistFormP
     );
   }
 
-  // Hero / inline variant
   return (
     <div className={className}>
       <AnimatePresence mode="wait">
@@ -109,19 +107,19 @@ export function WaitlistForm({ variant = 'hero', className = '' }: WaitlistFormP
               <Check className="w-6 h-6 text-primary" />
             </div>
             <p className="font-bold text-primary text-lg">{message}</p>
-            <p className="text-gray-500 text-sm mt-1">We&apos;ll let you know when Payoff launches.</p>
+            <p className="text-gray-500 text-sm mt-1">{w.successSub || "We'll let you know when Payoff launches."}</p>
           </motion.div>
         ) : (
           <motion.div key="form" initial={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <p className="text-sm text-gray-500 mb-3 text-center">
-              Coming soon to iOS & Android. Join the waitlist:
+              {w.comingSoon || "Coming soon to iOS & Android. Join the waitlist:"}
             </p>
             <form onSubmit={handleSubmit} className="flex gap-2 max-w-md mx-auto">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
+                placeholder={w.placeholder || "your@email.com"}
                 required
                 className="flex-1 px-5 py-3 rounded-full border-2 border-gray-200 text-sm focus:outline-none focus:border-primary transition"
               />
@@ -134,7 +132,7 @@ export function WaitlistForm({ variant = 'hero', className = '' }: WaitlistFormP
                   <Loader2 className="w-4 h-4 animate-spin" />
                 ) : (
                   <>
-                    Join Waitlist <ArrowRight className="w-4 h-4" />
+                    {w.button || "Join Waitlist"} <ArrowRight className="w-4 h-4" />
                   </>
                 )}
               </button>

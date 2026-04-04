@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FAQ_ITEMS } from "@/lib/constants";
+import { useDict } from "@/components/i18n/LocaleProvider";
 
 export default function FAQAccordion() {
+  const { dict } = useDict();
+  const f = dict.faq || {};
+  const items = f.items || [];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggle = (index: number) => {
@@ -15,7 +18,7 @@ export default function FAQAccordion() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: FAQ_ITEMS.map((item) => ({
+    mainEntity: items.map((item: { question: string; answer: string }) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {
@@ -27,13 +30,9 @@ export default function FAQAccordion() {
 
   return (
     <section id="faq" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-background">
-      {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Coral blob top-left */}
         <div className="absolute -top-28 -left-36 w-[400px] h-[400px] rounded-full bg-secondary opacity-[0.20] blur-[110px]" />
-        {/* Green blob bottom-right */}
         <div className="absolute -bottom-32 -right-28 w-[350px] h-[350px] rounded-full bg-primary opacity-[0.18] blur-[100px]" />
-        {/* Sparkle dots */}
         <div className="absolute top-20 right-[18%] w-2 h-2 rounded-full bg-secondary/15 animate-pulse" />
         <div className="absolute bottom-24 left-[22%] w-1.5 h-1.5 rounded-full bg-accent/30 animate-pulse" style={{ animationDelay: '0.6s' }} />
         <div className="absolute top-[50%] left-[8%] w-2 h-2 rounded-full bg-primary/20 animate-pulse" style={{ animationDelay: '1.2s' }} />
@@ -46,11 +45,11 @@ export default function FAQAccordion() {
 
       <div className="relative z-10 max-w-3xl mx-auto">
         <h2 className="text-4xl font-extrabold text-center text-foreground mb-12">
-          Frequently asked questions
+          {f.title || "Frequently asked questions"}
         </h2>
 
         <div className="divide-y divide-gray-200 border-t border-b border-gray-200">
-          {FAQ_ITEMS.map((item, i) => (
+          {items.map((item: { question: string; answer: string }, i: number) => (
             <div key={i}>
               <button
                 onClick={() => toggle(i)}
@@ -68,7 +67,6 @@ export default function FAQAccordion() {
                   <ChevronDown size={20} />
                 </motion.span>
               </button>
-
               <AnimatePresence initial={false}>
                 {openIndex === i && (
                   <motion.div
@@ -78,9 +76,7 @@ export default function FAQAccordion() {
                     transition={{ duration: 0.25, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <p className="pb-5 text-gray-600 leading-relaxed text-sm">
-                      {item.answer}
-                    </p>
+                    <p className="pb-5 text-gray-600 leading-relaxed text-sm">{item.answer}</p>
                   </motion.div>
                 )}
               </AnimatePresence>

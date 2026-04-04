@@ -1,17 +1,17 @@
-import { Metadata } from 'next';
+'use client';
+
 import Link from 'next/link';
 import { Mail, MessageCircle, Trash2 } from 'lucide-react';
-import { FAQ_ITEMS } from '@/lib/constants';
-
-export const metadata: Metadata = {
-  title: 'Support',
-  description: 'Get help with Payoff: Smart Debt Planner. Contact us, browse FAQs, or request account deletion.',
-};
+import { useDict } from '@/components/i18n/LocaleProvider';
 
 export default function SupportPage() {
+  const { locale, dict } = useDict();
+  const s = dict.support || {};
+  const faqItems = dict.faq?.items || [];
+  const prefix = locale === 'en' ? '' : `/${locale}`;
+
   return (
     <main className="relative pt-32 pb-20 px-4">
-      {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-28 -right-36 w-[420px] h-[420px] rounded-full bg-secondary opacity-[0.06] blur-[120px]" />
         <div className="absolute -bottom-32 -left-28 w-[380px] h-[380px] rounded-full bg-accent opacity-[0.07] blur-[100px]" />
@@ -23,52 +23,39 @@ export default function SupportPage() {
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4">Support</h1>
-        <p className="text-lg text-gray-500 mb-12">
-          We&apos;re here to help. Choose an option below or browse our FAQ.
-        </p>
+        <h1 className="text-4xl font-extrabold mb-4">{s.title || 'Support'}</h1>
+        <p className="text-lg text-gray-500 mb-12">{s.subtitle || "We're here to help. Choose an option below or browse our FAQ."}</p>
 
-        {/* Contact cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-          <a
-            href="mailto:payoffdebtplanner@zohomail.eu"
-            className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center no-underline"
-          >
+          <a href="mailto:payoffdebtplanner@zohomail.eu" className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center no-underline">
             <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
               <Mail className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="font-bold text-gray-900 mb-1">Email Us</h3>
+            <h3 className="font-bold text-gray-900 mb-1">{s.emailUs || 'Email Us'}</h3>
             <p className="text-sm text-gray-500">payoffdebtplanner@zohomail.eu</p>
           </a>
 
-          <Link
-            href="#faq"
-            className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center no-underline"
-          >
+          <Link href="#faq" className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center no-underline">
             <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
               <MessageCircle className="w-6 h-6 text-secondary" />
             </div>
-            <h3 className="font-bold text-gray-900 mb-1">Browse FAQ</h3>
-            <p className="text-sm text-gray-500">Find answers to common questions</p>
+            <h3 className="font-bold text-gray-900 mb-1">{s.browseFaq || 'Browse FAQ'}</h3>
+            <p className="text-sm text-gray-500">{s.browseFaqSub || 'Find answers to common questions'}</p>
           </Link>
 
-          <Link
-            href="/delete-account"
-            className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center no-underline"
-          >
+          <Link href={`${prefix}/delete-account`} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center no-underline">
             <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mx-auto mb-3">
               <Trash2 className="w-6 h-6 text-red-500" />
             </div>
-            <h3 className="font-bold text-gray-900 mb-1">Delete Account</h3>
-            <p className="text-sm text-gray-500">Permanently delete your data</p>
+            <h3 className="font-bold text-gray-900 mb-1">{s.deleteAccount || 'Delete Account'}</h3>
+            <p className="text-sm text-gray-500">{s.deleteAccountSub || 'Permanently delete your data'}</p>
           </Link>
         </div>
 
-        {/* FAQ */}
         <div id="faq">
-          <h2 className="text-2xl font-extrabold mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-extrabold mb-8">{s.faqTitle || 'Frequently Asked Questions'}</h2>
           <div className="space-y-4">
-            {FAQ_ITEMS.map((item, i) => (
+            {faqItems.map((item: { question: string; answer: string }, i: number) => (
               <details key={i} className="bg-white rounded-xl p-5 shadow-sm group">
                 <summary className="font-bold text-gray-900 cursor-pointer list-none flex items-center justify-between">
                   {item.question}

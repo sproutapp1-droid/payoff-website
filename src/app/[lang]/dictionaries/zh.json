@@ -1,0 +1,498 @@
+{
+  "metadata": {
+    "title": "Payoff: 智能债务还款规划器 - AI驱动的债务还款应用",
+    "description": "通过AI教练、雪球还款法、雪崩还款法等7种以上策略更快还清债务。跟踪进度、规划储蓄、保持动力。适用于iOS和Android的免费债务还款应用。"
+  },
+  "nav": {
+    "features": "功能",
+    "howItWorks": "使用方法",
+    "pricing": "价格",
+    "faq": "常见问题",
+    "blog": "博客",
+    "joinWaitlist": "加入等候名单"
+  },
+  "hero": {
+    "headline": "消灭债务。积累储蓄。保持动力。",
+    "subheadline": "配备AI教练、7种经过验证的策略和储蓄规划器的智能债务还款规划器,帮助你看到还清债务后的生活。",
+    "subheadlineMobile": "配备AI教练和7种经过验证策略的智能债务还款规划器",
+    "trustPills": ["无需银行授权", "9种语言", "免费开始", "iOS和Android"]
+  },
+  "whatPayoffCanDo": {
+    "title": "Payoff能为你做什么",
+    "subtitle": "消灭债务和积累财富所需的一切",
+    "items": [
+      {
+        "number": "01",
+        "title": "AI智能教练",
+        "content": "从了解你确切债务状况的AI获得个性化建议。问\"我收到了$600的奖金 - 该怎么用?\"就能得到基于你实际余额的具体可行的答案。"
+      },
+      {
+        "number": "02",
+        "title": "7种还款策略 + Baby Steps",
+        "content": "雪球法、雪崩法、混合法、现金流指数法、截止日期法、最高余额法和自定义顺序。还内置了Dave Ramsey Baby Steps指南。用60秒测验找到适合你的方法。"
+      },
+      {
+        "number": "03",
+        "title": "伴侣和家庭模式",
+        "content": "与伴侣共享债务,按比例分摊还款,跟踪每个人的贡献 - 一切实时同步,还有共享AI教练可用。"
+      },
+      {
+        "number": "04",
+        "title": "What-If模拟",
+        "content": "滑动查看额外还款如何改变你的还清日期。实时观察$50、$100或$500的月额外还款如何即时更新余额图表。"
+      },
+      {
+        "number": "05",
+        "title": "还清债务后的生活",
+        "content": "储蓄目标、带复利增长预测的投资追踪器,以及从首次还款到财务自由的每个里程碑的资金时间线。"
+      },
+      {
+        "number": "06",
+        "title": "里程碑庆祝",
+        "content": "每还清一笔债务,都有彩纸、奖杯和鼓励的话语。跟踪你的连续还款记录并获得徽章。还款之旅应该是愉快的。"
+      }
+    ]
+  },
+  "benefits": {
+    "items": [
+      {
+        "title": "无需银行授权",
+        "description": "你的财务数据保存在设备上。无需银行登录,无需同步,无风险。只需添加债务即可开始。"
+      },
+      {
+        "title": "更快还清债务",
+        "description": "遵循结构化还款计划的人比只付最低还款额的人快2-3年还清债务。"
+      },
+      {
+        "title": "为你的感受而设计",
+        "description": "专注模式隐藏令人焦虑的数字。里程碑庆祝让你保持动力。这个应用理解财务焦虑。"
+      }
+    ]
+  },
+  "features": [
+    {
+      "badge": "AI驱动",
+      "heading": "真正了解你债务的教练",
+      "description": "Payoff Coach了解你的实际余额、利率和还款记录。从\"信用卡和车贷,应该先还哪个?\"到\"我收到了奖金,应该用在哪里?\"什么都可以问。",
+      "bullets": [
+        "个性化建议,而非笼统提示",
+        "了解你的确切还清日期",
+        "建议奖金和意外收入的最佳用途",
+        "每月5条免费消息,Premium无限制"
+      ]
+    },
+    {
+      "badge": "智能匹配",
+      "heading": "找到最适合你的还款策略",
+      "description": "做一个60秒的理财性格测验。Payoff推荐最佳方法 - 需要动力选雪球法,想要省钱选雪崩法,或者其他5种方法之一。",
+      "bullets": [
+        "包括混合法和现金流指数法在内的7种策略",
+        "内置Dave Ramsey Baby Steps",
+        "一键随时切换",
+        "精确显示每种策略能节省多少"
+      ]
+    },
+    {
+      "badge": "互动体验",
+      "heading": "看看额外还款能带来什么",
+      "description": "滑动探索每月多还款如何加快还清日期。实时观察余额图表在不同金额下即时更新的效果。",
+      "bullets": [
+        "即时重新计算还清日期",
+        "实时显示利息节省额",
+        "比较最低还款 vs 你的计划 vs 激进还款"
+      ]
+    },
+    {
+      "badge": "家庭",
+      "heading": "一起消灭债务",
+      "description": "与伴侣共享债务,按比例分摊还款,跟踪每个人的贡献。一个家庭,一个计划,零争吵。",
+      "bullets": [
+        "通过简单的代码邀请伴侣",
+        "按债务设置分摊比例",
+        "用于共同决策的共享AI教练",
+        "家庭计划覆盖两个账户"
+      ]
+    }
+  ],
+  "howItWorks": {
+    "title": "60秒即可开始",
+    "steps": [
+      {
+        "number": "1",
+        "title": "添加你的债务",
+        "description": "输入余额、利率和最低还款额。或者用Smart Import扫描账单 - AI帮你输入。"
+      },
+      {
+        "number": "2",
+        "title": "选择你的策略",
+        "description": "做60秒性格测验或从7种经过验证的方法中选择。我们将立即为你创建定制还款计划。"
+      },
+      {
+        "number": "3",
+        "title": "看着债务消失",
+        "description": "按照计划,记录还款,庆祝每个里程碑。AI教练在每一步陪伴着你。"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "深受数千名债务偿还者的喜爱",
+    "items": [
+      {
+        "name": "Sarah M.",
+        "location": "London, UK",
+        "quote": "AI教练告诉我退税该放在哪里。我的信用卡提前3个月就能还清了!",
+        "initials": "SM"
+      },
+      {
+        "name": "Marcus T.",
+        "location": "Austin, TX",
+        "quote": "我试过所有的债务应用。Payoff是第一个看数字不会让我焦虑的。",
+        "initials": "MT"
+      },
+      {
+        "name": "Priya & Dev K.",
+        "location": "Toronto, CA",
+        "quote": "伴侣模式挽救了我们的关系。终于可以不用尴尬地讨论谁在付什么了。",
+        "initials": "PD"
+      },
+      {
+        "name": "James L.",
+        "location": "Sydney, AU",
+        "quote": "里程碑庆祝真的很激励人。昨天还清了第一张卡,看到彩纸飘落让我开心了一整天。",
+        "initials": "JL"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "简单透明的价格",
+    "subtitle": "免费开始,准备好了再升级。",
+    "monthly": "月付",
+    "yearly": "年付",
+    "free": {
+      "name": "免费",
+      "price": "$0",
+      "period": "永久免费",
+      "cta": "免费下载",
+      "features": [
+        "2笔债务",
+        "雪球和雪崩策略",
+        "带还清倒计时的仪表盘",
+        "每月5条AI教练消息",
+        "还款提醒",
+        "里程碑庆祝"
+      ]
+    },
+    "premium": {
+      "name": "Premium",
+      "badge": "最受欢迎",
+      "savingsNote": "节省30%",
+      "trialNote": "7天免费试用",
+      "cta": "开始免费试用",
+      "features": [
+        "免费版所有功能,外加:",
+        "无限债务",
+        "全部7种策略 + 性格测验",
+        "无限AI教练",
+        "What-If模拟",
+        "专注模式",
+        "Smart Import(相机扫描)",
+        "储蓄和投资规划器",
+        "CSV导入和数据导出"
+      ]
+    },
+    "household": {
+      "name": "家庭",
+      "cta": "获取家庭计划",
+      "features": [
+        "Premium所有功能,外加:",
+        "包含2个账户",
+        "共享债务的伴侣模式",
+        "分摊还款跟踪",
+        "共享AI教练"
+      ]
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": [
+      {
+        "question": "Payoff真的免费吗?",
+        "answer": "是的! 免费版包括2笔债务、雪球和雪崩策略、仪表盘和每月5条AI教练消息。无需信用卡。"
+      },
+      {
+        "question": "需要绑定银行账户吗?",
+        "answer": "不需要。Payoff从不要求银行授权。你手动输入债务,这意味着你的财务数据完全私密且安全地保存在你的设备上。"
+      },
+      {
+        "question": "AI教练和ChatGPT有什么不同?",
+        "answer": "Payoff Coach了解你的实际债务、余额、利率和还款记录。它提供具体的建议,比如\"把奖金放在Chase Sapphire上可以节省$389的利息\",而不是笼统的提示。"
+      },
+      {
+        "question": "我应该使用哪种还款策略?",
+        "answer": "试试我们的60秒策略测验吧! 一般来说,如果需要快速成就感来保持动力,选择雪球法;如果想最大限度地节省利息,选择雪崩法;如果想两者兼顾,选择混合法。"
+      },
+      {
+        "question": "可以和伴侣一起使用吗?",
+        "answer": "可以! 家庭计划让你邀请伴侣、共享债务、设定分摊比例,甚至使用共享AI教练。它专为携手应对债务的情侣设计。"
+      },
+      {
+        "question": "什么是专注模式?",
+        "answer": "专注模式隐藏你的总余额,只显示进度百分比和一个简单的下一步行动。它专为看到大额债务数字会感到焦虑的人设计。"
+      },
+      {
+        "question": "以后可以换策略吗?",
+        "answer": "当然可以。你可以随时一键更换还款策略。Payoff会立即重新计算你的整个计划。"
+      },
+      {
+        "question": "支持哪些语言?",
+        "answer": "Payoff支持9种语言: 英语、西班牙语、葡萄牙语、法语、德语、日语、韩语、中文(简体)和意大利语。同时支持多币种。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "准备好开始你的无债之旅了吗?",
+    "subtitle": "加入等候名单,在Payoff发布时第一时间体验。无需银行授权,无需承诺。"
+  },
+  "waitlist": {
+    "comingSoon": "即将登陆iOS和Android。加入等候名单:",
+    "placeholder": "your@email.com",
+    "placeholderBanner": "输入你的邮箱",
+    "button": "加入等候名单",
+    "buttonShort": "加入",
+    "success": "你已加入名单!",
+    "successSub": "Payoff发布时我们会通知你。",
+    "errorGeneric": "出了点问题,请重试。",
+    "errorNetwork": "网络错误,请重试。"
+  },
+  "footer": {
+    "ctaTitle": "今天就开始你的无债之旅",
+    "ctaSubtitle": "加入等候名单,第一时间体验Payoff。无需银行授权,无需承诺。",
+    "product": "产品",
+    "company": "公司",
+    "legal": "法律信息",
+    "links": {
+      "features": "功能",
+      "pricing": "价格",
+      "calculator": "计算器",
+      "faq": "常见问题",
+      "blog": "博客",
+      "support": "支持",
+      "contact": "联系我们",
+      "privacyPolicy": "隐私政策",
+      "termsOfService": "服务条款",
+      "deleteAccount": "删除账户"
+    },
+    "copyright": "2026 Payoff. All rights reserved."
+  },
+  "support": {
+    "title": "支持",
+    "subtitle": "我们随时为你提供帮助。请选择以下选项或浏览常见问题。",
+    "emailUs": "发送邮件",
+    "browseFaq": "浏览常见问题",
+    "browseFaqSub": "查找常见问题的解答",
+    "deleteAccount": "删除账户",
+    "deleteAccountSub": "永久删除你的数据",
+    "faqTitle": "常见问题"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "有问题、建议,或者只是想打个招呼?我们很乐意听到你的声音。",
+    "email": "邮箱",
+    "faqSupport": "常见问题与支持",
+    "faqSupportSub": "浏览常见问题",
+    "responseTime": "回复时间",
+    "responseTimeSub": "我们将在24小时内回复",
+    "name": "姓名",
+    "namePlaceholder": "你的姓名",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "your@email.com",
+    "subject": "主题",
+    "subjectPlaceholder": "关于什么?",
+    "message": "消息",
+    "messagePlaceholder": "请告诉我们更多...",
+    "send": "发送消息",
+    "successTitle": "消息已发送",
+    "successMessage": "感谢你的来信! 我们将在24小时内回复。",
+    "backToHome": "返回首页",
+    "errorMessage": "出了点问题。请重试或直接发送邮件给我们。"
+  },
+  "deleteAccountPage": {
+    "title": "删除你的账户",
+    "description": "此操作将永久删除你的Payoff账户及所有相关数据,包括债务、还款记录、储蓄目标和AI教练对话。此操作无法撤销。",
+    "warning": "删除前请注意:",
+    "warningText": "如果你有活跃的订阅,请先通过App Store或Google Play Store取消订阅,以避免未来扣费。",
+    "emailLabel": "账户邮箱地址",
+    "emailPlaceholder": "your@email.com",
+    "confirmText": "我了解此操作将永久删除我的账户和所有数据,且无法撤销。",
+    "deleteButton": "删除我的账户",
+    "successTitle": "请求已提交",
+    "successMessage": "你的账户删除请求已提交。你的数据将在30天内被永久删除。你将收到一封确认邮件。",
+    "needHelp": "需要帮助? 联系:"
+  },
+  "calculator": {
+    "title": "免费债务还款计算器",
+    "description": "比较雪球法和雪崩法,查看还清日期,计算利息节省 - 全部免费,无需注册。",
+    "comingSoon": "即将推出",
+    "comingSoonText": "我们的免费网页计算器正在开发中。在此期间,Payoff应用包含了完整的债务计算器,支持7种策略和What-If模拟。",
+    "backToHome": "返回首页"
+  },
+  "privacyPolicy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新: 2026年4月3日",
+    "languageLabel": "语言",
+    "intro": "Payoff: Smart Debt Planner(以下简称\"Payoff\"、\"我们\")致力于保护您的隐私。本隐私政策说明了当您使用我们的移动应用程序和网站(payoffdebtplanner.com)时,我们如何收集、使用、披露和保护您的信息。",
+    "sections": [
+      {
+        "title": "我们收集的信息",
+        "subsections": [
+          {
+            "title": "您提供的信息",
+            "items": [
+              "账户信息: 创建账户时的电子邮件地址和显示名称。",
+              "财务信息: 您在应用中手动输入的债务余额、利率、最低还款额和还款记录。我们不连接您的银行账户。",
+              "AI教练对话: 您发送给AI教练功能的消息,用于提供个性化的债务建议。",
+              "偏好设置: 通知设置、货币偏好、语言偏好和应用设置。"
+            ]
+          },
+          {
+            "title": "自动收集的信息",
+            "items": [
+              "使用分析: 我们使用Firebase Analytics收集匿名使用数据,如屏幕浏览、功能使用和应用事件,以改善应用体验。",
+              "崩溃报告: Firebase Crashlytics收集崩溃日志和错误报告,帮助我们修复错误。",
+              "设备信息: 为了兼容性和支持目的,收集设备类型、操作系统和应用版本。"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "我们如何使用您的信息",
+        "items": [
+          "提供和维护Payoff应用及其功能",
+          "基于您的债务数据提供个性化AI教练服务",
+          "通过Supabase云存储在设备间同步数据",
+          "发送还款提醒和里程碑通知(如已启用)",
+          "通过RevenueCat处理订阅购买",
+          "通过匿名分析改善应用",
+          "诊断和修复技术问题"
+        ]
+      },
+      {
+        "title": "第三方服务",
+        "intro": "我们使用以下第三方服务:",
+        "items": [
+          "Supabase: 用于身份验证和数据同步的云数据库。",
+          "OpenAI: 为AI教练功能提供支持。您的债务背景(非个人详细信息)将发送至OpenAI API以生成个性化建议。OpenAI不会将此数据用于训练。",
+          "RevenueCat: 管理订阅购买和权限。",
+          "Firebase (Google): 匿名分析和崩溃报告。",
+          "Apple / Google: 通过各自的应用商店处理应用内购买。"
+        ]
+      },
+      {
+        "title": "数据存储与安全",
+        "content": "您的财务数据存储在设备本地,并可选择同步到Supabase(托管在AWS上)。数据在传输中(TLS)和静态存储时均加密。我们实施行级安全(RLS)策略,确保您只能访问自己的数据。"
+      },
+      {
+        "title": "数据保留",
+        "content": "在您的账户处于活跃状态期间,我们将保留您的数据。如果您删除账户,所有相关数据将在30天内从我们的服务器上永久删除。匿名分析数据可能保留最长14个月。"
+      },
+      {
+        "title": "您的权利",
+        "intro": "您有权:",
+        "items": [
+          "访问您的个人数据",
+          "更正不准确的数据",
+          "删除账户及所有相关数据",
+          "导出您的数据",
+          "退出分析收集(通过设备设置)"
+        ]
+      },
+      {
+        "title": "账户删除",
+        "content": "您可以随时通过应用(设置 > 删除账户)或访问payoffdebtplanner.com/delete-account删除您的账户。"
+      },
+      {
+        "title": "儿童隐私",
+        "content": "Payoff不面向13岁以下的儿童。我们不会故意收集儿童的个人信息。"
+      },
+      {
+        "title": "政策变更",
+        "content": "我们可能会不时更新本隐私政策。如有重大变更,我们将通过应用或电子邮件通知您。"
+      },
+      {
+        "title": "联系我们",
+        "content": "如果您对本隐私政策有任何疑问,请通过payoffdebtplanner@zohomail.eu联系我们。"
+      }
+    ]
+  },
+  "terms": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新: 2026年4月3日",
+    "intro": "本服务条款(以下简称\"本条款\")规范您对Payoff: Smart Debt Planner(以下简称\"Payoff\"、\"本应用\")及网站payoffdebtplanner.com(以下简称\"本网站\")的使用。使用Payoff即表示您同意本条款。",
+    "sections": [
+      {
+        "title": "1. 服务使用",
+        "content": "Payoff是一款帮助您创建债务还款计划、跟踪还款和设置储蓄目标的个人理财规划工具。您必须年满13岁才能使用本应用。"
+      },
+      {
+        "title": "2. 非财务建议",
+        "content": "Payoff不是财务顾问。AI教练功能基于您输入的数据提供一般性信息和建议,不构成专业的财务、税务、法律或投资建议。在做出重大财务决策之前,请务必咨询合格的财务专业人士。"
+      },
+      {
+        "title": "3. 账户责任",
+        "content": "您有责任维护账户凭据的安全。您对账户下发生的所有活动负责。您输入的财务数据应尽您所知是准确的。"
+      },
+      {
+        "title": "4. 订阅与支付",
+        "items": [
+          "Payoff提供免费和高级订阅计划。",
+          "高级订阅通过Apple App Store或Google Play Store计费。",
+          "订阅将自动续订,除非在当前期间结束前至少24小时取消。",
+          "退款由相应的应用商店根据其退款政策处理。",
+          "7天免费试用(仅限年度计划)如不取消将自动转为付费订阅。"
+        ]
+      },
+      {
+        "title": "5. 家庭计划",
+        "content": "家庭计划允许两名用户在应用内共享债务数据。通过邀请伴侣,即表示您同意与其共享您选择的债务信息。您可以随时撤销共享。"
+      },
+      {
+        "title": "6. AI教练免责声明",
+        "content": "AI教练由第三方AI服务(OpenAI)提供支持。虽然我们力求准确,但AI生成的回复可能包含错误或不准确之处。您应独立验证任何财务计算或建议。我们对基于AI教练回复所采取的行动不承担责任。"
+      },
+      {
+        "title": "7. 数据与隐私",
+        "content": "您对Payoff的使用还受我们的隐私政策约束。使用本应用即表示您同意隐私政策中所述的数据收集和使用方式。"
+      },
+      {
+        "title": "8. 可接受的使用",
+        "intro": "您同意不得:",
+        "items": [
+          "将应用用于任何非法目的",
+          "尝试对应用进行逆向工程、反编译或反汇编",
+          "与他人共享账户凭据(请改用家庭模式)",
+          "使用AI教练生成有害、辱骂性或非法的内容"
+        ]
+      },
+      {
+        "title": "9. 责任限制",
+        "content": "Payoff按\"现状\"提供,不附带任何形式的保证。对于因使用本应用可能导致的任何财务损失、错过还款或计算错误,我们概不负责。使用Payoff的风险由您自行承担。"
+      },
+      {
+        "title": "10. 终止",
+        "content": "如果您违反本条款,我们保留暂停或终止您账户的权利。您可以随时通过应用或在payoffdebtplanner.com/delete-account删除您的账户。"
+      },
+      {
+        "title": "11. 条款变更",
+        "content": "我们可能会不时更新本条款。在变更后继续使用本应用即表示接受新条款。"
+      },
+      {
+        "title": "12. 联系方式",
+        "content": "如对本条款有任何疑问,请通过payoffdebtplanner@zohomail.eu联系我们。"
+      }
+    ]
+  },
+  "common": {
+    "language": "语言",
+    "selectLanguage": "选择语言"
+  }
+}

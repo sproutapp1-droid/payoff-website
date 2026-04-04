@@ -5,18 +5,22 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Blog", href: "/blog" },
-];
+import { useDict } from "@/components/i18n/LocaleProvider";
 
 export default function Navbar() {
+  const { locale, dict } = useDict();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const prefix = locale === "en" ? "" : `/${locale}`;
+
+  const navLinks = [
+    { label: dict.nav?.features || "Features", href: `${prefix}/#features` },
+    { label: dict.nav?.howItWorks || "How It Works", href: `${prefix}/#how-it-works` },
+    { label: dict.nav?.pricing || "Pricing", href: `${prefix}/#pricing` },
+    { label: dict.nav?.faq || "FAQ", href: `${prefix}/#faq` },
+    { label: dict.nav?.blog || "Blog", href: "/blog" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +39,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1.5">
+          <Link href={`${prefix}/`} className="flex items-center gap-1.5">
             <Image
               src="/logo.png"
               alt="Payoff logo"
@@ -64,10 +68,10 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Link
-              href="#waitlist"
+              href={`${prefix}/#waitlist`}
               className="bg-primary text-white rounded-full px-6 py-2 text-sm font-bold hover:bg-primary/90 transition-colors"
             >
-              Join Waitlist
+              {dict.nav?.joinWaitlist || "Join Waitlist"}
             </Link>
           </div>
 
@@ -104,11 +108,11 @@ export default function Navbar() {
                 </Link>
               ))}
               <Link
-                href="#waitlist"
+                href={`${prefix}/#waitlist`}
                 className="bg-primary text-white rounded-full px-6 py-2.5 text-sm font-bold text-center mt-2 hover:bg-primary/90 transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
-                Join Waitlist
+                {dict.nav?.joinWaitlist || "Join Waitlist"}
               </Link>
             </div>
           </motion.div>

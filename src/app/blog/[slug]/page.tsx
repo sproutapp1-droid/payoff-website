@@ -186,7 +186,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="bg-gradient-to-r from-primary to-primary/90 rounded-2xl p-8 mt-12 text-center text-white">
             <h3 className="font-extrabold text-2xl mb-2">Ready to put this into action?</h3>
             <p className="text-white/80 mb-5">
-              Join the waitlist for Payoff — AI coaching, 7 proven strategies, and a savings planner. Coming soon to iOS & Android.
+              Join the waitlist for Payoff  - AI coaching, 7 proven strategies, and a savings planner. Coming soon to iOS & Android.
             </p>
             <Link
               href="/#waitlist"

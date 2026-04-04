@@ -4,10 +4,10 @@ import { getAllPosts, getAllCategories } from '@/lib/blog';
 import { Clock, ArrowRight, Tag } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Blog — Debt Payoff Tips, Strategies & Guides',
+  title: 'Blog  - Debt Payoff Tips, Strategies & Guides',
   description: 'Learn proven debt payoff strategies, money-saving tips, and financial freedom guides. Snowball vs avalanche, budgeting hacks, and more from the Payoff team.',
   openGraph: {
-    title: 'Payoff Blog — Debt Payoff Tips & Strategies',
+    title: 'Payoff Blog  - Debt Payoff Tips & Strategies',
     description: 'Proven debt payoff strategies and financial freedom guides.',
   },
 };

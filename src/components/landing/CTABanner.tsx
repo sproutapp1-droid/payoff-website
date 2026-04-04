@@ -2,12 +2,15 @@
 
 import { motion } from "framer-motion";
 import { WaitlistForm } from "./WaitlistForm";
+import { useDict } from "@/components/i18n/LocaleProvider";
 
 export default function CTABanner() {
+  const { dict } = useDict();
+  const c = dict.cta || {};
+
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto relative overflow-hidden bg-gradient-to-r from-primary to-primary/80 rounded-3xl px-8 py-16 sm:px-16 sm:py-20 text-center">
-        {/* Decorative sparkle dots */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <span className="absolute top-6 left-[10%] w-2 h-2 bg-white/20 rounded-full" />
           <span className="absolute top-12 right-[15%] w-3 h-3 bg-white/15 rounded-full" />
@@ -27,12 +30,11 @@ export default function CTABanner() {
           className="relative z-10"
         >
           <h2 className="text-3xl font-extrabold text-white mb-4">
-            Ready to start your debt-free journey?
+            {c.title || "Ready to start your debt-free journey?"}
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-            Join the waitlist and be first to try Payoff when it launches. No bank access. No commitment.
+            {c.subtitle || "Join the waitlist and be first to try Payoff when it launches. No bank access. No commitment."}
           </p>
-
           <WaitlistForm variant="banner" />
         </motion.div>
       </div>

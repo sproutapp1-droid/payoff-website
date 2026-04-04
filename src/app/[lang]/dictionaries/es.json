@@ -1,0 +1,498 @@
+{
+  "metadata": {
+    "title": "Payoff: Planificador Inteligente de Deudas - App para Pagar Deudas con IA",
+    "description": "Paga tus deudas mas rapido con coaching de IA, bola de nieve, avalancha y 5 estrategias mas. Sigue tu progreso, planifica tus ahorros y mantente motivado. App gratuita para iOS y Android."
+  },
+  "nav": {
+    "features": "Funciones",
+    "howItWorks": "Como Funciona",
+    "pricing": "Precios",
+    "faq": "Preguntas Frecuentes",
+    "blog": "Blog",
+    "joinWaitlist": "Unirse a la Lista"
+  },
+  "hero": {
+    "headline": "Elimina deudas. Ahorra mas. Mantente motivado.",
+    "subheadline": "El planificador inteligente de deudas con coaching de IA, 7 estrategias probadas y un planificador de ahorro para visualizar tu vida sin deudas.",
+    "subheadlineMobile": "El planificador inteligente de deudas con coaching de IA y 7 estrategias probadas",
+    "trustPills": ["Sin acceso bancario", "9 idiomas", "Gratis para empezar", "iOS y Android"]
+  },
+  "whatPayoffCanDo": {
+    "title": "Lo Que Payoff Puede Hacer Por Ti",
+    "subtitle": "Todo lo que necesitas para eliminar deudas y construir riqueza",
+    "items": [
+      {
+        "number": "01",
+        "title": "Coaching con IA",
+        "content": "Consejos personalizados de una IA que conoce tus deudas exactas. Pregunta \"Recibi un bono de $600 - que deberia hacer?\" y obtendras respuestas especificas y practicas basadas en tus saldos reales."
+      },
+      {
+        "number": "02",
+        "title": "7 Estrategias de Pago + Baby Steps",
+        "content": "Bola de nieve, avalancha, hibrido, indice de flujo de caja, fecha limite, saldo mas alto y orden personalizado. Ademas, una guia integrada de Dave Ramsey Baby Steps. Haz nuestro quiz de 60 segundos para encontrar tu estrategia ideal."
+      },
+      {
+        "number": "03",
+        "title": "Modo Pareja y Hogar",
+        "content": "Comparte deudas con tu pareja, divide los pagos por porcentaje y controla quien ha contribuido que - todo sincronizado en tiempo real con un coach de IA compartido."
+      },
+      {
+        "number": "04",
+        "title": "Escenarios Hipoteticos",
+        "content": "Desliza para ver como los pagos extra cambian tu fecha libre de deudas. Observa como el grafico de saldo se actualiza al instante mientras exploras $50, $100 o $500 extra al mes."
+      },
+      {
+        "number": "05",
+        "title": "La Vida Despues de las Deudas",
+        "content": "Metas de ahorro, seguimiento de inversiones con proyecciones de crecimiento compuesto y una linea de tiempo financiera que traza cada hito desde el primer pago hasta la libertad financiera."
+      },
+      {
+        "number": "06",
+        "title": "Celebraciones de Hitos",
+        "content": "Cada deuda pagada recibe confeti, un trofeo y palabras de aliento. Sigue tus rachas de pago y gana insignias. El camino debe sentirse bien."
+      }
+    ]
+  },
+  "benefits": {
+    "items": [
+      {
+        "title": "Sin Acceso Bancario",
+        "description": "Tus datos financieros se quedan en tu dispositivo. Sin inicios de sesion bancarios, sin sincronizacion, sin riesgo. Solo agrega tus deudas y listo."
+      },
+      {
+        "title": "Paga Deudas Mas Rapido",
+        "description": "Las personas que siguen un plan estructurado eliminan sus deudas 2-3 anos mas rapido que quienes solo pagan el minimo."
+      },
+      {
+        "title": "Disenado Para Tus Emociones",
+        "description": "El Modo Enfoque oculta los numeros intimidantes. Las celebraciones de hitos te mantienen motivado. Esta app entiende la ansiedad financiera."
+      }
+    ]
+  },
+  "features": [
+    {
+      "badge": "Con IA",
+      "heading": "Un coach de deudas que realmente conoce tus deudas",
+      "description": "Payoff Coach ve tus saldos reales, tasas de interes e historial de pagos. Preguntale lo que quieras - desde \"Deberia pagar primero mi tarjeta de credito o el prestamo del auto?\" hasta \"Recibi un bono, donde deberia destinarlo?\"",
+      "bullets": [
+        "Consejos personalizados, no tips genericos",
+        "Conoce tu fecha exacta libre de deudas",
+        "Sugiere donde poner bonos e ingresos extra",
+        "5 mensajes gratis/mes, ilimitados en Premium"
+      ]
+    },
+    {
+      "badge": "Seleccion Inteligente",
+      "heading": "Encuentra tu estrategia de pago perfecta",
+      "description": "Haz un quiz de 60 segundos sobre tu personalidad financiera. Payoff recomienda el mejor metodo - bola de nieve para motivacion, avalancha para ahorrar, o una de 5 opciones mas.",
+      "bullets": [
+        "7 estrategias incluyendo hibrido e indice de flujo de caja",
+        "Dave Ramsey Baby Steps integrado",
+        "Cambia en cualquier momento con un toque",
+        "Ve exactamente cuanto ahorra cada estrategia"
+      ]
+    },
+    {
+      "badge": "Interactivo",
+      "heading": "Descubre lo que los pagos extra pueden lograr",
+      "description": "Desliza para explorar como pagar mas cada mes adelanta tu fecha libre de deudas. Observa el grafico de saldo actualizarse en tiempo real mientras experimentas con diferentes montos.",
+      "bullets": [
+        "Recalculo instantaneo de fecha libre de deudas",
+        "Ahorro en intereses mostrado en tiempo real",
+        "Compara pagos minimos vs tu plan vs agresivo"
+      ]
+    },
+    {
+      "badge": "Hogar",
+      "heading": "Elimina deudas en equipo",
+      "description": "Comparte deudas con tu pareja, divide los pagos por porcentaje y controla quien ha contribuido que. Un hogar, un plan, cero discusiones.",
+      "bullets": [
+        "Invita a tu pareja con un codigo simple",
+        "Porcentajes de division por deuda",
+        "Coach de IA compartido para decisiones conjuntas",
+        "El plan de hogar cubre ambas cuentas"
+      ]
+    }
+  ],
+  "howItWorks": {
+    "title": "Comienza en 60 segundos",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Agrega tus deudas",
+        "description": "Ingresa tus saldos, tasas de interes y pagos minimos. O escanea un estado de cuenta con Smart Import - la IA se encarga de escribir."
+      },
+      {
+        "number": "2",
+        "title": "Elige tu estrategia",
+        "description": "Haz el quiz de personalidad de 60 segundos o elige entre 7 metodos probados. Crearemos tu plan de pago personalizado al instante."
+      },
+      {
+        "number": "3",
+        "title": "Mira como desaparecen las deudas",
+        "description": "Sigue tu plan, registra pagos y celebra cada hito. Tu coach de IA te acompana en cada paso del camino."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Miles de personas lo aman para salir de deudas",
+    "items": [
+      {
+        "name": "Sarah M.",
+        "location": "London, UK",
+        "quote": "El coach de IA me dijo exactamente donde poner mi devolucion de impuestos. Estoy pagando mi tarjeta de credito 3 meses antes!",
+        "initials": "SM"
+      },
+      {
+        "name": "Marcus T.",
+        "location": "Austin, TX",
+        "quote": "Probe todas las apps de deudas que existen. Payoff es la primera que no me genera ansiedad al ver mis numeros.",
+        "initials": "MT"
+      },
+      {
+        "name": "Priya & Dev K.",
+        "location": "Toronto, CA",
+        "quote": "El modo pareja salvo nuestra relacion. Por fin podemos ver quien paga que sin conversaciones incomodas.",
+        "initials": "PD"
+      },
+      {
+        "name": "James L.",
+        "location": "Sydney, AU",
+        "quote": "Las celebraciones de hitos son realmente motivadoras. Ayer pague mi primera tarjeta y el confeti me alegro el dia.",
+        "initials": "JL"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Precios simples y transparentes",
+    "subtitle": "Empieza gratis. Mejora cuando estes listo.",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "free": {
+      "name": "Gratis",
+      "price": "$0",
+      "period": "para siempre",
+      "cta": "Descargar Gratis",
+      "features": [
+        "2 deudas",
+        "Estrategias bola de nieve y avalancha",
+        "Panel con cuenta regresiva libre de deudas",
+        "5 mensajes del coach IA/mes",
+        "Recordatorios de pago",
+        "Celebraciones de hitos"
+      ]
+    },
+    "premium": {
+      "name": "Premium",
+      "badge": "Mas Popular",
+      "savingsNote": "ahorra 30%",
+      "trialNote": "7 dias de prueba gratis",
+      "cta": "Iniciar Prueba Gratis",
+      "features": [
+        "Todo lo del plan Gratis, mas:",
+        "Deudas ilimitadas",
+        "Las 7 estrategias + quiz de personalidad",
+        "Coaching IA ilimitado",
+        "Escenarios hipoteticos",
+        "Modo Enfoque",
+        "Smart Import (escaneo con camara)",
+        "Planificador de ahorro e inversiones",
+        "Importar CSV y exportar datos"
+      ]
+    },
+    "household": {
+      "name": "Hogar",
+      "cta": "Obtener Hogar",
+      "features": [
+        "Todo lo de Premium, mas:",
+        "2 cuentas incluidas",
+        "Modo Pareja con deudas compartidas",
+        "Seguimiento de pagos divididos",
+        "Coach de IA compartido"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "question": "Es Payoff realmente gratis?",
+        "answer": "Si! El plan gratuito incluye 2 deudas, estrategias de bola de nieve y avalancha, tu panel y 5 mensajes del coach de IA por mes. No se requiere tarjeta de credito."
+      },
+      {
+        "question": "Necesito conectar mi cuenta bancaria?",
+        "answer": "No. Payoff nunca pide acceso bancario. Tu ingresas tus deudas manualmente, lo que significa que tus datos financieros permanecen completamente privados y seguros en tu dispositivo."
+      },
+      {
+        "question": "Que hace diferente al coach de IA de ChatGPT?",
+        "answer": "Payoff Coach ve tus deudas reales, saldos, tasas de interes e historial de pagos. Te da consejos especificos como \"Pon tu bono en Chase Sapphire para ahorrar $389 en intereses\" en lugar de tips genericos."
+      },
+      {
+        "question": "Que estrategia de pago deberia usar?",
+        "answer": "Haz nuestro quiz de estrategia de 60 segundos! En general: elige Bola de Nieve si necesitas victorias rapidas para motivarte, Avalancha si quieres ahorrar mas en intereses, o Hibrido para un equilibrio de ambos."
+      },
+      {
+        "question": "Mi pareja y yo podemos usarlo juntos?",
+        "answer": "Si! El plan Hogar te permite invitar a tu pareja, compartir deudas, establecer porcentajes de division e incluso usar un coach de IA compartido. Esta disenado para parejas que enfrentan las deudas en equipo."
+      },
+      {
+        "question": "Que es el Modo Enfoque?",
+        "answer": "El Modo Enfoque oculta tus saldos totales y muestra solo tu porcentaje de progreso y una accion simple a seguir. Esta disenado para personas que sienten ansiedad al ver numeros grandes de deuda."
+      },
+      {
+        "question": "Puedo cambiar de estrategia despues?",
+        "answer": "Por supuesto. Puedes cambiar tu estrategia de pago en cualquier momento con un toque. Payoff recalculara todo tu plan al instante."
+      },
+      {
+        "question": "Que idiomas estan disponibles?",
+        "answer": "Payoff esta disponible en 9 idiomas: ingles, espanol, portugues, frances, aleman, japones, coreano, chino (simplificado) e italiano. Incluye soporte multi-moneda."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Listo para comenzar tu camino libre de deudas?",
+    "subtitle": "Unete a la lista de espera y se de los primeros en probar Payoff cuando se lance. Sin acceso bancario. Sin compromiso."
+  },
+  "waitlist": {
+    "comingSoon": "Proximamente en iOS y Android. Unete a la lista de espera:",
+    "placeholder": "tu@email.com",
+    "placeholderBanner": "Ingresa tu email",
+    "button": "Unirse a la Lista",
+    "buttonShort": "Unirse",
+    "success": "Estas en la lista!",
+    "successSub": "Te avisaremos cuando Payoff se lance.",
+    "errorGeneric": "Algo salio mal. Por favor intenta de nuevo.",
+    "errorNetwork": "Error de red. Por favor intenta de nuevo."
+  },
+  "footer": {
+    "ctaTitle": "Comienza tu camino libre de deudas hoy",
+    "ctaSubtitle": "Unete a la lista de espera y se de los primeros en probar Payoff. Sin acceso bancario. Sin compromiso.",
+    "product": "Producto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "links": {
+      "features": "Funciones",
+      "pricing": "Precios",
+      "calculator": "Calculadora",
+      "faq": "Preguntas Frecuentes",
+      "blog": "Blog",
+      "support": "Soporte",
+      "contact": "Contacto",
+      "privacyPolicy": "Politica de Privacidad",
+      "termsOfService": "Terminos de Servicio",
+      "deleteAccount": "Eliminar Cuenta"
+    },
+    "copyright": "2026 Payoff. Todos los derechos reservados."
+  },
+  "support": {
+    "title": "Soporte",
+    "subtitle": "Estamos aqui para ayudarte. Elige una opcion a continuacion o consulta nuestras preguntas frecuentes.",
+    "emailUs": "Envianos un Email",
+    "browseFaq": "Consultar Preguntas Frecuentes",
+    "browseFaqSub": "Encuentra respuestas a preguntas comunes",
+    "deleteAccount": "Eliminar Cuenta",
+    "deleteAccountSub": "Eliminar permanentemente tus datos",
+    "faqTitle": "Preguntas Frecuentes"
+  },
+  "contact": {
+    "title": "Contactanos",
+    "subtitle": "Tienes una pregunta, sugerencia o simplemente quieres saludar? Nos encantaria saber de ti.",
+    "email": "Email",
+    "faqSupport": "Preguntas Frecuentes y Soporte",
+    "faqSupportSub": "Consulta preguntas comunes",
+    "responseTime": "Tiempo de Respuesta",
+    "responseTimeSub": "Respondemos en 24 horas",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "subject": "Asunto",
+    "subjectPlaceholder": "De que se trata?",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuentanos mas...",
+    "send": "Enviar Mensaje",
+    "successTitle": "Mensaje Enviado",
+    "successMessage": "Gracias por escribirnos! Te responderemos en 24 horas.",
+    "backToHome": "Volver al Inicio",
+    "errorMessage": "Algo salio mal. Por favor intenta de nuevo o envianos un email directamente."
+  },
+  "deleteAccountPage": {
+    "title": "Eliminar Tu Cuenta",
+    "description": "Esto eliminara permanentemente tu cuenta de Payoff y todos los datos asociados, incluyendo tus deudas, historial de pagos, metas de ahorro y conversaciones con el Coach de IA. Esta accion no se puede deshacer.",
+    "warning": "Antes de eliminar:",
+    "warningText": "Si tienes una suscripcion activa, cancelala primero a traves del App Store o Google Play Store para evitar cargos futuros.",
+    "emailLabel": "Direccion de email de la cuenta",
+    "emailPlaceholder": "tu@email.com",
+    "confirmText": "Entiendo que esto eliminara permanentemente mi cuenta y todos mis datos. Esta accion no se puede deshacer.",
+    "deleteButton": "Eliminar Mi Cuenta",
+    "successTitle": "Solicitud Enviada",
+    "successMessage": "Tu solicitud de eliminacion de cuenta ha sido enviada. Tus datos seran eliminados permanentemente en un plazo de 30 dias. Recibiras un email de confirmacion.",
+    "needHelp": "Necesitas ayuda? Contacta"
+  },
+  "calculator": {
+    "title": "Calculadora Gratuita de Pago de Deudas",
+    "description": "Compara bola de nieve vs avalancha, ve tu fecha libre de deudas y calcula el ahorro en intereses - todo gratis, sin necesidad de registrarse.",
+    "comingSoon": "Proximamente",
+    "comingSoonText": "Nuestra calculadora web gratuita esta en construccion. Mientras tanto, la app Payoff incluye una calculadora completa con 7 estrategias y escenarios hipoteticos.",
+    "backToHome": "Volver a la pagina principal"
+  },
+  "privacyPolicy": {
+    "title": "Politica de Privacidad",
+    "lastUpdated": "Ultima actualizacion: 3 de abril de 2026",
+    "languageLabel": "Idioma",
+    "intro": "Payoff: Smart Debt Planner (\"Payoff\", \"nosotros\", \"nos\" o \"nuestro\") se compromete a proteger tu privacidad. Esta Politica de Privacidad explica como recopilamos, usamos, divulgamos y protegemos tu informacion cuando usas nuestra aplicacion movil y sitio web (payoffdebtplanner.com).",
+    "sections": [
+      {
+        "title": "Informacion que Recopilamos",
+        "subsections": [
+          {
+            "title": "Informacion que Proporcionas",
+            "items": [
+              "Informacion de la cuenta: Direccion de email y nombre para mostrar cuando creas una cuenta.",
+              "Informacion financiera: Saldos de deudas, tasas de interes, pagos minimos e historial de pagos que ingresas manualmente en la app. No nos conectamos a tus cuentas bancarias.",
+              "Conversaciones con el Coach de IA: Mensajes que envias a la funcion Coach de IA para recibir asesoramiento personalizado sobre deudas.",
+              "Preferencias: Configuracion de notificaciones, preferencia de moneda, preferencia de idioma y configuracion de la app."
+            ]
+          },
+          {
+            "title": "Informacion Recopilada Automaticamente",
+            "items": [
+              "Analiticas de uso: Usamos Firebase Analytics para recopilar datos de uso anonimos como vistas de pantalla, uso de funciones y eventos de la app para mejorar la experiencia.",
+              "Informes de errores: Firebase Crashlytics recopila registros de fallos e informes de errores para ayudarnos a corregir problemas.",
+              "Informacion del dispositivo: Tipo de dispositivo, sistema operativo y version de la app para fines de compatibilidad y soporte."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Como Usamos Tu Informacion",
+        "items": [
+          "Para proporcionar y mantener la app Payoff y sus funciones",
+          "Para proporcionar coaching de IA personalizado basado en tus datos de deuda",
+          "Para sincronizar tus datos entre dispositivos a traves del almacenamiento en la nube de Supabase",
+          "Para enviar recordatorios de pago y notificaciones de hitos (si estan habilitados)",
+          "Para procesar compras de suscripcion a traves de RevenueCat",
+          "Para mejorar la app mediante analiticas anonimas",
+          "Para diagnosticar y solucionar problemas tecnicos"
+        ]
+      },
+      {
+        "title": "Servicios de Terceros",
+        "intro": "Utilizamos los siguientes servicios de terceros:",
+        "items": [
+          "Supabase: Autenticacion y base de datos en la nube para sincronizar tus datos.",
+          "OpenAI: Alimenta la funcion Coach de IA. Tu contexto de deuda (no datos personales) se envia a la API de OpenAI para generar asesoramiento personalizado. OpenAI no usa estos datos para entrenamiento.",
+          "RevenueCat: Gestiona las compras de suscripcion y derechos.",
+          "Firebase (Google): Analiticas anonimas e informes de errores.",
+          "Apple / Google: Procesamiento de compras dentro de la app a traves de las respectivas tiendas."
+        ]
+      },
+      {
+        "title": "Almacenamiento y Seguridad de Datos",
+        "content": "Tus datos financieros se almacenan localmente en tu dispositivo y opcionalmente se sincronizan con Supabase (alojado en AWS). Los datos estan cifrados en transito (TLS) y en reposo. Implementamos politicas de Seguridad a Nivel de Fila (RLS) para asegurar que solo puedas acceder a tus propios datos."
+      },
+      {
+        "title": "Retencion de Datos",
+        "content": "Conservamos tus datos mientras tu cuenta este activa. Si eliminas tu cuenta, todos los datos asociados se eliminan permanentemente de nuestros servidores en un plazo de 30 dias. Los datos de analiticas anonimas pueden conservarse hasta 14 meses."
+      },
+      {
+        "title": "Tus Derechos",
+        "intro": "Tienes derecho a:",
+        "items": [
+          "Acceder a tus datos personales",
+          "Corregir datos inexactos",
+          "Eliminar tu cuenta y todos los datos asociados",
+          "Exportar tus datos",
+          "Desactivar las analiticas (a traves de la configuracion del dispositivo)"
+        ]
+      },
+      {
+        "title": "Eliminacion de Cuenta",
+        "content": "Puedes eliminar tu cuenta en cualquier momento a traves de la app (Configuracion > Eliminar Cuenta) o visitando payoffdebtplanner.com/delete-account."
+      },
+      {
+        "title": "Privacidad de Menores",
+        "content": "Payoff no esta destinado a menores de 13 anos. No recopilamos intencionalmente informacion personal de menores."
+      },
+      {
+        "title": "Cambios a Esta Politica",
+        "content": "Podemos actualizar esta Politica de Privacidad periodicamente. Te notificaremos de cualquier cambio importante a traves de la app o por email."
+      },
+      {
+        "title": "Contactanos",
+        "content": "Si tienes preguntas sobre esta Politica de Privacidad, contactanos en payoffdebtplanner@zohomail.eu."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terminos de Servicio",
+    "lastUpdated": "Ultima actualizacion: 3 de abril de 2026",
+    "intro": "Estos Terminos de Servicio (\"Terminos\") rigen tu uso de Payoff: Smart Debt Planner (\"Payoff\", \"la App\") y el sitio web payoffdebtplanner.com (\"el Sitio Web\"). Al usar Payoff, aceptas estos Terminos.",
+    "sections": [
+      {
+        "title": "1. Uso del Servicio",
+        "content": "Payoff es una herramienta de planificacion financiera personal que te ayuda a crear planes de pago de deudas, registrar pagos y establecer metas de ahorro. Debes tener al menos 13 anos para usar la App."
+      },
+      {
+        "title": "2. No es Asesoramiento Financiero",
+        "content": "Payoff no es un asesor financiero. La funcion Coach de IA proporciona informacion general y sugerencias basadas en los datos que ingresas. No constituye asesoramiento financiero, fiscal, legal o de inversiones profesional. Siempre consulta a un profesional financiero calificado antes de tomar decisiones financieras importantes."
+      },
+      {
+        "title": "3. Responsabilidades de la Cuenta",
+        "content": "Eres responsable de mantener la seguridad de las credenciales de tu cuenta. Eres responsable de toda la actividad que ocurra bajo tu cuenta. Los datos financieros que ingreses deben ser precisos segun tu mejor conocimiento."
+      },
+      {
+        "title": "4. Suscripciones y Pagos",
+        "items": [
+          "Payoff ofrece planes de suscripcion gratuitos y premium.",
+          "Las suscripciones premium se facturan a traves del Apple App Store o Google Play Store.",
+          "Las suscripciones se renuevan automaticamente a menos que se cancelen al menos 24 horas antes del final del periodo actual.",
+          "Los reembolsos son gestionados por la tienda de aplicaciones correspondiente segun sus politicas de reembolso.",
+          "La prueba gratuita de 7 dias (solo plan anual) se convierte automaticamente en una suscripcion de pago a menos que se cancele."
+        ]
+      },
+      {
+        "title": "5. Planes de Hogar",
+        "content": "Los planes de Hogar permiten a dos usuarios compartir datos de deuda dentro de la App. Al invitar a una pareja, consientes compartir la informacion de deuda seleccionada con ella. Puedes revocar el uso compartido en cualquier momento."
+      },
+      {
+        "title": "6. Descargo de Responsabilidad del Coach de IA",
+        "content": "El Coach de IA esta impulsado por servicios de IA de terceros (OpenAI). Aunque nos esforzamos por la precision, las respuestas generadas por IA pueden contener errores o inexactitudes. Debes verificar de forma independiente cualquier calculo o sugerencia financiera. No somos responsables de las acciones tomadas basandose en las respuestas del Coach de IA."
+      },
+      {
+        "title": "7. Datos y Privacidad",
+        "content": "Tu uso de Payoff tambien se rige por nuestra Politica de Privacidad. Al usar la App, consientes la recopilacion y uso de datos como se describe en ella."
+      },
+      {
+        "title": "8. Uso Aceptable",
+        "intro": "Aceptas no:",
+        "items": [
+          "Usar la App para cualquier proposito ilegal",
+          "Intentar realizar ingenieria inversa, descompilar o desensamblar la App",
+          "Compartir las credenciales de tu cuenta con otros (usa el modo Hogar en su lugar)",
+          "Usar el Coach de IA para generar contenido danino, abusivo o ilegal"
+        ]
+      },
+      {
+        "title": "9. Limitacion de Responsabilidad",
+        "content": "Payoff se proporciona \"tal cual\" sin garantias de ningun tipo. No somos responsables de perdidas financieras, pagos perdidos o calculos incorrectos que puedan resultar del uso de la App. El uso de Payoff es bajo tu propio riesgo."
+      },
+      {
+        "title": "10. Terminacion",
+        "content": "Nos reservamos el derecho de suspender o cancelar tu cuenta si violas estos Terminos. Puedes eliminar tu cuenta en cualquier momento a traves de la App o en payoffdebtplanner.com/delete-account."
+      },
+      {
+        "title": "11. Cambios a los Terminos",
+        "content": "Podemos actualizar estos Terminos periodicamente. El uso continuado de la App despues de los cambios constituye la aceptacion de los nuevos Terminos."
+      },
+      {
+        "title": "12. Contacto",
+        "content": "Para preguntas sobre estos Terminos, contactanos en payoffdebtplanner@zohomail.eu."
+      }
+    ]
+  },
+  "common": {
+    "language": "Idioma",
+    "selectLanguage": "Seleccionar idioma"
+  }
+}

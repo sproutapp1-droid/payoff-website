@@ -9,6 +9,7 @@ interface PayoffChartProps {
   plan: PayoffPlan;
   lang: string;
   dict: Record<string, string>;
+  currency?: string;
 }
 
 const COLORS = [
@@ -24,8 +25,8 @@ const COLORS = [
   '#E879F9', // fuchsia
 ];
 
-export default function PayoffChart({ plan, lang, dict }: PayoffChartProps) {
-  const fc = (n: number) => formatCurrency(n, lang);
+export default function PayoffChart({ plan, lang, dict, currency }: PayoffChartProps) {
+  const fc = (n: number) => formatCurrency(n, lang, currency);
 
   const chartData = useMemo(() => {
     if (plan.debts.length === 0 || plan.totalMonths === 0) return null;
@@ -36,6 +37,9 @@ export default function PayoffChart({ plan, lang, dict }: PayoffChartProps) {
     const points: number[] = [];
     for (let m = 0; m < totalMonths; m += step) points.push(m);
     if (points[points.length - 1] !== totalMonths - 1) points.push(totalMonths - 1);
+
+    // Need at least 2 data points to draw a chart
+    if (points.length < 2) return null;
 
     // Build stacked data: for each sample point, get each debt's remaining balance
     const stacked = points.map((month) => {

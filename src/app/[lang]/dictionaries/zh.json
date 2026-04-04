@@ -360,6 +360,20 @@
     "emptyStateHint": "请至少输入一笔带有余额和最低还款额的债务。",
     "faqTitle": "常见问题",
     "backToHome": "返回首页",
+    "hybridTitle": "混合法计算器",
+    "hybridDesc": "雪球法与雪崩法的智能融合 — 兼顾小额还清的成就感与利息节省。",
+    "hybridBadge": "两全其美",
+    "cashflowTitle": "现金流指数计算器",
+    "cashflowDesc": "优先偿还还款额与余额比值最高的债务，最快释放月度现金流。",
+    "cashflowBadge": "预算紧张者首选",
+    "highestBalanceTitle": "最高余额计算器",
+    "highestBalanceDesc": "直面最大的债务。攻克最大的难关后，其余一切都会变得轻松。",
+    "highestBalanceBadge": "大额债务首选",
+    "deadlineTitle": "目标日期还清计算器",
+    "deadlineDesc": "设定目标无债日期，精确计算每月需要额外还款多少。",
+    "deadlineBadge": "设定你的目标",
+    "hubMetaTitle": "免费债务还款计算器 — 雪球法、雪崩法等 | Payoff",
+    "hubMetaDesc": "6种策略对应6款免费债务还款计算器。比较雪球法、雪崩法、混合法、现金流法、最高余额法和目标日期法 — 无需注册。",
     "snowball": {
       "title": "免费雪球法计算器",
       "heroText": "用雪球法查看无债日期。添加债务 — 结果即时更新。",
@@ -371,6 +385,30 @@
       "heroText": "用雪崩法查看无债日期。添加债务 — 结果即时更新。",
       "metaTitle": "免费雪崩法计算器 — 最大节省利息 | Payoff",
       "metaDesc": "用雪崩法计算无债日期。先攻击最高利率债务 — 100%免费。"
+    },
+    "hybrid": {
+      "title": "免费混合法计算器",
+      "heroText": "混合法融合雪球法的成就感与雪崩法的利息节省。添加债务 — 结果即时更新。",
+      "metaTitle": "免费混合法计算器 — 兼顾成就与节省 | Payoff",
+      "metaDesc": "混合法融合雪球法的动力与雪崩法的节省。用我们的免费计算器查看还款计划 — 无需注册。"
+    },
+    "cashflow": {
+      "title": "免费现金流指数计算器",
+      "heroText": "最快释放月度现金流。现金流法优先偿还相对于余额消耗最多现金的债务。",
+      "metaTitle": "免费现金流指数债务计算器 — 更快释放资金 | Payoff",
+      "metaDesc": "现金流法优先偿还释放最多月度现金的债务。用我们的免费计算器查看还款计划 — 无需注册。"
+    },
+    "highestBalance": {
+      "title": "免费最高余额计算器",
+      "heroText": "直面最大的债务。攻克最大的难关后，其余一切都变得轻松。",
+      "metaTitle": "免费最高余额债务计算器 — 挑战最大债务 | Payoff",
+      "metaDesc": "用最高余额法优先偿还最大债务。用我们的免费计算器查看还款计划 — 无需注册。"
+    },
+    "deadline": {
+      "title": "免费目标日期还清计算器",
+      "heroText": "设定目标无债日期，精确计算每月需要额外还款多少。",
+      "metaTitle": "免费目标日期还清计算器 — 设定你的目标 | Payoff",
+      "metaDesc": "设定目标无债日期，精确计算每月额外还款额。反向规划还款方案 — 免费，无需注册。"
     },
     "form": {
       "yourDebts": "您的债务",

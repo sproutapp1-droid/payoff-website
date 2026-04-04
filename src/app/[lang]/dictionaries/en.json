@@ -355,6 +355,20 @@
     "emptyStateHint": "Enter at least one debt with a balance and minimum payment.",
     "faqTitle": "Frequently Asked Questions",
     "backToHome": "Back to homepage",
+    "hybridTitle": "Debt Hybrid Calculator",
+    "hybridDesc": "A smart blend of snowball and avalanche — balance quick wins with interest savings.",
+    "hybridBadge": "Best of both worlds",
+    "cashflowTitle": "Cash Flow Index Calculator",
+    "cashflowDesc": "Free up monthly cash flow fastest by targeting debts with the highest payment-to-balance ratio.",
+    "cashflowBadge": "Best for tight budgets",
+    "highestBalanceTitle": "Highest Balance Calculator",
+    "highestBalanceDesc": "Tackle your largest debt head-on. Face the biggest challenge first and everything else feels easy.",
+    "highestBalanceBadge": "Best for big debts",
+    "deadlineTitle": "Debt-Free By Date Calculator",
+    "deadlineDesc": "Pick your target debt-free date and find out exactly how much extra you need to pay each month.",
+    "deadlineBadge": "Set your target",
+    "hubMetaTitle": "Free Debt Payoff Calculators — Snowball, Avalanche & More | Payoff",
+    "hubMetaDesc": "6 free debt payoff calculators for 6 strategies. Compare snowball, avalanche, hybrid, cash flow, highest balance, and deadline methods — no signup required.",
     "snowball": {
       "title": "Free Debt Snowball Calculator",
       "heroText": "See exactly when you'll be debt-free using the snowball method. Add your debts below — results update instantly.",
@@ -366,6 +380,30 @@
       "heroText": "See exactly when you'll be debt-free using the avalanche method. Add your debts below — results update instantly.",
       "metaTitle": "Free Debt Avalanche Calculator — Save the Most on Interest | Payoff",
       "metaDesc": "Calculate your debt-free date with the avalanche method. Target high-interest debt first, see exactly how much you'll save — 100% free, no signup."
+    },
+    "hybrid": {
+      "title": "Free Debt Hybrid Calculator",
+      "heroText": "The hybrid method blends snowball motivation with avalanche savings. Add your debts below — results update instantly.",
+      "metaTitle": "Free Debt Hybrid Calculator — Balance Wins & Savings | Payoff",
+      "metaDesc": "The hybrid method blends snowball motivation with avalanche savings. See your payoff plan with our free calculator — no signup required."
+    },
+    "cashflow": {
+      "title": "Free Cash Flow Index Calculator",
+      "heroText": "Free up monthly cash flow fastest. The cash flow method targets debts that consume the most cash relative to their size.",
+      "metaTitle": "Free Cash Flow Index Debt Calculator — Free Up Money Faster | Payoff",
+      "metaDesc": "The cash flow method targets debts that free up the most monthly cash. See your payoff plan with our free calculator — no signup required."
+    },
+    "highestBalance": {
+      "title": "Free Highest Balance Calculator",
+      "heroText": "Tackle your largest debt head-on. Once the mountain is gone, everything else feels manageable.",
+      "metaTitle": "Free Highest Balance Debt Calculator — Tackle Your Biggest Debt | Payoff",
+      "metaDesc": "Target your largest debt first with the highest balance method. See your payoff plan with our free calculator — no signup required."
+    },
+    "deadline": {
+      "title": "Free Debt-Free By Date Calculator",
+      "heroText": "Pick your target debt-free date and find out exactly how much extra you need to pay each month.",
+      "metaTitle": "Free Debt-Free By Date Calculator — Set Your Target | Payoff",
+      "metaDesc": "Pick your target debt-free date and see exactly how much extra you need to pay each month. Reverse-engineer your payoff plan — free, no signup."
     },
     "form": {
       "yourDebts": "Your debts",

@@ -360,6 +360,20 @@
     "emptyStateHint": "Inserisci almeno un debito con saldo e pagamento minimo.",
     "faqTitle": "Domande Frequenti",
     "backToHome": "Torna alla home",
+    "hybridTitle": "Calcolatore Metodo Ibrido",
+    "hybridDesc": "Un mix intelligente di palla di neve e valanga — bilancia piccole vittorie e risparmio sugli interessi.",
+    "hybridBadge": "Il meglio di entrambi",
+    "cashflowTitle": "Calcolatore Indice Cash Flow",
+    "cashflowDesc": "Libera il flusso di cassa mensile più velocemente puntando ai debiti con il rapporto rata/saldo più alto.",
+    "cashflowBadge": "Ideale per budget ridotti",
+    "highestBalanceTitle": "Calcolatore Saldo Più Alto",
+    "highestBalanceDesc": "Affronta il tuo debito più grande di petto. Una volta superata la montagna, tutto il resto sembra facile.",
+    "highestBalanceBadge": "Ideale per debiti grandi",
+    "deadlineTitle": "Calcolatore Senza Debiti Entro",
+    "deadlineDesc": "Scegli la tua data obiettivo e scopri esattamente quanto extra devi pagare ogni mese.",
+    "deadlineBadge": "Fissa il tuo obiettivo",
+    "hubMetaTitle": "Calcolatori Gratuiti per Estinguere i Debiti — Palla di Neve, Valanga e Altro | Payoff",
+    "hubMetaDesc": "6 calcolatori gratuiti per 6 strategie. Confronta palla di neve, valanga, ibrido, cash flow, saldo più alto e metodo a scadenza — nessuna registrazione.",
     "snowball": {
       "title": "Calcolatore Palla di Neve Gratuito",
       "heroText": "Scopri quando sarai libero dai debiti con il metodo palla di neve. Aggiungi i debiti — risultati in tempo reale.",
@@ -371,6 +385,30 @@
       "heroText": "Scopri quando sarai libero dai debiti con il metodo valanga. Aggiungi i debiti — risultati in tempo reale.",
       "metaTitle": "Calcolatore Valanga Gratuito — Risparmia di Più sugli Interessi | Payoff",
       "metaDesc": "Calcola la data senza debiti con il metodo valanga. Attacca prima il debito con il tasso più alto — 100% gratuito."
+    },
+    "hybrid": {
+      "title": "Calcolatore Metodo Ibrido Gratuito",
+      "heroText": "Il metodo ibrido unisce la motivazione della palla di neve al risparmio della valanga. Aggiungi i debiti — risultati in tempo reale.",
+      "metaTitle": "Calcolatore Metodo Ibrido Gratuito — Vittorie e Risparmio | Payoff",
+      "metaDesc": "Il metodo ibrido unisce la motivazione della palla di neve al risparmio della valanga. Vedi il tuo piano con il nostro calcolatore gratuito — nessuna registrazione."
+    },
+    "cashflow": {
+      "title": "Calcolatore Indice Cash Flow Gratuito",
+      "heroText": "Libera il flusso di cassa mensile più velocemente. Il metodo cash flow punta ai debiti che consumano più liquidità rispetto al saldo.",
+      "metaTitle": "Calcolatore Indice Cash Flow Gratuito — Libera Denaro Più Veloce | Payoff",
+      "metaDesc": "Il metodo cash flow punta ai debiti che liberano più liquidità mensile. Vedi il tuo piano con il nostro calcolatore gratuito — nessuna registrazione."
+    },
+    "highestBalance": {
+      "title": "Calcolatore Saldo Più Alto Gratuito",
+      "heroText": "Affronta il tuo debito più grande di petto. Una volta superata la montagna, tutto il resto sembra facile.",
+      "metaTitle": "Calcolatore Saldo Più Alto Gratuito — Affronta il Debito Più Grande | Payoff",
+      "metaDesc": "Punta al debito più grande con il metodo saldo più alto. Vedi il tuo piano con il nostro calcolatore gratuito — nessuna registrazione."
+    },
+    "deadline": {
+      "title": "Calcolatore Senza Debiti Entro Gratuito",
+      "heroText": "Scegli la tua data obiettivo e scopri esattamente quanto extra devi pagare ogni mese.",
+      "metaTitle": "Calcolatore Senza Debiti Entro Gratuito — Fissa il Tuo Obiettivo | Payoff",
+      "metaDesc": "Scegli la tua data obiettivo e scopri quanto extra pagare ogni mese. Pianifica al contrario il tuo piano — gratuito, nessuna registrazione."
     },
     "form": {
       "yourDebts": "I tuoi debiti",

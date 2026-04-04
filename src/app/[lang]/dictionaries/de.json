@@ -360,6 +360,44 @@
     "emptyStateHint": "Gib mindestens eine Schuld mit Saldo und Mindestzahlung ein.",
     "faqTitle": "Häufig gestellte Fragen",
     "backToHome": "Zurück zur Startseite",
+    "hybridTitle": "Hybrid-Schuldenrechner",
+    "hybridDesc": "Eine clevere Mischung aus Schneeball und Lawine — schnelle Erfolge mit Zinsersparnis kombinieren.",
+    "hybridBadge": "Das Beste aus beiden Methoden",
+    "cashflowTitle": "Cashflow-Rechner",
+    "cashflowDesc": "Monatlichen Cashflow am schnellsten freisetzen, indem Schulden mit dem höchsten Zahlungs-Saldo-Verhältnis getilgt werden.",
+    "cashflowBadge": "Ideal bei knappem Budget",
+    "highestBalanceTitle": "Höchster-Saldo-Rechner",
+    "highestBalanceDesc": "Geh deine größte Schuld zuerst an. Ist der Berg bezwungen, fühlt sich alles andere leicht an.",
+    "highestBalanceBadge": "Ideal für große Schulden",
+    "deadlineTitle": "Schuldenfrei-bis-Datum-Rechner",
+    "deadlineDesc": "Wähle dein Zieldatum und finde heraus, wie viel extra du jeden Monat zahlen musst.",
+    "deadlineBadge": "Setze dein Ziel",
+    "hubMetaTitle": "Kostenlose Schuldenrechner — Schneeball, Lawine & Mehr | Payoff",
+    "hubMetaDesc": "6 kostenlose Schuldenrechner für 6 Strategien. Vergleiche Schneeball, Lawine, Hybrid, Cashflow, höchster Saldo und Zieldatum — ohne Anmeldung.",
+    "hybrid": {
+      "title": "Kostenloser Hybrid-Schuldenrechner",
+      "heroText": "Die Hybrid-Methode verbindet Schneeball-Motivation mit Lawinen-Ersparnis. Füge deine Schulden hinzu — Ergebnisse sofort.",
+      "metaTitle": "Kostenloser Hybrid-Schuldenrechner — Erfolge & Ersparnis | Payoff",
+      "metaDesc": "Die Hybrid-Methode verbindet Schneeball-Motivation mit Lawinen-Ersparnis. Berechne deinen Plan kostenlos — ohne Anmeldung."
+    },
+    "cashflow": {
+      "title": "Kostenloser Cashflow-Schuldenrechner",
+      "heroText": "Monatlichen Cashflow am schnellsten freisetzen. Die Cashflow-Methode priorisiert Schulden, die am meisten Geld im Verhältnis zum Saldo binden.",
+      "metaTitle": "Kostenloser Cashflow-Schuldenrechner — Geld Schneller Freisetzen | Payoff",
+      "metaDesc": "Die Cashflow-Methode priorisiert Schulden, die am meisten monatliches Geld freisetzen. Berechne deinen Plan kostenlos — ohne Anmeldung."
+    },
+    "highestBalance": {
+      "title": "Kostenloser Höchster-Saldo-Rechner",
+      "heroText": "Geh deine größte Schuld zuerst an. Ist der Berg getilgt, fühlt sich alles andere machbar an.",
+      "metaTitle": "Kostenloser Höchster-Saldo-Rechner — Größte Schuld Zuerst | Payoff",
+      "metaDesc": "Priorisiere deine größte Schuld mit der Höchster-Saldo-Methode. Berechne deinen Plan kostenlos — ohne Anmeldung."
+    },
+    "deadline": {
+      "title": "Kostenloser Schuldenfrei-bis-Datum-Rechner",
+      "heroText": "Wähle dein Zieldatum für Schuldenfreiheit und finde heraus, wie viel extra du jeden Monat zahlen musst.",
+      "metaTitle": "Kostenloser Schuldenfrei-bis-Datum-Rechner — Setze Dein Ziel | Payoff",
+      "metaDesc": "Wähle dein Zieldatum für Schuldenfreiheit und finde heraus, wie viel extra du monatlich zahlen musst. Plane deinen Weg kostenlos — ohne Anmeldung."
+    },
     "snowball": {
       "title": "Kostenloser Schneeball-Rechner",
       "heroText": "Erfahre genau, wann du mit der Schneeball-Methode schuldenfrei bist. Füge deine Schulden hinzu — Ergebnisse sofort.",

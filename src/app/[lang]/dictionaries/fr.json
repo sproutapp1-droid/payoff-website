@@ -360,6 +360,44 @@
     "emptyStateHint": "Saisissez au moins une dette avec un solde et un paiement minimum.",
     "faqTitle": "Questions Fréquentes",
     "backToHome": "Retour à l’accueil",
+    "hybridTitle": "Calculateur Hybride de Dettes",
+    "hybridDesc": "Un mélange intelligent de boule de neige et avalanche — combinez victoires rapides et économies d’intérêts.",
+    "hybridBadge": "Le meilleur des deux méthodes",
+    "cashflowTitle": "Calculateur de Trésorerie",
+    "cashflowDesc": "Libérez votre trésorerie mensuelle plus vite en ciblant les dettes au ratio paiement/solde le plus élevé.",
+    "cashflowBadge": "Idéal pour les budgets serrés",
+    "highestBalanceTitle": "Calculateur de Solde le Plus Élevé",
+    "highestBalanceDesc": "Attaquez votre plus grosse dette en premier. Une fois le plus gros défi relevé, le reste paraît facile.",
+    "highestBalanceBadge": "Idéal pour les grosses dettes",
+    "deadlineTitle": "Calculateur Sans Dettes à une Date",
+    "deadlineDesc": "Choisissez votre date cible et découvrez exactement combien de plus vous devez payer chaque mois.",
+    "deadlineBadge": "Fixez votre objectif",
+    "hubMetaTitle": "Calculateurs de Remboursement Gratuits — Boule de Neige, Avalanche et Plus | Payoff",
+    "hubMetaDesc": "6 calculateurs gratuits pour 6 stratégies. Comparez boule de neige, avalanche, hybride, trésorerie, solde élevé et date limite — sans inscription.",
+    "hybrid": {
+      "title": "Calculateur Hybride de Dettes Gratuit",
+      "heroText": "La méthode hybride combine la motivation de la boule de neige avec les économies de l’avalanche. Ajoutez vos dettes — résultats en temps réel.",
+      "metaTitle": "Calculateur Hybride de Dettes Gratuit — Victoires et Économies | Payoff",
+      "metaDesc": "La méthode hybride combine la motivation de la boule de neige avec les économies de l’avalanche. Calculez votre plan gratuitement — sans inscription."
+    },
+    "cashflow": {
+      "title": "Calculateur de Trésorerie Gratuit",
+      "heroText": "Libérez votre trésorerie mensuelle plus vite. La méthode de trésorerie cible les dettes qui consomment le plus par rapport à leur solde.",
+      "metaTitle": "Calculateur de Trésorerie Gratuit — Libérez de l’Argent Plus Vite | Payoff",
+      "metaDesc": "La méthode de trésorerie cible les dettes qui libèrent le plus d’argent mensuel. Calculez votre plan gratuitement — sans inscription."
+    },
+    "highestBalance": {
+      "title": "Calculateur de Solde le Plus Élevé Gratuit",
+      "heroText": "Attaquez votre plus grosse dette en premier. Une fois la montagne éliminée, tout le reste paraît gérable.",
+      "metaTitle": "Calculateur de Solde Élevé Gratuit — Attaquez Votre Plus Grosse Dette | Payoff",
+      "metaDesc": "Ciblez votre plus grosse dette avec la méthode du solde le plus élevé. Calculez votre plan gratuitement — sans inscription."
+    },
+    "deadline": {
+      "title": "Calculateur Sans Dettes à une Date Gratuit",
+      "heroText": "Choisissez votre date cible sans dettes et découvrez exactement combien de plus vous devez payer chaque mois.",
+      "metaTitle": "Calculateur Sans Dettes à une Date Gratuit — Fixez Votre Objectif | Payoff",
+      "metaDesc": "Choisissez votre date cible sans dettes et découvrez combien de plus payer chaque mois. Planifiez votre chemin gratuitement — sans inscription."
+    },
     "snowball": {
       "title": "Calculateur Boule de Neige Gratuit",
       "heroText": "Découvrez exactement quand vous serez libre de dettes avec la méthode boule de neige. Ajoutez vos dettes — résultats en temps réel.",

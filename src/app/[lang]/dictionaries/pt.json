@@ -360,6 +360,44 @@
     "emptyStateHint": "Insira pelo menos uma dívida com saldo e pagamento mínimo.",
     "faqTitle": "Perguntas Frequentes",
     "backToHome": "Voltar à página inicial",
+    "hybridTitle": "Calculadora Híbrida de Dívidas",
+    "hybridDesc": "Uma mistura inteligente de bola de neve e avalanche — combine vitórias rápidas com economia de juros.",
+    "hybridBadge": "O melhor dos dois métodos",
+    "cashflowTitle": "Calculadora de Fluxo de Caixa",
+    "cashflowDesc": "Libere fluxo de caixa mensal mais rápido eliminando as dívidas com maior proporção pagamento-saldo.",
+    "cashflowBadge": "Ideal para orçamentos apertados",
+    "highestBalanceTitle": "Calculadora de Maior Saldo",
+    "highestBalanceDesc": "Enfrente sua maior dívida primeiro. Depois de vencer o maior desafio, todo o resto fica fácil.",
+    "highestBalanceBadge": "Ideal para dívidas grandes",
+    "deadlineTitle": "Calculadora Livre de Dívidas por Data",
+    "deadlineDesc": "Escolha sua data-alvo e descubra exatamente quanto extra precisa pagar por mês.",
+    "deadlineBadge": "Defina sua meta",
+    "hubMetaTitle": "Calculadoras Gratuitas de Dívidas — Bola de Neve, Avalanche e Mais | Payoff",
+    "hubMetaDesc": "6 calculadoras gratuitas para 6 estratégias. Compare bola de neve, avalanche, híbrido, fluxo de caixa, maior saldo e prazo — sem cadastro.",
+    "hybrid": {
+      "title": "Calculadora Híbrida de Dívidas Gratuita",
+      "heroText": "O método híbrido combina a motivação da bola de neve com a economia da avalanche. Adicione suas dívidas — resultados em tempo real.",
+      "metaTitle": "Calculadora Híbrida de Dívidas Gratuita — Vitórias e Economia | Payoff",
+      "metaDesc": "O método híbrido combina a motivação da bola de neve com a economia da avalanche. Calcule seu plano grátis — sem cadastro."
+    },
+    "cashflow": {
+      "title": "Calculadora de Fluxo de Caixa Gratuita",
+      "heroText": "Libere fluxo de caixa mensal mais rápido. O método de fluxo de caixa prioriza dívidas que consomem mais dinheiro em relação ao saldo.",
+      "metaTitle": "Calculadora de Fluxo de Caixa Gratuita — Libere Dinheiro Mais Rápido | Payoff",
+      "metaDesc": "O método de fluxo de caixa prioriza dívidas que liberam mais dinheiro mensal. Calcule seu plano grátis — sem cadastro."
+    },
+    "highestBalance": {
+      "title": "Calculadora de Maior Saldo Gratuita",
+      "heroText": "Enfrente sua maior dívida primeiro. Depois de eliminar a montanha, todo o resto fica manejável.",
+      "metaTitle": "Calculadora de Maior Saldo Gratuita — Enfrente Sua Maior Dívida | Payoff",
+      "metaDesc": "Priorize sua maior dívida com o método de maior saldo. Calcule seu plano grátis — sem cadastro."
+    },
+    "deadline": {
+      "title": "Calculadora Livre de Dívidas por Data Gratuita",
+      "heroText": "Escolha sua data-alvo livre de dívidas e descubra exatamente quanto extra precisa pagar por mês.",
+      "metaTitle": "Calculadora Livre de Dívidas por Data Gratuita — Defina Sua Meta | Payoff",
+      "metaDesc": "Escolha sua data-alvo livre de dívidas e descubra quanto extra pagar por mês. Planeje seu caminho grátis — sem cadastro."
+    },
     "snowball": {
       "title": "Calculadora Bola de Neve Gratuita",
       "heroText": "Veja exatamente quando ficará livre de dívidas com o método bola de neve. Adicione suas dívidas — resultados em tempo real.",

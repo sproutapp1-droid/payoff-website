@@ -360,6 +360,44 @@
     "emptyStateHint": "Ingresa al menos una deuda con saldo y pago mínimo.",
     "faqTitle": "Preguntas Frecuentes",
     "backToHome": "Volver a la página principal",
+    "hybridTitle": "Calculadora Híbrida de Deudas",
+    "hybridDesc": "Una mezcla inteligente de bola de nieve y avalancha — combina victorias rápidas con ahorro en intereses.",
+    "hybridBadge": "Lo mejor de ambos métodos",
+    "cashflowTitle": "Calculadora de Flujo de Caja",
+    "cashflowDesc": "Libera flujo de caja mensual más rápido eliminando las deudas con mayor proporción pago-saldo.",
+    "cashflowBadge": "Ideal para presupuestos ajustados",
+    "highestBalanceTitle": "Calculadora de Saldo Mayor",
+    "highestBalanceDesc": "Ataca tu deuda más grande primero. Una vez superado el mayor reto, todo lo demás es fácil.",
+    "highestBalanceBadge": "Ideal para deudas grandes",
+    "deadlineTitle": "Calculadora Libre de Deudas por Fecha",
+    "deadlineDesc": "Elige tu fecha objetivo y descubre exactamente cuánto extra necesitas pagar cada mes.",
+    "deadlineBadge": "Fija tu objetivo",
+    "hubMetaTitle": "Calculadoras Gratuitas de Deudas — Bola de Nieve, Avalancha y Más | Payoff",
+    "hubMetaDesc": "6 calculadoras gratuitas para 6 estrategias. Compara bola de nieve, avalancha, híbrido, flujo de caja, saldo mayor y fecha límite — sin registro.",
+    "hybrid": {
+      "title": "Calculadora Híbrida de Deudas Gratuita",
+      "heroText": "El método híbrido combina la motivación de bola de nieve con el ahorro de avalancha. Agrega tus deudas — los resultados se actualizan al instante.",
+      "metaTitle": "Calculadora Híbrida de Deudas Gratuita — Victorias y Ahorro | Payoff",
+      "metaDesc": "El método híbrido combina la motivación de bola de nieve con el ahorro de avalancha. Calcula tu plan gratis — sin registro."
+    },
+    "cashflow": {
+      "title": "Calculadora de Flujo de Caja Gratuita",
+      "heroText": "Libera flujo de caja mensual más rápido. El método de flujo de caja prioriza las deudas que consumen más efectivo en relación a su saldo.",
+      "metaTitle": "Calculadora de Flujo de Caja Gratuita — Libera Dinero Más Rápido | Payoff",
+      "metaDesc": "El método de flujo de caja prioriza las deudas que liberan más efectivo mensual. Calcula tu plan gratis — sin registro."
+    },
+    "highestBalance": {
+      "title": "Calculadora de Saldo Mayor Gratuita",
+      "heroText": "Ataca tu deuda más grande primero. Una vez eliminada la montaña, todo lo demás se siente manejable.",
+      "metaTitle": "Calculadora de Saldo Mayor Gratuita — Ataca Tu Deuda Más Grande | Payoff",
+      "metaDesc": "Prioriza tu deuda más grande con el método de saldo mayor. Calcula tu plan gratis — sin registro."
+    },
+    "deadline": {
+      "title": "Calculadora Libre de Deudas por Fecha Gratuita",
+      "heroText": "Elige tu fecha objetivo libre de deudas y descubre exactamente cuánto extra necesitas pagar cada mes.",
+      "metaTitle": "Calculadora Libre de Deudas por Fecha Gratuita — Fija Tu Objetivo | Payoff",
+      "metaDesc": "Elige tu fecha objetivo libre de deudas y descubre cuánto extra pagar cada mes. Planifica tu camino gratis — sin registro."
+    },
     "snowball": {
       "title": "Calculadora Gratuita Bola de Nieve",
       "heroText": "Descubre exactamente cuándo estarás libre de deudas con el método bola de nieve. Agrega tus deudas abajo — los resultados se actualizan al instante.",

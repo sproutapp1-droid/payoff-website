@@ -9,6 +9,10 @@
     "pricing": "요금",
     "faq": "자주 묻는 질문",
     "blog": "블로그",
+    "tools": "도구",
+    "snowballCalculator": "눈덩이 계산기",
+    "avalancheCalculator": "눈사태 계산기",
+    "allCalculators": "모든 계산기",
     "joinWaitlist": "대기자 명단 등록"
   },
   "hero": {

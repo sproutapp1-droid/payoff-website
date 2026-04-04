@@ -9,6 +9,10 @@
     "pricing": "Pricing",
     "faq": "FAQ",
     "blog": "Blog",
+    "tools": "Tools",
+    "snowballCalculator": "Snowball Calculator",
+    "avalancheCalculator": "Avalanche Calculator",
+    "allCalculators": "All Calculators",
     "joinWaitlist": "Join Waitlist"
   },
   "hero": {

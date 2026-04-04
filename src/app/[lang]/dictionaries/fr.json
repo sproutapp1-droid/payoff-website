@@ -9,6 +9,10 @@
     "pricing": "Tarifs",
     "faq": "FAQ",
     "blog": "Blog",
+    "tools": "Outils",
+    "snowballCalculator": "Calculateur Boule de Neige",
+    "avalancheCalculator": "Calculateur Avalanche",
+    "allCalculators": "Tous les Calculateurs",
     "joinWaitlist": "Rejoindre la Liste"
   },
   "hero": {

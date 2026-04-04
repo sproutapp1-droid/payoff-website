@@ -9,6 +9,10 @@
     "pricing": "价格",
     "faq": "常见问题",
     "blog": "博客",
+    "tools": "工具",
+    "snowballCalculator": "雪球法计算器",
+    "avalancheCalculator": "雪崩法计算器",
+    "allCalculators": "所有计算器",
     "joinWaitlist": "加入等候名单"
   },
   "hero": {

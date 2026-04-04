@@ -1,16 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, Calculator, Snowflake, TrendingDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useDict } from "@/components/i18n/LocaleProvider";
 
 export default function Navbar() {
   const { locale, dict } = useDict();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [toolsOpen, setToolsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const toolsRef = useRef<HTMLDivElement>(null);
 
   const prefix = locale === "en" ? "" : `/${locale}`;
 
@@ -22,12 +24,29 @@ export default function Navbar() {
     { label: dict.nav?.blog || "Blog", href: "/blog" },
   ];
 
+  const toolLinks = [
+    { label: dict.nav?.snowballCalculator || "Snowball Calculator", href: `${prefix}/calculator/snowball`, icon: <Snowflake size={16} /> },
+    { label: dict.nav?.avalancheCalculator || "Avalanche Calculator", href: `${prefix}/calculator/avalanche`, icon: <TrendingDown size={16} /> },
+    { label: dict.nav?.allCalculators || "All Calculators", href: `${prefix}/calculator`, icon: <Calculator size={16} /> },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Close tools dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (toolsRef.current && !toolsRef.current.contains(e.target as Node)) {
+        setToolsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
@@ -63,6 +82,40 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Tools dropdown */}
+            <div className="relative" ref={toolsRef}>
+              <button
+                onClick={() => setToolsOpen(!toolsOpen)}
+                className="flex items-center gap-1 text-sm font-semibold text-foreground/70 hover:text-primary transition-colors"
+              >
+                {dict.nav?.tools || "Tools"}
+                <ChevronDown size={14} className={`transition-transform ${toolsOpen ? "rotate-180" : ""}`} />
+              </button>
+              <AnimatePresence>
+                {toolsOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -4 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50"
+                  >
+                    {toolLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="flex items-center gap-2.5 px-4 py-2.5 text-sm text-foreground/70 hover:text-primary hover:bg-primary/5 transition-colors"
+                        onClick={() => setToolsOpen(false)}
+                      >
+                        <span className="text-primary/60">{link.icon}</span>
+                        {link.label}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </div>
 
           {/* Desktop CTA */}
@@ -107,6 +160,27 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
+
+              {/* Mobile tools section */}
+              <div className="border-t border-gray-100 pt-3 mt-1">
+                <span className="text-xs font-bold text-foreground/40 uppercase tracking-wider px-1">
+                  {dict.nav?.tools || "Tools"}
+                </span>
+                <div className="flex flex-col gap-1 mt-2">
+                  {toolLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="flex items-center gap-2.5 text-base font-semibold text-foreground/70 hover:text-primary transition-colors py-2 px-1"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      <span className="text-primary/60">{link.icon}</span>
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
               <Link
                 href={`${prefix}/#waitlist`}
                 className="bg-primary text-white rounded-full px-6 py-2.5 text-sm font-bold text-center mt-2 hover:bg-primary/90 transition-colors"

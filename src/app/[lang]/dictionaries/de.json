@@ -9,6 +9,10 @@
     "pricing": "Preise",
     "faq": "FAQ",
     "blog": "Blog",
+    "tools": "Tools",
+    "snowballCalculator": "Schneeball-Rechner",
+    "avalancheCalculator": "Lawinen-Rechner",
+    "allCalculators": "Alle Rechner",
     "joinWaitlist": "Warteliste beitreten"
   },
   "hero": {

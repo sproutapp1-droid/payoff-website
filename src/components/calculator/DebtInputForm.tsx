@@ -1,15 +1,18 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { Plus, Trash2, Sparkles } from 'lucide-react';
+import { Plus, Trash2, Sparkles, RotateCcw } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import type { WebDebt } from '@/lib/debt-calculator';
+import { CURRENCIES } from '@/lib/debt-calculator';
+import type { WebDebt, CurrencyCode } from '@/lib/debt-calculator';
 
 interface DebtInputFormProps {
   debts: WebDebt[];
   extraPayment: number;
   onDebtsChange: (debts: WebDebt[]) => void;
   onExtraPaymentChange: (amount: number) => void;
+  currency: CurrencyCode;
+  onCurrencyChange: (code: CurrencyCode) => void;
   dict: Record<string, string>;
   currencySymbol?: string;
 }
@@ -38,6 +41,8 @@ export default function DebtInputForm({
   extraPayment,
   onDebtsChange,
   onExtraPaymentChange,
+  currency,
+  onCurrencyChange,
   dict,
   currencySymbol = '$',
 }: DebtInputFormProps) {
@@ -79,6 +84,12 @@ export default function DebtInputForm({
     onDebtsChange(createSampleDebts());
   }, [onDebtsChange]);
 
+  const clearAll = useCallback(() => {
+    onDebtsChange([createEmptyDebt()]);
+    setSliderValue(0);
+    onExtraPaymentChange(0);
+  }, [onDebtsChange, onExtraPaymentChange]);
+
   const handleSlider = (val: number) => {
     setSliderValue(val);
     onExtraPaymentChange(val);
@@ -97,13 +108,40 @@ export default function DebtInputForm({
         <h2 className="text-lg font-bold text-gray-900">
           {dict.yourDebts || 'Your debts'}
         </h2>
-        <button
-          onClick={loadSample}
-          className="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+        <div className="flex items-center gap-3">
+          <button
+            onClick={clearAll}
+            className="flex items-center gap-1.5 text-sm font-semibold text-gray-400 hover:text-red-500 transition-colors"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            {dict.clearAll || 'Clear all'}
+          </button>
+          <button
+            onClick={loadSample}
+            className="flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+          >
+            <Sparkles className="w-4 h-4" />
+            {dict.loadExample || 'Load example'}
+          </button>
+        </div>
+      </div>
+
+      {/* Currency selector */}
+      <div className="flex items-center gap-2">
+        <label className="text-xs font-semibold text-gray-500">
+          {dict.currency || 'Currency'}
+        </label>
+        <select
+          value={currency}
+          onChange={(e) => onCurrencyChange(e.target.value as CurrencyCode)}
+          className="rounded-xl border-2 border-gray-200 px-3 py-1.5 text-sm font-semibold text-gray-700 bg-gray-50/50 focus:border-primary focus:outline-none transition-colors cursor-pointer"
         >
-          <Sparkles className="w-4 h-4" />
-          {dict.loadExample || 'Load example'}
-        </button>
+          {CURRENCIES.map((c) => (
+            <option key={c.code} value={c.code}>
+              {c.label}
+            </option>
+          ))}
+        </select>
       </div>
 
       {/* Debt rows */}

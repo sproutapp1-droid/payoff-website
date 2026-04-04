@@ -371,6 +371,8 @@
     "form": {
       "yourDebts": "내 부채",
       "loadExample": "예시 불러오기",
+      "clearAll": "모두 지우기",
+      "currency": "통화",
       "debtName": "부채명",
       "debtNamePlaceholder": "예: 신용카드, 자동차 대출...",
       "balance": "잔액",

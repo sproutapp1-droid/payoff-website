@@ -10,11 +10,12 @@ interface AmortizationTableProps {
   plan: PayoffPlan;
   lang: string;
   dict: Record<string, string>;
+  currency?: string;
 }
 
-export default function AmortizationTable({ plan, lang, dict }: AmortizationTableProps) {
+export default function AmortizationTable({ plan, lang, dict, currency }: AmortizationTableProps) {
   const [expandedDebt, setExpandedDebt] = useState<string | null>(null);
-  const fc = (n: number) => formatCurrency(n, lang);
+  const fc = (n: number) => formatCurrency(n, lang, currency);
 
   const toggle = (id: string) => {
     setExpandedDebt(expandedDebt === id ? null : id);

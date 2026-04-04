@@ -121,6 +121,16 @@ export default async function AvalanchePage({
     })),
   };
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Payoff', item: `${SITE_URL}/${lang}` },
+      { '@type': 'ListItem', position: 2, name: 'Calculators', item: `${SITE_URL}/${lang}/calculator` },
+      { '@type': 'ListItem', position: 3, name: 'Avalanche Calculator', item: `${SITE_URL}/${lang}/calculator/avalanche` },
+    ],
+  };
+
   return (
     <>
       <script
@@ -130,6 +140,10 @@ export default async function AvalanchePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <AvalancheClient faqs={faqs} />
     </>

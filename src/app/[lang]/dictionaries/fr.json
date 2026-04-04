@@ -371,6 +371,8 @@
     "form": {
       "yourDebts": "Vos dettes",
       "loadExample": "Charger un exemple",
+      "clearAll": "Tout effacer",
+      "currency": "Devise",
       "debtName": "Nom de la dette",
       "debtNamePlaceholder": "ex. Carte de Crédit, Prêt Auto...",
       "balance": "Solde",

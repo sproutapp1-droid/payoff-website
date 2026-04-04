@@ -14,6 +14,7 @@ interface CalculatorResultsProps {
   otherMethod: 'snowball' | 'avalanche';
   otherMethodPlan: PayoffPlan | null;
   locale: string;
+  currency?: string;
 }
 
 export default function CalculatorResults({
@@ -23,8 +24,9 @@ export default function CalculatorResults({
   otherMethod,
   otherMethodPlan,
   locale,
+  currency,
 }: CalculatorResultsProps) {
-  const fc = (n: number) => formatCurrency(n, lang);
+  const fc = (n: number) => formatCurrency(n, lang, currency);
   const fd = (d: Date) => formatDate(d, lang);
 
   const statCards = [
@@ -158,7 +160,7 @@ export default function CalculatorResults({
       )}
 
       {/* Payoff chart */}
-      <PayoffChart plan={plan} lang={lang} dict={dict} />
+      <PayoffChart plan={plan} lang={lang} dict={dict} currency={currency} />
 
       {/* Payoff order */}
       <div className="space-y-3">
@@ -199,7 +201,7 @@ export default function CalculatorResults({
       </div>
 
       {/* Amortization table */}
-      <AmortizationTable plan={plan} lang={lang} dict={dict} />
+      <AmortizationTable plan={plan} lang={lang} dict={dict} currency={currency} />
     </motion.div>
   );
 }

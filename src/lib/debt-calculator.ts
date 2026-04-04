@@ -292,8 +292,35 @@ const CURRENCY_MAP: Record<string, { code: string; locale: string }> = {
   it: { code: 'EUR', locale: 'it-IT' },
 };
 
-export function formatCurrency(amount: number, lang: string = 'en'): string {
-  const { code, locale } = CURRENCY_MAP[lang] || CURRENCY_MAP.en;
+export const CURRENCIES = [
+  { code: 'USD', symbol: '$', label: 'USD ($)' },
+  { code: 'EUR', symbol: '€', label: 'EUR (€)' },
+  { code: 'GBP', symbol: '£', label: 'GBP (£)' },
+  { code: 'BRL', symbol: 'R$', label: 'BRL (R$)' },
+  { code: 'JPY', symbol: '¥', label: 'JPY (¥)' },
+  { code: 'KRW', symbol: '₩', label: 'KRW (₩)' },
+  { code: 'CNY', symbol: '¥', label: 'CNY (¥)' },
+  { code: 'CAD', symbol: 'CA$', label: 'CAD (CA$)' },
+  { code: 'AUD', symbol: 'A$', label: 'AUD (A$)' },
+  { code: 'INR', symbol: '₹', label: 'INR (₹)' },
+  { code: 'MXN', symbol: 'MX$', label: 'MXN (MX$)' },
+  { code: 'CHF', symbol: 'CHF', label: 'CHF' },
+] as const;
+
+export type CurrencyCode = (typeof CURRENCIES)[number]['code'];
+
+export function getDefaultCurrency(lang: string): CurrencyCode {
+  const { code } = CURRENCY_MAP[lang] || CURRENCY_MAP.en;
+  return code as CurrencyCode;
+}
+
+export function getCurrencySymbol(currencyCode: CurrencyCode): string {
+  return CURRENCIES.find((c) => c.code === currencyCode)?.symbol || '$';
+}
+
+export function formatCurrency(amount: number, lang: string = 'en', currencyCode?: string): string {
+  const { locale } = CURRENCY_MAP[lang] || CURRENCY_MAP.en;
+  const code = currencyCode || (CURRENCY_MAP[lang] || CURRENCY_MAP.en).code;
   return new Intl.NumberFormat(locale, {
     style: 'currency',
     currency: code,

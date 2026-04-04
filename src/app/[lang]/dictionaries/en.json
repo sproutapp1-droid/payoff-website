@@ -366,6 +366,8 @@
     "form": {
       "yourDebts": "Your debts",
       "loadExample": "Load example",
+      "clearAll": "Clear all",
+      "currency": "Currency",
       "debtName": "Debt name",
       "debtNamePlaceholder": "e.g. Credit Card, Car Loan...",
       "balance": "Balance",

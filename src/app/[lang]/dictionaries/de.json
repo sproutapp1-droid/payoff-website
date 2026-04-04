@@ -371,6 +371,8 @@
     "form": {
       "yourDebts": "Deine Schulden",
       "loadExample": "Beispiel laden",
+      "clearAll": "Alles löschen",
+      "currency": "Währung",
       "debtName": "Schuldenname",
       "debtNamePlaceholder": "z.B. Kreditkarte, Autokredit...",
       "balance": "Saldo",

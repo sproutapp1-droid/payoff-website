@@ -371,6 +371,8 @@
     "form": {
       "yourDebts": "您的债务",
       "loadExample": "加载示例",
+      "clearAll": "全部清除",
+      "currency": "货币",
       "debtName": "债务名称",
       "debtNamePlaceholder": "例: 信用卡、车贷...",
       "balance": "余额",

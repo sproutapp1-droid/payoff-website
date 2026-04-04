@@ -371,6 +371,8 @@
     "form": {
       "yourDebts": "あなたの借金",
       "loadExample": "例を読み込む",
+      "clearAll": "すべてクリア",
+      "currency": "通貨",
       "debtName": "借金名",
       "debtNamePlaceholder": "例: クレジットカード、自動車ローン...",
       "balance": "残高",

@@ -371,6 +371,8 @@
     "form": {
       "yourDebts": "Suas dívidas",
       "loadExample": "Carregar exemplo",
+      "clearAll": "Limpar tudo",
+      "currency": "Moeda",
       "debtName": "Nome da dívida",
       "debtNamePlaceholder": "ex. Cartão de Crédito, Financiamento...",
       "balance": "Saldo",

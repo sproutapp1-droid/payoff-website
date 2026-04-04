@@ -7,8 +7,8 @@ import { useDict } from '@/components/i18n/LocaleProvider';
 import DebtInputForm, { createEmptyDebt } from './DebtInputForm';
 import CalculatorResults from './CalculatorResults';
 import CalculatorCTA from './CalculatorCTA';
-import { generatePayoffPlan } from '@/lib/debt-calculator';
-import type { WebDebt, StrategyMethod } from '@/lib/debt-calculator';
+import { generatePayoffPlan, getDefaultCurrency, getCurrencySymbol } from '@/lib/debt-calculator';
+import type { WebDebt, StrategyMethod, CurrencyCode } from '@/lib/debt-calculator';
 
 interface FAQ {
   q: string;
@@ -35,6 +35,7 @@ export default function CalculatorPageComponent({
 
   const [debts, setDebts] = useState<WebDebt[]>([createEmptyDebt()]);
   const [extraPayment, setExtraPayment] = useState(0);
+  const [currency, setCurrency] = useState<CurrencyCode>(getDefaultCurrency(locale));
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const otherMethod: StrategyMethod = method === 'snowball' ? 'avalanche' : 'snowball';
@@ -63,11 +64,11 @@ export default function CalculatorPageComponent({
     setExtraPayment(amount);
   }, []);
 
-  const CURRENCY_SYMBOLS: Record<string, string> = {
-    en: '$', es: '\u20AC', pt: 'R$', fr: '\u20AC', de: '\u20AC',
-    ja: '\u00A5', ko: '\u20A9', zh: '\u00A5', it: '\u20AC',
-  };
-  const currencySymbol = CURRENCY_SYMBOLS[locale] || '$';
+  const currencySymbol = getCurrencySymbol(currency);
+
+  const handleCurrencyChange = useCallback((code: CurrencyCode) => {
+    setCurrency(code);
+  }, []);
 
   return (
     <main className="relative pt-28 pb-20 px-4">
@@ -105,6 +106,8 @@ export default function CalculatorPageComponent({
                 extraPayment={extraPayment}
                 onDebtsChange={handleDebtsChange}
                 onExtraPaymentChange={handleExtraChange}
+                currency={currency}
+                onCurrencyChange={handleCurrencyChange}
                 dict={f}
                 currencySymbol={currencySymbol}
               />
@@ -122,6 +125,7 @@ export default function CalculatorPageComponent({
                   otherMethod={otherMethod}
                   otherMethodPlan={otherPlan}
                   locale={locale}
+                  currency={currency}
                 />
 
                 {/* Inline CTA */}

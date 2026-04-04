@@ -6,19 +6,19 @@ import { Check } from "lucide-react";
 import { useDict } from "@/components/i18n/LocaleProvider";
 
 interface FeatureSectionProps {
-  imageSrc: string;
+  screenshotNum: number;
   imageAlt: string;
   featureIndex: number;
   reverse?: boolean;
 }
 
 export default function FeatureSection({
-  imageSrc,
+  screenshotNum,
   imageAlt,
   featureIndex,
   reverse = false,
 }: FeatureSectionProps) {
-  const { dict } = useDict();
+  const { locale, dict } = useDict();
   const features = dict.features || [];
   const feature = features[featureIndex] || {};
 
@@ -26,6 +26,8 @@ export default function FeatureSection({
   const heading = feature.heading || '';
   const description = feature.description || '';
   const bullets = feature.bullets || [];
+
+  const imageSrc = `/screenshots/${locale}/${screenshotNum}.jpeg`;
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">

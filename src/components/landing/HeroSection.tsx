@@ -7,7 +7,8 @@ import { WaitlistForm } from "./WaitlistForm";
 import { useDict } from "@/components/i18n/LocaleProvider";
 
 export default function HeroSection() {
-  const { dict } = useDict();
+  const { locale, dict } = useDict();
+  const screenshotPath = `/screenshots/${locale}`;
   const h = dict.hero || {};
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -77,10 +78,10 @@ export default function HeroSection() {
             </span>
             <motion.div style={{ rotateY, transformStyle: "preserve-3d" }} className="relative w-[310px] h-[640px]">
               <div className="absolute inset-0 rounded-[44px] border-[8px] border-gray-900 overflow-hidden bg-black" style={{ backfaceVisibility: "hidden", boxShadow: "0 30px 80px -15px rgba(0,0,0,0.3)" }}>
-                <Image src="/screenshots/en/1.jpeg" alt="Payoff app dashboard showing debt-free countdown and payment progress" fill className="object-cover rounded-[36px]" priority />
+                <Image src={`${screenshotPath}/1.jpeg`} alt="Payoff app dashboard showing debt-free countdown and payment progress" fill className="object-cover rounded-[36px]" priority />
               </div>
               <div className="absolute inset-0 rounded-[44px] border-[8px] border-gray-900 overflow-hidden bg-black" style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)", boxShadow: "0 30px 80px -15px rgba(0,0,0,0.3)" }}>
-                <Image src="/screenshots/en/2.jpeg" alt="Payoff AI debt coach giving personalised advice" fill className="object-cover rounded-[36px]" />
+                <Image src={`${screenshotPath}/2.jpeg`} alt="Payoff AI debt coach giving personalised advice" fill className="object-cover rounded-[36px]" />
               </div>
             </motion.div>
             <span className="text-[80px] xl:text-[100px] font-extrabold text-primary select-none leading-[0.85] tracking-tight pointer-events-none" style={{ opacity: watermarkOpacity, writingMode: "vertical-rl", transform: "rotate(180deg)" }}>
@@ -97,10 +98,10 @@ export default function HeroSection() {
           <div style={{ perspective: "1000px" }} className="mb-6">
             <motion.div style={{ rotateY, transformStyle: "preserve-3d" }} className="relative w-[250px] h-[520px]">
               <div className="absolute inset-0 rounded-[40px] border-[7px] border-gray-900 overflow-hidden bg-black" style={{ backfaceVisibility: "hidden", boxShadow: "0 25px 60px -12px rgba(0,0,0,0.25)" }}>
-                <Image src="/screenshots/en/1.jpeg" alt="Payoff app dashboard" fill className="object-cover rounded-[33px]" priority />
+                <Image src={`${screenshotPath}/1.jpeg`} alt="Payoff app dashboard" fill className="object-cover rounded-[33px]" priority />
               </div>
               <div className="absolute inset-0 rounded-[40px] border-[7px] border-gray-900 overflow-hidden bg-black" style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)", boxShadow: "0 25px 60px -12px rgba(0,0,0,0.25)" }}>
-                <Image src="/screenshots/en/2.jpeg" alt="Payoff AI coach" fill className="object-cover rounded-[33px]" />
+                <Image src={`${screenshotPath}/2.jpeg`} alt="Payoff AI coach" fill className="object-cover rounded-[33px]" />
               </div>
             </motion.div>
           </div>

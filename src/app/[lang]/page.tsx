@@ -9,11 +9,11 @@ import FAQAccordion from '@/components/landing/FAQAccordion';
 import CTABanner from '@/components/landing/CTABanner';
 import { SITE_URL } from '@/lib/constants';
 
-const featureImages = [
-  { imageSrc: '/screenshots/en/2.jpeg', imageAlt: 'Payoff AI debt coach giving personalised advice', reverse: false },
-  { imageSrc: '/screenshots/en/4.jpeg', imageAlt: 'Payoff strategy recommendation screen', reverse: true },
-  { imageSrc: '/screenshots/en/6.jpeg', imageAlt: 'Payoff what-if scenario screen', reverse: false },
-  { imageSrc: '/screenshots/en/3.jpeg', imageAlt: 'Payoff partner mode showing shared debts', reverse: true },
+const featureScreenshots = [
+  { screenshotNum: 2, imageAlt: 'Payoff AI debt coach giving personalised advice', reverse: false },
+  { screenshotNum: 4, imageAlt: 'Payoff strategy recommendation screen', reverse: true },
+  { screenshotNum: 6, imageAlt: 'Payoff what-if scenario screen', reverse: false },
+  { screenshotNum: 3, imageAlt: 'Payoff partner mode showing shared debts', reverse: true },
 ];
 
 export default function HomePage() {
@@ -57,13 +57,13 @@ export default function HomePage() {
       <BenefitsGrid />
 
       <div className="space-y-20 py-20 px-4">
-        {featureImages.map((img, i) => (
+        {featureScreenshots.map((feat, i) => (
           <FeatureSection
             key={i}
-            imageSrc={img.imageSrc}
-            imageAlt={img.imageAlt}
+            screenshotNum={feat.screenshotNum}
+            imageAlt={feat.imageAlt}
             featureIndex={i}
-            reverse={img.reverse}
+            reverse={feat.reverse}
           />
         ))}
       </div>

@@ -128,7 +128,7 @@ function renderKeyTakeaway(lines: string[], i: number, key: number): { element: 
 
   return {
     element: (
-      <div key={key} className="bg-gradient-to-r from-primary to-primary/90 text-white rounded-2xl p-6 my-8">
+      <div key={key} className="not-prose bg-gradient-to-r from-primary to-primary/90 text-white rounded-2xl p-6 my-8">
         <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
           <Lightbulb className="w-5 h-5" /> Key Takeaway
         </h4>
@@ -239,7 +239,7 @@ function renderCTABox(line: string, key: number): { element: React.ReactNode } {
 
   return {
     element: (
-      <div key={key} className="bg-background rounded-2xl border-2 border-primary/10 p-8 my-8 text-center">
+      <div key={key} className="not-prose bg-background rounded-2xl border-2 border-primary/10 p-8 my-8 text-center">
         <h4 className="font-extrabold text-xl text-primary mb-2">{title}</h4>
         <p className="text-gray-600 mb-4">{description}</p>
         <Link
@@ -327,7 +327,7 @@ function renderStatHighlight(line: string, key: number): { element: React.ReactN
 
   return {
     element: (
-      <div key={key} className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 my-8 text-center">
+      <div key={key} className="not-prose bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 my-8 text-center">
         <div className="text-5xl md:text-6xl font-extrabold text-primary mb-2">{value}</div>
         <div className="text-lg font-bold text-gray-900 mb-1">{label}</div>
         {description && <p className="text-gray-500 text-sm max-w-md mx-auto">{description}</p>}

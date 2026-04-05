@@ -63,6 +63,16 @@ function parseAttributes(tagLine: string): Record<string, unknown> {
   return attrs;
 }
 
+/**
+ * Extract inline content when open + close tag are on the same line.
+ * Returns the content string if found, otherwise null.
+ */
+function extractInlineContent(tag: string, line: string): string | null {
+  const regex = new RegExp(`<${tag}[^>]*>(.+?)</${tag}>`);
+  const match = line.match(regex);
+  return match ? match[1] : null;
+}
+
 function collectUntilClose(tag: string, lines: string[], startIndex: number): { content: string[]; endIndex: number } {
   const contentLines: string[] = [];
   let i = startIndex;
@@ -78,7 +88,14 @@ function collectUntilClose(tag: string, lines: string[], startIndex: number): { 
 function renderCallout(line: string, lines: string[], i: number, key: number): { element: React.ReactNode; newIndex: number } {
   const attrs = parseAttributes(line);
   const type = (attrs.type as string) || 'tip';
-  const { content, endIndex } = collectUntilClose('Callout', lines, i + 1);
+
+  // Check if open + close are on the same line
+  const inline = extractInlineContent('Callout', line);
+  const text = inline ?? (() => {
+    const { content } = collectUntilClose('Callout', lines, i + 1);
+    return content.join(' ').trim();
+  })();
+  const endIndex = inline ? i + 1 : collectUntilClose('Callout', lines, i + 1).endIndex;
 
   const styles: Record<string, { bg: string; border: string; icon: React.ReactNode }> = {
     tip: { bg: 'bg-primary/5', border: 'border-primary', icon: <Lightbulb className="w-5 h-5 text-primary flex-shrink-0" /> },
@@ -92,7 +109,7 @@ function renderCallout(line: string, lines: string[], i: number, key: number): {
       <div key={key} className={`${s.bg} ${s.border} border-l-4 rounded-xl p-5 my-6 flex gap-3`}>
         <div className="mt-0.5">{s.icon}</div>
         <div className="text-gray-700 text-[15px] leading-relaxed [&>p]:mb-0">
-          {processInline(content.join(' ').trim())}
+          {processInline(text)}
         </div>
       </div>
     ),
@@ -101,14 +118,21 @@ function renderCallout(line: string, lines: string[], i: number, key: number): {
 }
 
 function renderKeyTakeaway(lines: string[], i: number, key: number): { element: React.ReactNode; newIndex: number } {
-  const { content, endIndex } = collectUntilClose('KeyTakeaway', lines, i + 1);
+  // Check if open + close are on the same line
+  const inline = extractInlineContent('KeyTakeaway', lines[i]);
+  const text = inline ?? (() => {
+    const { content, endIndex: _end } = collectUntilClose('KeyTakeaway', lines, i + 1);
+    return content.join(' ').trim();
+  })();
+  const endIndex = inline ? i + 1 : collectUntilClose('KeyTakeaway', lines, i + 1).endIndex;
+
   return {
     element: (
       <div key={key} className="bg-gradient-to-r from-primary to-primary/90 text-white rounded-2xl p-6 my-8">
         <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
           <Lightbulb className="w-5 h-5" /> Key Takeaway
         </h4>
-        <p className="text-white/90 leading-relaxed mb-0">{processInline(content.join(' ').trim())}</p>
+        <p className="text-white/90 leading-relaxed mb-0">{processInline(text)}</p>
       </div>
     ),
     newIndex: endIndex,

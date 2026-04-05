@@ -129,6 +129,22 @@ export default async function HybridPage({
     ],
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Pay Off Debt Using the Hybrid Method',
+    description: 'The hybrid method combines snowball and avalanche strategies — you target a mix of small-balance wins and high-interest savings to stay motivated while minimising costs.',
+    totalTime: 'PT5M',
+    step: [
+      { '@type': 'HowToStep', name: 'List all your debts', text: 'Write down every debt with its balance, APR, and minimum payment.' },
+      { '@type': 'HowToStep', name: 'Split debts into two groups', text: 'Put high-interest debts (above 15-20% APR) in the avalanche group. Put the rest in the snowball group.' },
+      { '@type': 'HowToStep', name: 'Attack the avalanche group first', text: 'Direct extra payments to the highest-interest debt to stop the bleeding on expensive interest.' },
+      { '@type': 'HowToStep', name: 'Switch to snowball for quick wins', text: 'Once high-interest debts are cleared, switch to smallest-balance-first for motivational wins.' },
+      { '@type': 'HowToStep', name: 'Roll payments forward', text: 'Each cleared debt\'s payment rolls into the next, combining the best of both methods.' },
+      { '@type': 'HowToStep', name: 'Adjust as needed', text: 'Re-evaluate quarterly. If motivation dips, lean snowball. If interest costs spike, lean avalanche.' },
+    ],
+  };
+
   return (
     <>
       <script
@@ -142,6 +158,10 @@ export default async function HybridPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <HybridClient faqs={faqs} />
     </>

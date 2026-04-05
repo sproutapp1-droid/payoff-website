@@ -129,6 +129,22 @@ export default async function CashFlowPage({
     ],
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Pay Off Debt Using the Cash Flow Index Method',
+    description: 'The cash flow index method targets debts that free up the most monthly cash flow relative to their balance, giving you breathing room fastest.',
+    totalTime: 'PT5M',
+    step: [
+      { '@type': 'HowToStep', name: 'List all your debts', text: 'Write down every debt with its balance, minimum payment, and APR.' },
+      { '@type': 'HowToStep', name: 'Calculate each debt\'s cash flow index', text: 'Divide the balance by the minimum payment. Lower numbers mean that debt locks up more cash relative to what you owe.' },
+      { '@type': 'HowToStep', name: 'Sort by cash flow index (lowest first)', text: 'The debt with the lowest index is using the most cash flow per pound of debt — target it first.' },
+      { '@type': 'HowToStep', name: 'Direct extra payments to the lowest-index debt', text: 'Put all spare money toward the debt that will free up the most monthly cash when eliminated.' },
+      { '@type': 'HowToStep', name: 'Roll freed payments forward', text: 'When a debt is paid off, add its minimum payment to your attack on the next debt.' },
+      { '@type': 'HowToStep', name: 'Enjoy the breathing room', text: 'Each eliminated debt frees up proportionally more cash flow, reducing financial pressure faster.' },
+    ],
+  };
+
   return (
     <>
       <script
@@ -142,6 +158,10 @@ export default async function CashFlowPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <CashFlowClient faqs={faqs} />
     </>

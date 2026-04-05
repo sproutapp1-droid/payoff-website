@@ -131,6 +131,56 @@ export default async function AvalanchePage({
     ],
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Pay Off Debt Using the Avalanche Method',
+    description:
+      'The debt avalanche method pays off debts from highest interest rate to lowest, minimising total interest paid. You save the most money with this mathematically optimal approach.',
+    totalTime: 'PT5M',
+    tool: [
+      { '@type': 'HowToTool', name: 'Free Debt Avalanche Calculator' },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'List all your debts',
+        text: 'Write down every debt you owe — credit cards, personal loans, medical bills, student loans. Include the balance, APR, and minimum payment for each.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Sort by interest rate (highest to lowest)',
+        text: 'Arrange your debts from the highest APR to the lowest. The avalanche method focuses on interest rate, not balance size, to minimise total cost.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Pay minimums on all debts except the highest-rate one',
+        text: 'Continue making minimum payments on every debt except the one with the highest interest rate. This keeps all accounts current.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Put every spare pound or dollar toward the highest-rate debt',
+        text: 'Direct all extra money beyond minimums to the debt charging you the most interest. This stops the most expensive debt from growing.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Roll the payment into the next-highest-rate debt',
+        text: 'When the highest-rate debt is paid off, take the entire amount you were paying on it and add it to the minimum payment of the next-highest-rate debt.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 6,
+        name: 'Repeat until debt-free',
+        text: 'Continue the avalanche — each debt you eliminate frees up more money for the next. You\'ll pay the least total interest of any method.',
+      },
+    ],
+  };
+
   return (
     <>
       <script
@@ -144,6 +194,10 @@ export default async function AvalanchePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <AvalancheClient faqs={faqs} />
     </>

@@ -128,6 +128,22 @@ export default async function HighestBalancePage({
     ],
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Pay Off Debt Using the Highest Balance Method',
+    description: 'The highest balance method tackles your largest debt first, eliminating the biggest source of financial stress and reducing your total debt most dramatically with each payoff.',
+    totalTime: 'PT5M',
+    step: [
+      { '@type': 'HowToStep', name: 'List all your debts', text: 'Write down every debt with its balance, APR, and minimum payment.' },
+      { '@type': 'HowToStep', name: 'Sort by balance (largest first)', text: 'Arrange debts from highest balance to lowest. This method targets the elephant in the room first.' },
+      { '@type': 'HowToStep', name: 'Pay minimums on all except the largest', text: 'Keep all accounts current while focusing your firepower on the biggest debt.' },
+      { '@type': 'HowToStep', name: 'Direct all extra payments to the largest debt', text: 'Put every spare pound toward your biggest balance. Progress may feel slow at first, but the payoff is dramatic.' },
+      { '@type': 'HowToStep', name: 'Roll payments into the next largest', text: 'When the biggest debt falls, roll that entire payment into the next-largest. Momentum builds fast from here.' },
+      { '@type': 'HowToStep', name: 'Watch your total debt drop fastest', text: 'Each payoff removes a larger chunk of your total debt than any other method.' },
+    ],
+  };
+
   return (
     <>
       <script
@@ -141,6 +157,10 @@ export default async function HighestBalancePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <HighestBalanceClient faqs={faqs} />
     </>

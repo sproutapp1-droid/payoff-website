@@ -131,6 +131,56 @@ export default async function SnowballPage({
     ],
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Pay Off Debt Using the Snowball Method',
+    description:
+      'The debt snowball method pays off debts from smallest balance to largest. Each time you eliminate a debt, you roll that payment into the next one — building momentum like a snowball.',
+    totalTime: 'PT5M',
+    tool: [
+      { '@type': 'HowToTool', name: 'Free Debt Snowball Calculator' },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'List all your debts',
+        text: 'Write down every debt you owe — credit cards, personal loans, medical bills, student loans. Include the balance, APR, and minimum payment for each.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Sort by balance (smallest to largest)',
+        text: 'Arrange your debts from the smallest balance to the largest. Ignore interest rates — the snowball method focuses on balance size for quick psychological wins.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Pay minimums on all debts except the smallest',
+        text: 'Continue making minimum payments on every debt except the one with the smallest balance. This keeps all accounts current while focusing your extra money.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Put every spare pound or dollar toward the smallest debt',
+        text: 'Direct all extra money beyond minimums to your smallest debt. Even an extra £25-50 per month can dramatically accelerate your payoff date.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Roll the payment into the next debt',
+        text: 'When the smallest debt is paid off, take the entire amount you were paying on it (minimum + extra) and add it to the minimum payment of the next-smallest debt.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 6,
+        name: 'Repeat until debt-free',
+        text: 'Continue rolling payments into the next debt on your list. Each debt you eliminate makes the next one fall faster — that\'s the snowball effect.',
+      },
+    ],
+  };
+
   return (
     <>
       <script
@@ -144,6 +194,10 @@ export default async function SnowballPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <SnowballClient faqs={faqs} />
     </>

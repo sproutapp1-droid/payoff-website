@@ -129,6 +129,22 @@ export default async function DeadlinePage({
     ],
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Become Debt-Free by a Specific Date',
+    description: 'The deadline method lets you pick your target debt-free date and reverse-engineers exactly how much extra you need to pay each month to hit it.',
+    totalTime: 'PT5M',
+    step: [
+      { '@type': 'HowToStep', name: 'List all your debts', text: 'Enter every debt with its balance, APR, and minimum payment.' },
+      { '@type': 'HowToStep', name: 'Choose your target debt-free date', text: 'Pick a realistic but ambitious date. Common targets: 2 years, 3 years, or a life event like a wedding or retirement.' },
+      { '@type': 'HowToStep', name: 'Calculate the required monthly extra', text: 'The calculator works backwards from your target date to determine exactly how much extra you need each month.' },
+      { '@type': 'HowToStep', name: 'Check if it\'s affordable', text: 'Compare the required extra payment to your disposable income. Adjust the date if needed until it feels challenging but doable.' },
+      { '@type': 'HowToStep', name: 'Set up your payment plan', text: 'Allocate the extra payment using your preferred strategy (snowball, avalanche, or hybrid).' },
+      { '@type': 'HowToStep', name: 'Track progress against your deadline', text: 'Monitor monthly to ensure you\'re on track. Adjust if your income or expenses change.' },
+    ],
+  };
+
   return (
     <>
       <script
@@ -142,6 +158,10 @@ export default async function DeadlinePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <DeadlineClient faqs={faqs} />
     </>

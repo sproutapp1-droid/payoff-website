@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog';
+import { getAllGuideSlugs } from '@/data/guides';
 import { SITE_URL } from '@/lib/constants';
 import { LOCALES } from '@/lib/i18n';
 
@@ -38,6 +39,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: {
           languages: alternates,
         },
+      });
+    }
+  }
+
+  // Programmatic guide pages (locale-prefixed)
+  const guideSlugs = getAllGuideSlugs();
+  for (const slug of guideSlugs) {
+    for (const locale of LOCALES) {
+      const alternates: Record<string, string> = {};
+      for (const l of LOCALES) {
+        alternates[l] = `${SITE_URL}/${l}/guides/${slug}`;
+      }
+
+      entries.push({
+        url: `${SITE_URL}/${locale}/guides/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.85,
       });
     }
   }

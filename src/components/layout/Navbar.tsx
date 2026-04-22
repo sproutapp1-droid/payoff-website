@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Menu, X, ChevronDown, Calculator, Snowflake, TrendingDown, Blend, Banknote, BarChart3, CalendarClock } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useDict } from "@/components/i18n/LocaleProvider";
+import DownloadButtons from "@/components/landing/DownloadButtons";
 
 export default function Navbar() {
   const { locale, dict } = useDict();
@@ -124,12 +125,7 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Link
-              href={`${prefix}/#waitlist`}
-              className="bg-primary text-white rounded-full px-6 py-2 text-sm font-bold hover:bg-primary/90 transition-colors"
-            >
-              {dict.nav?.joinWaitlist || "Join Waitlist"}
-            </Link>
+            <DownloadButtons variant="inline" />
           </div>
 
           {/* Mobile hamburger */}
@@ -185,13 +181,9 @@ export default function Navbar() {
                 </div>
               </div>
 
-              <Link
-                href={`${prefix}/#waitlist`}
-                className="bg-primary text-white rounded-full px-6 py-2.5 text-sm font-bold text-center mt-2 hover:bg-primary/90 transition-colors"
-                onClick={() => setMobileOpen(false)}
-              >
-                {dict.nav?.joinWaitlist || "Join Waitlist"}
-              </Link>
+              <div className="mt-2" onClick={() => setMobileOpen(false)}>
+                <DownloadButtons variant="inline" align="left" />
+              </div>
             </div>
           </motion.div>
         )}

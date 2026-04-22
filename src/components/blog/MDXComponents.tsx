@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowRight, Lightbulb, AlertTriangle, Info, CheckCircle2 } from 'lucide-react';
+import { Lightbulb, AlertTriangle, Info, CheckCircle2 } from 'lucide-react';
+import DownloadButtons from '@/components/landing/DownloadButtons';
 
 function Callout({ type = 'tip', children }: { type?: 'tip' | 'warning' | 'info'; children: React.ReactNode }) {
   const styles = {
@@ -85,17 +85,12 @@ function KeyTakeaway({ children }: { children: React.ReactNode }) {
   );
 }
 
-function CTABox({ title, description, buttonText, href }: { title: string; description: string; buttonText: string; href: string }) {
+function CTABox({ title, description }: { title: string; description: string; buttonText?: string; href?: string }) {
   return (
     <div className="bg-background rounded-2xl border-2 border-primary/10 p-8 my-8 text-center">
       <h4 className="font-extrabold text-xl text-primary mb-2">{title}</h4>
-      <p className="text-gray-600 mb-4">{description}</p>
-      <Link
-        href={href}
-        className="inline-flex items-center gap-2 bg-primary text-white rounded-full px-8 py-3 font-bold hover:bg-primary/90 transition no-underline"
-      >
-        {buttonText} <ArrowRight className="w-4 h-4" />
-      </Link>
+      <p className="text-gray-600 mb-5">{description}</p>
+      <DownloadButtons />
     </div>
   );
 }

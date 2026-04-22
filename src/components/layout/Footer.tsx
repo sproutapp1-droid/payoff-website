@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Globe } from "lucide-react";
 import { useDict } from "@/components/i18n/LocaleProvider";
-import { WaitlistForm } from "@/components/landing/WaitlistForm";
+import DownloadButtons from "@/components/landing/DownloadButtons";
 import { LOCALES, LOCALE_NATIVE_NAMES } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 import { usePathname, useRouter } from "next/navigation";
@@ -68,9 +68,9 @@ export default function Footer() {
             {f.ctaTitle || "Start your debt-free journey today"}
           </h2>
           <p className="text-white/80 text-lg mb-8">
-            {f.ctaSubtitle || "Join the waitlist and be first to try Payoff. No bank access. No commitment."}
+            {f.ctaSubtitle || "Download Payoff free on iOS and Android. No bank access. No commitment."}
           </p>
-          <WaitlistForm variant="banner" />
+          <DownloadButtons variant="light" />
         </div>
       </section>
 

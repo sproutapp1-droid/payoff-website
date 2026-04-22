@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { WaitlistForm } from "./WaitlistForm";
+import DownloadButtons from "./DownloadButtons";
 import { useDict } from "@/components/i18n/LocaleProvider";
 
 export default function HeroSection() {
@@ -62,7 +62,7 @@ export default function HeroSection() {
             <p className="text-lg text-gray-600 mb-8 max-w-md">
               {h.subheadline || "The smart debt payoff planner with AI coaching, 7 proven strategies, and a savings planner to help you see life after debt."}
             </p>
-            <WaitlistForm variant="hero" className="mb-6 max-w-md" />
+            <DownloadButtons align="left" className="mb-6" />
             <div className="flex flex-wrap gap-2">
               {trustPills.map((pill: string) => (
                 <span key={pill} className="border border-primary/20 text-primary/70 rounded-full px-3 py-1 text-xs">
@@ -112,7 +112,7 @@ export default function HeroSection() {
             <p className="text-base text-gray-600 mb-5">
               {h.subheadlineMobile || h.subheadline || "The smart debt payoff planner with AI coaching and 7 proven strategies"}
             </p>
-            <WaitlistForm variant="hero" className="mb-4" />
+            <DownloadButtons className="mb-4" />
             <div className="flex flex-wrap justify-center gap-2">
               {trustPills.map((pill: string) => (
                 <span key={pill} className="border border-primary/20 text-primary/70 rounded-full px-3 py-1 text-xs">

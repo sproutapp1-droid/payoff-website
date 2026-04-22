@@ -17,20 +17,13 @@ export const NAV_LINKS = [
 ] as const;
 
 export const STORE_LINKS = {
-  appStore: '#', // TODO: Replace with real App Store URL
-  playStore: '#', // TODO: Replace with real Play Store URL
+  appStore: 'https://apps.apple.com/us/app/payoff-smart-debt-planner/id6761310986',
+  playStore: 'https://play.google.com/store/apps/details?id=com.payoffplanner.app',
 } as const;
 
-/**
- * ========== APP DOWNLOAD CTA ==========
- * This is the ONE place to update when the app goes live.
- * Currently points to waitlist. Replace with App Store / Play Store link.
- * Search the codebase for "/#waitlist" to find remaining hardcoded MDX references.
- * =======================================
- */
-export const APP_DOWNLOAD_URL = '/#waitlist';
-export const APP_CTA_TEXT = 'Join the Waitlist'; // Change to "Download Free" at launch
-export const APP_CTA_TEXT_ALT = 'Get Started Free'; // Secondary CTA variant
+export const APP_DOWNLOAD_URL = STORE_LINKS.appStore;
+export const APP_CTA_TEXT = 'Download Free';
+export const APP_CTA_TEXT_ALT = 'Get the App';
 
 export const PRICING = {
   free: {

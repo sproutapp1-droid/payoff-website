@@ -5,6 +5,7 @@ import { getAllPosts, getPostBySlug, getAdjacentPosts } from '@/lib/blog';
 import { ArrowLeft, ArrowRight, Clock, Calendar, User, Tag } from 'lucide-react';
 import { BlogArticle } from '@/components/blog/BlogArticle';
 import { SITE_URL } from '@/lib/constants';
+import DownloadButtons from '@/components/landing/DownloadButtons';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -186,14 +187,9 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="bg-gradient-to-r from-primary to-primary/90 rounded-2xl p-8 mt-12 text-center text-white">
             <h3 className="font-extrabold text-2xl mb-2">Ready to put this into action?</h3>
             <p className="text-white/80 mb-5">
-              Join the waitlist for Payoff  - AI coaching, 7 proven strategies, and a savings planner. Coming soon to iOS & Android.
+              Download Payoff free — AI coaching, 7 proven strategies, and a savings planner. Available on iOS &amp; Android.
             </p>
-            <Link
-              href="/#waitlist"
-              className="inline-block bg-white text-primary rounded-full px-8 py-3 font-bold hover:bg-gray-100 transition no-underline"
-            >
-              Join the Waitlist
-            </Link>
+            <DownloadButtons variant="light" />
           </div>
         </article>
       </main>

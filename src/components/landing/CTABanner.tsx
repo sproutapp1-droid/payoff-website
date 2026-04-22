@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { WaitlistForm } from "./WaitlistForm";
+import DownloadButtons from "./DownloadButtons";
 import { useDict } from "@/components/i18n/LocaleProvider";
 
 export default function CTABanner() {
@@ -33,9 +33,9 @@ export default function CTABanner() {
             {c.title || "Ready to start your debt-free journey?"}
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-            {c.subtitle || "Join the waitlist and be first to try Payoff when it launches. No bank access. No commitment."}
+            {c.subtitle || "Download Payoff free on iOS and Android. No bank access. No commitment."}
           </p>
-          <WaitlistForm variant="banner" />
+          <DownloadButtons variant="light" />
         </motion.div>
       </div>
     </section>

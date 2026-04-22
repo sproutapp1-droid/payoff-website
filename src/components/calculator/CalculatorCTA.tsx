@@ -1,7 +1,7 @@
 'use client';
 
-import { ArrowRight, Sparkles } from 'lucide-react';
-import Link from 'next/link';
+import { Sparkles } from 'lucide-react';
+import DownloadButtons from '@/components/landing/DownloadButtons';
 
 interface CalculatorCTAProps {
   dict: Record<string, string>;
@@ -9,9 +9,7 @@ interface CalculatorCTAProps {
   variant?: 'inline' | 'full';
 }
 
-export default function CalculatorCTA({ dict, locale, variant = 'full' }: CalculatorCTAProps) {
-  const prefix = locale === 'en' ? '' : `/${locale}`;
-
+export default function CalculatorCTA({ dict, variant = 'full' }: CalculatorCTAProps) {
   if (variant === 'inline') {
     return (
       <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -23,14 +21,7 @@ export default function CalculatorCTA({ dict, locale, variant = 'full' }: Calcul
             {dict.ctaInlineDesc || 'The Payoff app gives you personalised advice based on your real debt data.'}
           </p>
         </div>
-        {/* TODO: Replace /#waitlist with actual app download link at launch */}
-        <Link
-          href={`${prefix}/#waitlist`}
-          className="flex items-center gap-1.5 px-5 py-2.5 bg-primary text-white text-sm font-semibold rounded-full hover:bg-primary/90 transition-colors flex-shrink-0"
-        >
-          {dict.ctaInlineButton || 'Join Waitlist'}
-          <ArrowRight className="w-4 h-4" />
-        </Link>
+        <DownloadButtons variant="inline" className="flex-shrink-0" />
       </div>
     );
   }
@@ -67,14 +58,9 @@ export default function CalculatorCTA({ dict, locale, variant = 'full' }: Calcul
             ))}
         </div>
 
-        {/* TODO: Replace /#waitlist with actual app download link at launch */}
-        <Link
-          href={`${prefix}/#waitlist`}
-          className="inline-flex items-center gap-2 bg-white text-primary font-bold text-sm sm:text-base px-8 py-3.5 rounded-full hover:bg-white/90 transition-colors mt-2"
-        >
-          {dict.ctaButton || 'Join the Waitlist'}
-          <ArrowRight className="w-4 h-4" />
-        </Link>
+        <div className="pt-2">
+          <DownloadButtons variant="light" />
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getAllPosts, getPostBySlug, getAdjacentPosts } from '@/lib/blog';
+import { getAllPosts, getPostBySlug, getAdjacentPosts, getCategorySlug } from '@/lib/blog';
 import { ArrowLeft, ArrowRight, Clock, Calendar, User, Tag } from 'lucide-react';
 import { BlogArticle } from '@/components/blog/BlogArticle';
 import { SITE_URL } from '@/lib/constants';
@@ -53,21 +53,41 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const { prev, next } = getAdjacentPosts(slug);
 
+  const categorySlug = getCategorySlug(post.category);
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.description,
-    datePublished: post.date,
-    dateModified: post.updated || post.date,
-    author: { '@type': 'Organization', name: post.author },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Payoff: Smart Debt Planner',
-      url: SITE_URL,
-    },
-    mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
-    keywords: post.tags.join(', '),
+    '@graph': [
+      {
+        '@type': 'Article',
+        '@id': `${SITE_URL}/blog/${slug}#article`,
+        headline: post.title,
+        description: post.description,
+        datePublished: post.date,
+        dateModified: post.updated || post.date,
+        author: { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: post.author },
+        publisher: { '@id': `${SITE_URL}/#organization` },
+        mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
+        articleSection: post.category,
+        keywords: post.tags.join(', '),
+        inLanguage: 'en',
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Blog', item: `${SITE_URL}/blog` },
+          { '@type': 'ListItem', position: 2, name: post.category, item: `${SITE_URL}/blog/category/${categorySlug}` },
+          { '@type': 'ListItem', position: 3, name: post.title, item: `${SITE_URL}/blog/${slug}` },
+        ],
+      },
+      ...(post.faqs?.length ? [{
+        '@type': 'FAQPage',
+        mainEntity: post.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+        })),
+      }] : []),
+    ],
   };
 
   return (
@@ -90,9 +110,12 @@ export default async function BlogPostPage({ params }: PageProps) {
           {/* Article header */}
           <header className="mb-10">
             <div className="flex flex-wrap items-center gap-3 mb-4">
-              <span className="bg-primary/10 text-primary text-sm font-bold rounded-full px-4 py-1">
+              <Link
+                href={`/blog/category/${categorySlug}`}
+                className="bg-primary/10 text-primary text-sm font-bold rounded-full px-4 py-1 no-underline hover:bg-primary/15"
+              >
                 {post.category}
-              </span>
+              </Link>
               <span className="flex items-center gap-1 text-sm text-gray-400">
                 <Clock className="w-3.5 h-3.5" />
                 {post.readingTime}
@@ -135,6 +158,12 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           {/* Article body */}
           <BlogArticle content={post.content} />
+
+          <aside className="mt-10 rounded-xl border border-gray-200 bg-white p-5 text-sm text-gray-600">
+            <strong className="text-gray-900">Editorial note:</strong>{' '}
+            This content is for general education and does not replace personalised financial, legal, tax, credit, or mental-health advice.
+            We use current primary sources for material claims and do not accept payment for editorial rankings.
+          </aside>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mt-10 pt-8 border-t border-gray-100">

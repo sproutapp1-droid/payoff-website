@@ -1,8 +1,10 @@
 import type { MetadataRoute } from 'next';
-import { getAllPosts } from '@/lib/blog';
+import { BLOG_CATEGORIES, getAllPosts } from '@/lib/blog';
 import { getAllGuideSlugs } from '@/data/guides';
 import { SITE_URL } from '@/lib/constants';
 import { LOCALES } from '@/lib/i18n';
+
+const SITE_UPDATED = new Date('2026-07-29');
 
 const STATIC_PAGES = [
   '',
@@ -10,7 +12,6 @@ const STATIC_PAGES = [
   '/terms',
   '/support',
   '/contact',
-  '/delete-account',
   '/calculator',
   '/calculator/snowball',
   '/calculator/avalanche',
@@ -30,10 +31,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       for (const l of LOCALES) {
         alternates[l] = `${SITE_URL}/${l}${page}`;
       }
+      alternates['x-default'] = `${SITE_URL}/en${page}`;
 
       entries.push({
         url: `${SITE_URL}/${locale}${page}`,
-        lastModified: new Date(),
+        lastModified: SITE_UPDATED,
         changeFrequency: page === '' || page.startsWith('/calculator') ? 'weekly' : 'monthly',
         priority: page === '' ? 1.0 : page.startsWith('/calculator') ? 0.9 : 0.7,
         alternates: {
@@ -51,12 +53,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       for (const l of LOCALES) {
         alternates[l] = `${SITE_URL}/${l}/guides/${slug}`;
       }
+      alternates['x-default'] = `${SITE_URL}/en/guides/${slug}`;
 
       entries.push({
         url: `${SITE_URL}/${locale}/guides/${slug}`,
-        lastModified: new Date(),
+        lastModified: SITE_UPDATED,
         changeFrequency: 'monthly',
         priority: 0.85,
+        alternates: {
+          languages: alternates,
+        },
       });
     }
   }
@@ -64,17 +70,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog index (English only)
   entries.push({
     url: `${SITE_URL}/blog`,
-    lastModified: new Date(),
+    lastModified: SITE_UPDATED,
     changeFrequency: 'weekly',
     priority: 0.8,
   });
+
+  entries.push(
+    {
+      url: `${SITE_URL}/blog/about`,
+      lastModified: SITE_UPDATED,
+      changeFrequency: 'yearly',
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/blog/editorial-policy`,
+      lastModified: SITE_UPDATED,
+      changeFrequency: 'yearly',
+      priority: 0.5,
+    },
+    ...BLOG_CATEGORIES.map((category) => ({
+      url: `${SITE_URL}/blog/category/${category.slug}`,
+      lastModified: SITE_UPDATED,
+      changeFrequency: 'weekly' as const,
+      priority: 0.75,
+    })),
+  );
 
   // Blog posts (English only)
   const posts = getAllPosts();
   for (const post of posts) {
     entries.push({
       url: `${SITE_URL}/blog/${post.slug}`,
-      lastModified: new Date(post.date),
+      lastModified: new Date(post.updated || post.date),
       changeFrequency: 'monthly',
       priority: 0.6,
     });

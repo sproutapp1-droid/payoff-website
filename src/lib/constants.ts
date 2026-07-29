@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://payoffdebtplanner.com';
+export const SITE_URL = 'https://www.payoffdebtplanner.com';
 export const SITE_NAME = 'Payoff: Smart Debt Planner';
 
 export const COLORS = {

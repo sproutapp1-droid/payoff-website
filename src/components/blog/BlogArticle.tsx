@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Lightbulb, CheckCircle2, AlertTriangle, ArrowRight, Smartphone } from 'lucide-react';
+import { Lightbulb, CheckCircle2, AlertTriangle, ArrowRight } from 'lucide-react';
 
 interface BlogArticleProps {
   content: string;
@@ -121,7 +121,7 @@ function renderKeyTakeaway(lines: string[], i: number, key: number): { element: 
   // Check if open + close are on the same line
   const inline = extractInlineContent('KeyTakeaway', lines[i]);
   const text = inline ?? (() => {
-    const { content, endIndex: _end } = collectUntilClose('KeyTakeaway', lines, i + 1);
+    const { content } = collectUntilClose('KeyTakeaway', lines, i + 1);
     return content.join(' ').trim();
   })();
   const endIndex = inline ? i + 1 : collectUntilClose('KeyTakeaway', lines, i + 1).endIndex;

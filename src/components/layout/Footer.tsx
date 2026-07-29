@@ -30,6 +30,8 @@ export default function Footer() {
       title: f.company || "Company",
       links: [
         { label: f.links?.blog || "Blog", href: "/blog" },
+        { label: "About our content", href: "/blog/about" },
+        { label: "Editorial policy", href: "/blog/editorial-policy" },
         { label: f.links?.support || "Support", href: `${prefix}/support` },
         { label: f.links?.contact || "Contact", href: `${prefix}/contact` },
       ],

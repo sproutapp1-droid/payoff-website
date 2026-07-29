@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   for (const locale of LOCALES) {
     alternates[locale] = `${SITE_URL}/${locale}`;
   }
+  alternates['x-default'] = `${SITE_URL}/en`;
 
   return {
     title: dict.metadata.title,
@@ -59,6 +60,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       follow: true,
     },
     alternates: {
+      canonical: `${SITE_URL}/${lang}`,
       languages: alternates,
     },
   };

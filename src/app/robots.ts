@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/delete-account'],
+        disallow: ['/api/', '/*/delete-account'],
       },
       // Explicitly allow AI search bots for citation/discoverability
       { userAgent: 'GPTBot', allow: '/' },
@@ -15,7 +15,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'PerplexityBot', allow: '/' },
       { userAgent: 'ClaudeBot', allow: '/' },
       { userAgent: 'anthropic-ai', allow: '/' },
-      { userAgent: 'Google-Extended', allow: '/' },
       { userAgent: 'Bingbot', allow: '/' },
       // Block training-only crawlers (no search/citation benefit)
       { userAgent: 'CCBot', disallow: '/' },

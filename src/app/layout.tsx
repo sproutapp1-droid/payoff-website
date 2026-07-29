@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import Script from "next/script";
+import { SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
 const nunito = Nunito({
@@ -9,8 +10,6 @@ const nunito = Nunito({
   weight: ["400", "600", "700", "800"],
   display: "swap",
 });
-
-const SITE_URL = "https://payoffdebtplanner.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -59,28 +58,13 @@ const organizationSchema = {
       url: SITE_URL,
       description:
         "AI-powered debt payoff planner with 7 strategies including snowball and avalanche, savings planner, partner mode, and focus mode for financial anxiety.",
-      offers: [
-        {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          description: "Free plan — 2 debts, snowball & avalanche, AI coach (5 messages/month)",
-        },
-        {
-          "@type": "Offer",
-          price: "49.99",
-          priceCurrency: "GBP",
-          priceValidUntil: "2027-12-31",
-          description: "Premium yearly — unlimited debts, all strategies, unlimited AI, savings planner",
-        },
-      ],
-      author: { "@id": `${SITE_URL}/#organization` },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        ratingCount: "1",
-        bestRating: "5",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+        description: "Free to download with optional paid features.",
       },
+      author: { "@id": `${SITE_URL}/#organization` },
     },
   ],
 };

@@ -1,11 +1,17 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getAllPosts, getAllCategories } from '@/lib/blog';
+import { getAllPosts, getAllCategories, getCategorySlug } from '@/lib/blog';
 import { Clock, ArrowRight, Tag } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Blog  - Debt Payoff Tips, Strategies & Guides',
+  title: 'Debt Payoff Blog: Calculators, Strategies and Practical Guides',
   description: 'Learn proven debt payoff strategies, money-saving tips, and financial freedom guides. Snowball vs avalanche, budgeting hacks, and more from the Payoff team.',
+  alternates: {
+    canonical: '/blog',
+    types: {
+      'application/rss+xml': '/blog/feed.xml',
+    },
+  },
   openGraph: {
     title: 'Payoff Blog  - Debt Payoff Tips & Strategies',
     description: 'Proven debt payoff strategies and financial freedom guides.',
@@ -51,16 +57,17 @@ export default function BlogPage() {
         {/* Category pills */}
         {categories.length > 1 && (
           <div className="flex flex-wrap gap-2 justify-center mb-12">
-            <span className="bg-primary text-white rounded-full px-4 py-1.5 text-sm font-semibold cursor-pointer">
+            <Link href="/blog" className="bg-primary text-white rounded-full px-4 py-1.5 text-sm font-semibold no-underline">
               All
-            </span>
+            </Link>
             {categories.map((cat) => (
-              <span
+              <Link
                 key={cat}
+                href={`/blog/category/${getCategorySlug(cat)}`}
                 className="bg-gray-100 text-gray-600 rounded-full px-4 py-1.5 text-sm font-semibold hover:bg-gray-200 transition cursor-pointer"
               >
                 {cat}
-              </span>
+              </Link>
             ))}
           </div>
         )}

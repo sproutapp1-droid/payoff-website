@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useDict } from '@/components/i18n/LocaleProvider';
 import { LOCALES, LOCALE_NATIVE_NAMES } from '@/lib/i18n';
 import type { Locale } from '@/lib/i18n';
@@ -23,17 +23,18 @@ export default function PrivacyPolicyPage() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [pp, setPp] = useState<any>(dict.privacyPolicy || {});
 
-  useEffect(() => {
-    if (selectedLocale === locale) {
+  const handleLocaleChange = (newLocale: string) => {
+    setSelectedLocale(newLocale);
+    if (newLocale === locale) {
       setPp(dict.privacyPolicy || {});
       return;
     }
-    loaders[selectedLocale]?.().then((mod) => {
+    loaders[newLocale]?.().then((mod) => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const d = mod.default as any;
       setPp(d.privacyPolicy || {});
     });
-  }, [selectedLocale, locale, dict]);
+  };
 
   const sections = pp.sections || [];
 
@@ -57,7 +58,7 @@ export default function PrivacyPolicyPage() {
             <select
               id="pp-lang"
               value={selectedLocale}
-              onChange={(e) => setSelectedLocale(e.target.value)}
+              onChange={(e) => handleLocaleChange(e.target.value)}
               className="bg-white border border-gray-200 text-sm rounded-lg px-3 py-2 focus:outline-none focus:border-primary"
             >
               {LOCALES.map((loc) => (
